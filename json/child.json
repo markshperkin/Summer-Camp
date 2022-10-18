@@ -4,82 +4,151 @@
       "User": "Child",
       "first name": "Kate",
       "last name": "Johnson",
-      "Age":"5",
       "Birthday": "11/30/2017",
-      "Email address" : "kte322@gmail.com",
-      "Password" :"Asf432",
-      "Phone number":"803-543-9999",
-      "Address" :"543 Lowery Ct, West Columbia,SC,29170",
       "Gender": "Female",
-      "State": "South Carolina",
-      "Country": "United States",
-      "Relationship to the Parent": "Child to: Karla,Alex"
+      "Allergy":"none",
+      "medName":"None",
+      "medTime":"none",
+      "medDose":"none",
+      "shirtSize":"Small",
+      "Contact": [
+        {
+          "firstName":"Karla",
+          "lastName": "Johnson",
+          "phoneNum": "803-543-9999"    ,
+          "email":"kJohnson342@gmail.com"      ,
+          "relationship": "Mother",
+
+          "firstName":"Alex",
+          "lastName": "Johnson",
+          "phoneNum": "803-654-8554",
+          "email":"AJH874@gmail.com",
+          "relationship": "Father"
+
+
+        }
+      ]
     },{
-      "id":2,
+          "id": 2,
+          "User": "Child",
+          "first name": "Jacob",
+          "last name": "Johnson",
+          "Birthday": "10/24/15",
+          "Gender": "Male",
+          "Allergy":"Peanuts",
+          "medName":"None",
+          "medTime":"none",
+          "medDose":"none",
+          "shirtSize":"Small",
+          "Contact": [
+            {
+              "firstName":"Karla",
+              "lastName": "Johnson",
+              "phoneNum": "803-543-9999"    ,
+              "email":"kJohnson342@gmail.com"      ,
+              "relationship": "Mother",
+    
+              "firstName":"Alex",
+              "lastName": "Johnson",
+              "phoneNum": "803-654-8554",
+              "email":"AJH874@gmail.com",
+              "relationship": "Father"
+    
+    
+            }
+            
+          ]
+    },
+    {
+      "id": 3,
       "User": "Child",
-      "first name": "Jacob",
-      "last name": "Johnson",
-      "Age":"7",
-      "Birthday": "04/04/2015",
-      "Email address" : "ja899@gmail.com",
-      "Password":"Jaxr432",
-      "Phone number":"803-543-9999",
-      "Street Address" :"543 Lowery Ct",
-      "Town": "West Columbia",
-      "Zipcode":"29170",
-      "State": "South Carolina",
-      "Country": "United States",
-      "Gender":"Male",
-      "Relationship to the Parent": "Child to: Karla,Alex"
-      
+      "first name": "Micheal",
+      "last name": "Waterman",
+      "Birthday": "12/25/15",
+      "Gender": "Male",
+      "Allergy":"none",
+      "medName":"None",
+      "medTime":"none",
+      "medDose":"none",
+      "shirtSize":"Small",
+      "Contact": [
+        {
+          "firstName":"Jared",
+          "lastName": "Waterman",
+          "phoneNum": "803-853-3255"    ,
+          "email":"jWat342@gmail.com"      ,
+          "relationship": "Father",
+
+          "firstName":"Nora",
+          "lastName": "Waterman",
+          "phoneNum": "803-531-3255",
+          "email":"NWat32@gmail.com",
+          "relationship": "Mother"
+
+
+        }
+        
+      ]
     },{
-      "id":3,
+      "id": 4,
       "User": "Child",
-      "First name": "Scott",
-      "Last name": "Waterman",
-      "Age":"12",
-      "Birthday": "08/16/2010",
-      "Email address" : "Sco432@gmail.com",
-      "Phone number":"803-543-6333",
-      "Street Address" :"942 Tremble Dr",
-      "Town": "Columbia",
-      "State": "South Carolina",
-      "Zipcode": "29201",
-      "Country": "United States",
-      "Gender":"Male",
-      "Relationship to the Parent": "Child to: Nora,Jared"
-    },{
-      "id":4,
-      "User": "Child",
-      "First name": "Marie",
-      "Last name": "Waterman",
-      "Age":"9",
-      "Birthday": "02/24/2013",
-      "Email address" : "N/A",
-      "Phone number":"N/A",
-      "Street Address" :"942 Tremble Dr",
-      "Town": "Columbia",
-      "State": "South Carolina",
-      "Zipcode": "29201",
-      "Country": "United States",
-      "Gender":"Male",
-      "Relationship to the Parent": "Child to: Nora,Jared"
+      "first name": "Marie",
+      "last name": "Waterman",
+      "Birthday": "02/28/14",
+      "Gender": "Female",
+      "Allergy":"none",
+      "medName":"None",
+      "medTime":"none",
+      "medDose":"none",
+      "shirtSize":"Medium",
+      "Contact": [
+        {
+          "firstName":"Jared",
+          "lastName": "Waterman",
+          "phoneNum": "803-853-3255"    ,
+          "email":"jWat342@gmail.com"      ,
+          "relationship": "Father",
+
+          "firstName":"Nora",
+          "lastName": "Waterman",
+          "phoneNum": "803-531-3255",
+          "email":"NWat32@gmail.com",
+          "relationship": "Mother"
+
+
+        }
+        
+      ]
      },{
-      "id":5,
+      "id": 5,
       "User": "Child",
-      "First name": "Scarlett",
-      "Last name": "Waterman",
-      "Age":"7",
-      "Birthday": "02/13/2015",
-      "Email address" : "N/A",
-      "Phone number":"N/A",
-      "Street Address" :"942 Tremble Dr",
-      "Town": "Columbia",
-      "State": "South Carolina",
-      "Zipcode": "29201",
-      "Country": "United States",
-      "Gender":"Female",
-      "Relationship to the Parent": "Child to: Nora,Jared" 
+      "first name": "Scarlett",
+      "last name": "Waterman",
+      "Birthday": "11/13/13",
+      "Gender": "Female",
+      "Allergy":"none",
+      "medName":"None",
+      "medTime":"none",
+      "medDose":"none",
+      "shirtSize":"Small",
+      "Contact": [
+        {
+          "firstName":"Jared",
+          "lastName": "Waterman",
+          "phoneNum": "803-853-3255"    ,
+          "email":"jWat342@gmail.com"      ,
+          "relationship": "Father",
+
+          "firstName":"Nora",
+          "lastName": "Waterman",
+          "phoneNum": "803-531-3255",
+          "email":"NWat32@gmail.com",
+          "relationship": "Mother"
+
+
+        }
+        
+      ]
     }
        
    

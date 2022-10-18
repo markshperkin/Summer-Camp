@@ -12,8 +12,8 @@
   "Town": "West Columbia",
   "State": "South Carolina",
   "Country": "United States",
-  "Gender":"Female",
-  "Relationship to the Child":"Parent to: Karla, Jacob"
+  "Gender":"Female"
+  
   },{
   "id":2,
   "User": "Parent",
@@ -28,14 +28,13 @@
     "ZipCode": "29170",
     "State": "South Carolina",
     "Country": "United States",
-    "Gender":"Male",
-    "Relationship to the Child": "Parent to: Karla,Jacob"
+    "Gender":"Male"
+    
   },{
     "id":3,
     "User": "Parent",
     "first name": "Jared",
     "last name": "Waterman",
-    "Age":"32",
     "Birthday": "07/31/1990",
     "Email address" : "jWat342@gmail.com",
     "Password":"RTS543",
@@ -45,14 +44,13 @@
     "ZipCode": "29201",
     "State": "South Carolina",
     "Country": "United States",
-    "Gender":"Male",
-    "Relationship to the Child":""
+    "Gender":"Male"
+   
   },{
     "id":4,
     "User": "Parent",
     "first name": "Nora",
     "last name": "Waterman",
-    "Age":"30",
     "Birthday": "09/13/1992",
     "Email address" : "NWat32@gmail.com",
     "Password": "ware2122",
@@ -62,8 +60,8 @@
     "ZipCode": "29201",
     "State": "South Carolina",
     "Country": "United States",
-    "Gender":"Male",
-    "Relationship to the Child":""
+    "Gender":"Male"
+    
   }
 
   
