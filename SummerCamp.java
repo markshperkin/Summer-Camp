@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class SummerCamp{
 
-    public ArrayList<Activities> activities ;
+    public ArrayList<Activity> activities ;
     public ArrayList<FAQ> faqs;
     public String question;
     public String answer;
@@ -20,7 +20,7 @@ public class SummerCamp{
 
     }
 
-    public void addActivity(Activities activity){
+    public void addActivity(Activity activity){
         
     }
 
