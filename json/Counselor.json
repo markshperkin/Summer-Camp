@@ -1,0 +1,72 @@
+[
+    {
+        "firstName": "Jack",
+        "lastName": "Daniels",
+        "email": "JackDaniels@myhouse.com",
+        "password": "password",
+        "phoneNum": "8904561234",
+        "street" : "Brookgreen",
+        "town": "Columbia",
+        "state": "South Carolina",
+        "zipCode": 29201,
+        "country": "United States",
+        "birthday": "April 15,2003",
+        "aboutME": "Hello I am the counselor",
+        "gender": "Male",
+        "allergy": "none",
+        "medication": "none",
+        "shirtSize": "Medium",
+        "strike": 0,
+        "contacts": [
+            {
+                "firstName": "Marcus",
+                "lastName": "Campbell",
+                "phoneNum": "1236782345",
+                "email": "mcampbell@asdf.com",
+                "relationship": "brother"
+            },
+            {
+                "firstName": "Tyler",
+                "lastName": "Portia",
+                "phoneNum": "80912345678",
+                "email": "BigDawgT@gmail.com",
+                "relationship": "brother"
+            }
+        ]
+    },
+    {
+        "firstName": "Daniel",
+        "lastName": "evens",
+        "email": "DanielEvens@gmail.com",
+        "password": "password",
+        "phoneNum": "8904561234",
+        "street" : "Coldstone",
+        "town": "Columbia",
+        "state": "South Carolina",
+        "zipCode": 29201,
+        "country": "United States",
+        "birthday": "April 19,2000",
+        "aboutME": "Hello I am the counselor",
+        "gender": "Male",
+        "allergy": "none",
+        "medication": "none",
+        "shirtSize": "Medium",
+        "strike": 0,
+        "contacts": [
+            {
+                "firstName": "Mark",
+                "lastName": "Zee",
+                "phoneNum": "4567891234",
+                "email": "markzee@asdf.com",
+                "relationship": "brother"
+            },
+            {
+                "firstName": "Yon",
+                "lastName": "hellow",
+                "phoneNum": "8035758923",
+                "email": "YonHellow@gmail.com",
+                "relationship": "sister"
+            }
+        ]
+    }
+]

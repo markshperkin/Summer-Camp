@@ -13,7 +13,11 @@
       "Gender": "Female",
       "State": "South Carolina",
       "Country": "United States",
-      "Relationship to the Parent": "Child to: Karla,Alex"
+      "Relationship to the Parent": "Child to: Karla,Alex",
+      "contact": [
+        {},
+        {}
+      ]
     },{
       "id":2,
       "User": "Child",
