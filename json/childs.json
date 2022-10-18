@@ -16,19 +16,19 @@
           "firstName":"Karla",
           "lastName": "Johnson",
           "phoneNum": "803-543-9999"    ,
-          "email":"kJohnson342@gmail.com"      ,
-          "relationship": "Mother",
-
+          "email":"kJohnson342@gmail.com",
+          "relationship": "Mother"
+        },
+        {
           "firstName":"Alex",
           "lastName": "Johnson",
           "phoneNum": "803-654-8554",
           "email":"AJH874@gmail.com",
           "relationship": "Father"
-
-
         }
       ]
-    },{
+     }, 
+      {
           "id": 2,
           "User": "Child",
           "first name": "Jacob",
@@ -46,8 +46,9 @@
               "lastName": "Johnson",
               "phoneNum": "803-543-9999"    ,
               "email":"kJohnson342@gmail.com"      ,
-              "relationship": "Mother",
-    
+              "relationship": "Mother"
+            },
+            {
               "firstName":"Alex",
               "lastName": "Johnson",
               "phoneNum": "803-654-8554",
@@ -77,8 +78,9 @@
           "lastName": "Waterman",
           "phoneNum": "803-853-3255"    ,
           "email":"jWat342@gmail.com"      ,
-          "relationship": "Father",
-
+          "relationship": "Father"
+        },
+        {
           "firstName":"Nora",
           "lastName": "Waterman",
           "phoneNum": "803-531-3255",
@@ -87,7 +89,7 @@
 
 
         }
-        
+      
       ]
     },{
       "id": 4,
@@ -105,10 +107,11 @@
         {
           "firstName":"Jared",
           "lastName": "Waterman",
-          "phoneNum": "803-853-3255"    ,
-          "email":"jWat342@gmail.com"      ,
-          "relationship": "Father",
-
+          "phoneNum": "803-853-3255",
+          "email":"jWat342@gmail.com",
+          "relationship": "Father"
+        },
+        {
           "firstName":"Nora",
           "lastName": "Waterman",
           "phoneNum": "803-531-3255",
@@ -117,9 +120,10 @@
 
 
         }
-        
+    
       ]
-     },{
+},  
+  {
       "id": 5,
       "User": "Child",
       "first name": "Scarlett",
@@ -137,22 +141,17 @@
           "lastName": "Waterman",
           "phoneNum": "803-853-3255"    ,
           "email":"jWat342@gmail.com"      ,
-          "relationship": "Father",
+          "relationship": "Father"
+        },
+        {
 
-          "firstName":"Nora",
+         "firstName":"Nora",
           "lastName": "Waterman",
           "phoneNum": "803-531-3255",
           "email":"NWat32@gmail.com",
           "relationship": "Mother"
 
-
-        }
-        
-      ]
-    }
-       
-   
-       
-   
-   
-   ]
+           }
+        ]
+      }
+  ]   
