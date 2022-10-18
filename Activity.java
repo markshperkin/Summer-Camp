@@ -1,6 +1,6 @@
 import javax.swing.Action;
 
-public class Activities {
+public class Activity {
     private String title;
     private String description;
     private String location;
@@ -8,7 +8,7 @@ public class Activities {
     private int clockMinute;
     private Action action;
 
-    public Activities(String title, String description, String location, int clockHour
+    public Activity(String title, String description, String location, int clockHour
     , int clockMinute, Action action) {
         this.title = title;
         this.description = description;
