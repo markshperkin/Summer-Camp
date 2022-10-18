@@ -1,0 +1,77 @@
+[
+ {
+  "id":1,
+  "User": "Parent",
+  "first name": "Karla",
+  "last name": "Johnson",
+  "Age":"45",
+  "Birthday": "09/01/1977",
+  "Email address" : "kJohnson342@gmail.com",
+  "Phone number":"803-543-9999",
+  "Street Address" :"543 Lowery Ct",
+  "Town": "West Columbia",
+  "State": "South Carolina",
+  "Country": "United States",
+  "Gender":"Female",
+  "Relationship to the Child":"Parent to: Karla, Jacob"
+  },{
+  "id":2,
+  "User": "Parent",
+  "first name": "Alex",
+    "last name": "Johnson",
+    "Age":"46",
+    "Birthday": "03/07/1976",
+    "Email address" : "AJH874@gmail.com",
+    "Phone number":"803-654-8554",
+    "Street Address" :"543 Lowery Ct",
+    "Town": "West Columbia",
+    "ZipCode": "29170",
+    "State": "South Carolina",
+    "Country": "United States",
+    "Gender":"Male",
+    "Relationship to the Child": "Parent to: Karla,Jacob"
+  },{
+    "id":3,
+    "User": "Parent",
+    "first name": "Jared",
+    "last name": "Waterman",
+    "Age":"32",
+    "Birthday": "07/31/1990",
+    "Email address" : "jWat342@gmail.com",
+    "Password":"RTS543",
+    "Phone number":"803-853-3255",
+    "Street Address" :"942 Tremble Dr",
+    "Town": "Columbia",
+    "ZipCode": "29201",
+    "State": "South Carolina",
+    "Country": "United States",
+    "Gender":"Male",
+    "Relationship to the Child":""
+  },{
+    "id":4,
+    "User": "Parent",
+    "first name": "Nora",
+    "last name": "Waterman",
+    "Age":"30",
+    "Birthday": "09/13/1992",
+    "Email address" : "NWat32@gmail.com",
+    "Password": "ware2122",
+    "Phone number":"803-531-3255",
+    "Street Address" :"942 Tremble Dr",
+    "Town": "Columbia",
+    "ZipCode": "29201",
+    "State": "South Carolina",
+    "Country": "United States",
+    "Gender":"Male",
+    "Relationship to the Child":""
+  }
+
+  
+
+ 
+    
+
+   
+    
+
+]
