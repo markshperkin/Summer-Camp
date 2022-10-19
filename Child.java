@@ -13,6 +13,12 @@ public class Child {
     public ArrayList<Contact> contacts;
 
     public Child (String firstName, String lastName, String birthday, String gender, String allergy, String shirtSize){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthday = birthday;
+        this.gender = gender;
+        this.allergy = allergy;
+        this.shirtSize = shirtSize;
 
     }
 

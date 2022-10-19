@@ -10,12 +10,13 @@ public class Parent extends User{
     private int expDate;
     private int price;
 
-    public Parent(String firstName, String lastName, String userName, String email, String password, String phoneNum, String birthday){
-
+    public Parent(String firstName, String lastName, String email, String password, String phoneNum, String birthday, String street
+    , String town, String state, int zipCode, String country) {
+        super(firstName, lastName, email, password, phoneNum, birthday, street, town, state, zipCode, country);
     }
 
-    public void addAddress(String streetAddress, String town, String state, int zipCode, String country){
-
+    public String addAddress(String street, String town, String state, int zipCode, String country){
+        return "";
     }
 
     public void addChild(Child child){

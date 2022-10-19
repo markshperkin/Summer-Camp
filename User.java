@@ -1,21 +1,22 @@
 public abstract class User {
-    private String firstName;
-    private String lastName;
-    private String email;
-    private String password;
-    private String phoneNum;
-    private String  street;
-    private String town;
-    private String state;
-    private int zipCode;
-    private String country;
-    private String birthday;
+    protected String firstName;
+    protected String lastName;
+    protected String email;
+    protected String password;
+    protected String phoneNum;
+    protected String  street;
+    protected String town;
+    protected String state;
+    protected int zipCode;
+    protected String country;
+    protected String birthday;
 
-    public User(String firstName, String lastName, String email, String phoneNum, String birthday, String street
+    public User(String firstName, String lastName, String email, String password, String phoneNum, String birthday, String street
     , String town, String state, int zipCode, String country) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.password = password;
         this.phoneNum = phoneNum;
         this.birthday = birthday;
         this.street = street;
