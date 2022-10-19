@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "firstName":"Marcus",
+    "lastName":"Campbell",
+    "email":"mcampbell@email.com",
+    "password": "asdfasdf",
+    "phoneNumber": "8035652570",
+    "streetAddress": "814 Cookie St",
+    "town": "Columbia",
+    "state": "SC",
+    "zipCode" : 29201,
+    "country": "USA",
+    "birthday":"April 15, 1984",
+    "director": true
+  },
+  {
+    "id": 2,
+    "firstName":"Tyree",
+    "lastName":"Hum",
+    "email":"thum@email.com",
+    "password": "asdf1234",
+    "phoneNumber": "8034545770",
+    "streetAddress": "815 Cookie St",
+    "town": "Columbia",
+    "state": "SC",
+    "zipCode" : 29201,
+    "country": "USA",
+    "birthday":"April 16, 1974",
+    "director": true
+  }
+  {
+    "id": 3,
+    "firstName":"Aiyanna",
+    "lastName":"Blair",
+    "email":"AiyannaBlair@email.com",
+    "password": "AiyannaIsCool",
+    "phoneNumber": "8037894561",
+    "streetAddress": "316 joker St",
+    "town": "Columbia",
+    "state": "SC",
+    "zipCode" : 29201,
+    "country": "USA",
+    "birthday":"March 27, 1984",
+    "director": true
+  }
+]

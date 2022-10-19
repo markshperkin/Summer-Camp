@@ -18,17 +18,17 @@
   "id":2,
   "User": "Parent",
   "first name": "Alex",
-    "last name": "Johnson",
-    "Age":"46",
-    "Birthday": "03/07/1976",
-    "Email address" : "AJH874@gmail.com",
-    "Phone number":"803-654-8554",
-    "Street Address" :"543 Lowery Ct",
-    "Town": "West Columbia",
-    "ZipCode": "29170",
-    "State": "South Carolina",
-    "Country": "United States",
-    "Gender":"Male"
+  "last name": "Johnson",
+  "Age":"46",
+  "Birthday": "03/07/1976",
+  "Email address" : "AJH874@gmail.com",
+  "Phone number":"803-654-8554",
+  "Street Address" :"543 Lowery Ct",
+  "Town": "West Columbia",
+  "ZipCode": "29170",
+  "State": "South Carolina",
+  "Country": "United States",
+  "Gender":"Male"
     
   },{
     "id":3,
