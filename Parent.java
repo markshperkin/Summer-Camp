@@ -3,11 +3,9 @@ import java.util.ArrayList;
 
 
 public class Parent extends User{
-    private int cardNumber;
     private boolean waiver;
     private ArrayList<Child> children;
     private int numOfWeeks;
-    private int expDate;
     private int price;
 
     public Parent(String firstName, String lastName, String email, String password, String phoneNum, String birthday, String street
@@ -25,10 +23,6 @@ public class Parent extends User{
 
     public boolean signWaiver(boolean waiver){
         return waiver;
-    }
-
-    public void addPayment(String nameOnFile, int cardNumber, int expDate, int cvcNum){
-
     }
 
     public void choseDates (int numOfWeeks){
