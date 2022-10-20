@@ -6,7 +6,4 @@ public class DataReader extends DataConstants{
         return null;
     }
     
-    public ArrayList<Activity> getAllActivities() {
-        return null;
-    }
 }
