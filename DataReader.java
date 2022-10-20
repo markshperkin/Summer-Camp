@@ -24,8 +24,8 @@ public class DataReader extends DataConstants{
     public static ArrayList<Director> getAllDirectors() {
         return null;
     }
-
-    public static ArrayList <Counselor> getAllConselors() {
+    
+    public ArrayList<Activity> getAllActivities() {
         return null;
     }
 }

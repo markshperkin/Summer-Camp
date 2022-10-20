@@ -6,7 +6,4 @@ public class DataWriter extends DataConstants{
         return true;
     }
     
-    public boolean saveAllActivities(ArrayList<Activity> activities) {
-        return true;
-    }
 }

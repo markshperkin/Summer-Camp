@@ -7,6 +7,7 @@ public class SummerCamp{
     public String question;
     public String answer;
     public ArrayList<String> reviews;
+    public ArrayList<Sessions> sessions;
     public String camperNeed;
     public ArrayList<String> camperNeeds;
     public String campAddress;
@@ -21,6 +22,10 @@ public class SummerCamp{
     }
 
     public void addActivity(Activity activity){
+        
+    }
+
+    public void addSession(Sessions sessions){
         
     }
 
