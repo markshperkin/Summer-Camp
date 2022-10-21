@@ -16,16 +16,4 @@ public class DataReader extends DataConstants{
         }
         return null;
     }
-    
-    public static ArrayList<Child> getAllChilds() {
-        return null;
-    }
-
-    public static ArrayList<Director> getAllDirectors() {
-        return null;
-    }
-    
-    public ArrayList<Activity> getAllActivities() {
-        return null;
-    }
 }
