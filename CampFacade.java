@@ -17,31 +17,31 @@ public class CampFacade {
         this.cabin = cabin;
     }
 
-    public void login(String username, String password){
+    public static boolean login(String username, String password){
+        return true;
+    }
+
+    public static void signUp (String firstName, String lastName, String userName, String email, String password){
 
     }
 
-    public void signUp (String firstName, String lastName, String userName, String email, String password){
-
+    public static String getActivityByKeyWord (String word){
+        return "activity";
     }
 
-    public void getActivityByKeyWord (String word){
-
+    public static String getAllActivity(){
+        return "activities";
     }
 
-    public void getAllActivity(){
-
-    }
-
-    public void viewSchedule(){
-
+    public static String viewSchedule(){
+        return "schedule";  
     }
 
     public void createSchedule(){
 
     }
 
-    public void addReview(){
+    public static void addReview(){
 
     }
 
