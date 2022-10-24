@@ -105,6 +105,33 @@ public class DataReader extends DataConstants{
         }
         return null;
     }
+    public static ArrayList<Counselor> getAllCounselors() {
+        ArrayList<Counselor> counselors = new ArrayList<Counselor>();
 
+        try {
+            FileReader counselorReader = new FileReader(COUNSELOR_FILE);
+            JSONParser parser = new JSONParser();
+            JSONArray counselorJSON = (JSONArray)new JSONParser().parse(counselorReader);
+
+            for(int i = 0; i < counselorJSON.size(); i++) {
+                JSONObject counselorsJSON = (JSONObject) counselorJSON.get(i);
+                String fname = (String)counselorsJSON.get(FIRSTNAME);
+                String lname = (String)counselorsJSON.get(LASTNAME);
+                String email = (String)counselorsJSON.get(EMAIL);
+                String password = (String) counselorsJSON.get(PASSWORD);
+                String phoneNum = (String) counselorsJSON.get(PHONENUMBER);
+                String street = (String) counselorsJSON.get(STREET);
+                String town =(String) counselorsJSON.get(TOWN);
+                String zipCode =(String) counselorsJSON.get(ZIPCODE);
+                String state =(String) counselorsJSON.get(STATE);
+                String country=(String) counselorsJSON.get(COUNTRY);
+                String birthday=(String) counselorsJSON.get(BIRTHDAY);
+               
+
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     
 }
