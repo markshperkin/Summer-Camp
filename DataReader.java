@@ -23,12 +23,12 @@ public class DataReader extends DataConstants{
                 String email = (String)parentJSON.get(EMAIL);
                 String password = (String)parentJSON.get(PASSWORD);
                 String phoneNum = (String)parentJSON.get(PHONENUMBER);
-                String birthday = (String)parentJSON.get("birthday");
-                String street = (String)parentJSON.get("street");
-                String town = (String)parentJSON.get("town"); 
-                String state = (String)parentJSON.get("state"); 
-                int zipCode = (int)parentJSON.get("zipCode"); 
-                String country = (String)parentJSON.get("country");
+                String birthday = (String)parentJSON.get(BIRTHDAY);
+                String street = (String)parentJSON.get(STREET);
+                String town = (String)parentJSON.get(TOWN); 
+                String state = (String)parentJSON.get(STATE); 
+                int zipCode = (int)parentJSON.get(ZIPCODE); 
+                String country = (String)parentJSON.get(COUNTRY);
 
                 parents.add(new Parent(fname, lname, email, password, phoneNum, birthday, street, town, state, zipCode, country));
             }
@@ -51,14 +51,20 @@ public class DataReader extends DataConstants{
                 JSONObject childJSON = (JSONObject) childrenJSON.get(i);
                 String fname = (String)childJSON.get(FIRSTNAME);
                 String lname = (String)childJSON.get(LASTNAME);
-                String birthday = (String)childJSON.get("birthday");
-                String gender = (String) childJSON.get("gender");
-                ArrayList <String> allergy = (ArrayList<String>) childJSON.get("allergy"); //TODO
-                String medName = (String)childJSON.get("medName");
-                String medTime = (String)childJSON.get("medTime");
-                String medDose = (String)childJSON.get("medDose");
-                String shirtSize = (String)childJSON.get("shirtSize");
+                String birthday = (String)childJSON.get(BIRTHDAY);
+                String gender = (String) childJSON.get(GENDER);
+                String shirtSize = (String)childJSON.get(SHIRSIZE);
+                ArrayList <String> allergy = (ArrayList<String>) childJSON.get(ALLERGY); //TODO
+                String medName = (String)childJSON.get(MEDNAME);
+                String medTime = (String)childJSON.get(MEDTIME);
+                String medDose = (String)childJSON.get(MEDDOSE);
                 ArrayList <Contact> contacts = new ArrayList<Contact>(); //TODO
+                String firstname =(String)childJSON.get(FIRSTNAME);
+                String lastname=(String)childJSON.get(LASTNAME);
+                String phonenumber=(String)childJSON.get(PHONENUMBER);
+                String email=(String)childJSON.get(EMAIL);
+                String relationship=(String)childJSON.get(RELATIONSHIP);
+
                 
                 children.add(new Child(fname, lname, birthday, gender, shirtSize));
             }
@@ -85,7 +91,13 @@ public class DataReader extends DataConstants{
                 String email = (String)directorJSON.get(EMAIL);
                 String password = (String) directorJSON.get(PASSWORD);
                 String phoneNum = (String) directorJSON.get(PHONENUMBER);
-                String street = (String) directorJSON.get("street");
+                String street = (String) directorJSON.get(STREET);
+                String town =(String) directorJSON.get(TOWN);
+                String zipCode =(String) directorJSON.get(ZIPCODE);
+                String state =(String) directorJSON.get(STATE);
+                String country=(String) directorJSON.get(COUNTRY);
+                String birthday=(String) directorJSON.get(BIRTHDAY);
+               
 
             }
         } catch (Exception e) {

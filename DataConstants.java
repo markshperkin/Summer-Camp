@@ -7,5 +7,22 @@ public class DataConstants {
     protected static final String LASTNAME = "lastName";
     protected static final String PHONENUMBER = "phoneNum";
     protected static final String EMAIL = "email";
+    protected static final String RELATIONSHIP="relationship";
     protected static final String PASSWORD = "password";
+    protected static final String BIRTHDAY ="birthday";
+    protected static final String GENDER = "gender";
+    protected static final String ALLERGY= "allergy";
+    protected static final String MEDNAME= "medName";
+    protected static final String MEDTIME= "medTime";
+    protected static final String MEDDOSE="medDose";
+    protected static final String SHIRSIZE="shirtSize";
+    protected static final String STREET="street";
+    protected static final String TOWN="town";
+    protected static final String STATE="state";
+    protected static final String ZIPCODE= "zipCode";
+    protected static final String COUNTRY="country";
+
+
+
+    
 }
