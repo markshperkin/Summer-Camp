@@ -49,4 +49,12 @@ public class CampFacade {
         
     }
 
+    public static void addChild(){
+        
+    }
+
+    public static void registerChild(){
+        
+    }
+
 }
