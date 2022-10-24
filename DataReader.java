@@ -60,7 +60,7 @@ public class DataReader extends DataConstants{
                 String shirtSize = (String)childJSON.get("shirtSize");
                 ArrayList <Contact> contacts = new ArrayList<Contact>(); //TODO
                 
-                children.add(new Child(fname, lname, birthday, gender, medDose, shirtSize));
+                children.add(new Child(fname, lname, birthday, gender, shirtSize));
             }
 
             return children;
