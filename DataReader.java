@@ -130,19 +130,17 @@ public class DataReader extends DataConstants{
                 String str=(String)  counselorsJSON.get("strike");
                 ArrayList <Contact> contacts = new ArrayList<Contact>(); 
 
-            
-
-                contacts.add((Contact) counselorsJSON.get("contacts"));
+        
 
                 JSONArray jsonArray = (JSONArray) counselorsJSON.get("contacts");
 
-
-                for(int i = 0; i < jsonArray.size(); i++) {
-                    String contactFname = jsonArray[i].get(FIRSTNAME);
-                    String contactLname = jsonArray[i].get(LASTNAME);
-                    String contactPhoneNum = jsonArray[i].get(PHONENUMBER);
-                    String contactEmail = jsonArray[i].get(EMAIL);
-                    String contactRelationship = jsonArray[i].get(RELATIONSHIP);
+                for(int j = 0; j < jsonArray.size(); j++) {
+                    JSONObject contactJSON = (JSONObject) jsonArray.get(j);
+                    String contactFname = (String)contactJSON.get(FIRSTNAME);
+                    String contactLname = (String) contactJSON.get(LASTNAME);
+                    String contactPhoneNum = (String)contactJSON.get(PHONENUMBER);
+                    String contactEmail =  (String)contactJSON.get(EMAIL);
+                    String contactRelationship = (String)contactJSON.get(RELATIONSHIP);
 
                     contacts.add(new Contact(fname, lname, contactPhoneNum, contactEmail, contactRelationship));
                 }

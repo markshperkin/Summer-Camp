@@ -42,7 +42,7 @@ public class UI {
         }
         else{
             System.out.println("Sorry, there is no login with that username/password. Please try again.");
-            ui.login();
+            ui.run();
         }
         
     }
