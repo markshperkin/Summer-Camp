@@ -59,11 +59,7 @@ public class DataReader extends DataConstants{
                 String medTime = (String)childJSON.get(MEDTIME);
                 String medDose = (String)childJSON.get(MEDDOSE);
                 ArrayList <Contact> contacts = new ArrayList<Contact>(); //TODO
-                String firstname =(String)childJSON.get(FIRSTNAME);
-                String lastname=(String)childJSON.get(LASTNAME);
-                String phonenumber=(String)childJSON.get(PHONENUMBER);
-                String email=(String)childJSON.get(EMAIL);
-                String relationship=(String)childJSON.get(RELATIONSHIP);
+               
 
                 
                 children.add(new Child(fname, lname, birthday, gender, shirtSize));
@@ -133,14 +129,10 @@ public class DataReader extends DataConstants{
                 String SSize=(String) counselorsJSON.get(SHIRSIZE);
                 String str=(String)  counselorsJSON.get("strike");
                 ArrayList <Contact> contacts = new ArrayList<Contact>(); 
-                String firstname =(String)counselorsJSON.get(FIRSTNAME);
-                String lastname=(String)counselorsJSON.get(LASTNAME);
-                String phonenumber=(String)counselorsJSON.get(PHONENUMBER);
-                String emails=(String)counselorsJSON.get(EMAIL);
-                String relationship=(String)counselorsJSON.get(RELATIONSHIP);
+            
 
                
-        counselors.add(new Counselor(firstname, lastname, emails, password, phonenumber, birthday, street, town, state, i, country, gender, SSize));
+        counselors.add(new Counselor(fname, lname, email, password, phoneNum, birthday, street, town, state, i, country, gender, SSize));
             }
         return counselors;
         } catch (Exception e) {
