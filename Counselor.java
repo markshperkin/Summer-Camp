@@ -12,9 +12,8 @@ public class Counselor extends User{
     public ArrayList<String> allergy;
 
 
-    public Counselor(String firstName, String lastName, String email, String password, String phoneNum, String birthday, String street
-    , String town, String state, int zipCode, String country, String gender, String shirtSize) {
-        super(firstName, lastName, email, password, phoneNum, birthday, street, town, state, zipCode, country);
+    public Counselor(String firstName, String lastName, String email, String password, String phoneNum, String birthday, String gender, String shirtSize) {
+        super(firstName, lastName, email, password, phoneNum, birthday);
         this.gender = gender;
         this.shirtSize = shirtSize;
         contacts = new ArrayList();
