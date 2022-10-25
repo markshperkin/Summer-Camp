@@ -32,8 +32,8 @@ public class Cabin {
         campers.add(camper);
     }
 
-    public void viewSchedule(){
-
+    public static String viewSchedule(){
+        return "schedule";
     }
     public Theme getTheme() {
         return this.theme;

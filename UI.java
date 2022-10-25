@@ -56,8 +56,19 @@ public class UI {
         String email = keyboard.nextLine();
         System.out.println("Please enter your password.");
         String password = keyboard.nextLine();
+<<<<<<< HEAD
+        System.out.println("please enter your phone number");
+        String phoneNum = keyboard.nextLine();
+        System.out.println("please enter your birthday");
+        String birthday = keyboard.nextLine();
+
+        UserList.addUser(name, lastName, email, password, phoneNum, birthday);
+
+        //ui.run();
+=======
         CampFacade.signUp(name, lastName, email, password);
         ui.in();
+>>>>>>> 0156ab10d35034139a5bc98f7eda20c7fd6e771d
     }
 
     public void in() {
@@ -102,5 +113,41 @@ public class UI {
                 System.out.println("Command not valid.");
             }
         }
+<<<<<<< HEAD
+
+        else if(command.equalsIgnoreCase("activities")) {
+            ActivitiesList.getAllActivities();
+            ui.in();
+
+        }
+
+        else if(command.equalsIgnoreCase("schedule")) {
+            CampFacade.viewSchedule();
+            ui.in();
+
+        }
+
+        else if(command.equalsIgnoreCase("review")) {
+            System.out.println("please add your review");
+            String review = keyboard.nextLine();
+            SummerCamp.addReview(review);
+            ui.in();
+
+        }
+        else if(command.equalsIgnoreCase("addChild")) {
+            CampFacade.addChild();
+            ui.run();
+        }
+        else if(command.equalsIgnoreCase("registerChild")) {
+            CampFacade.registerChild();
+            ui.run();
+        }
+        else if(command.equalsIgnoreCase("signout")) {
+            ui.run();
+        }
+        else
+            System.out.println("command not valid");
+=======
+>>>>>>> 0156ab10d35034139a5bc98f7eda20c7fd6e771d
     }
 

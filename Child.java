@@ -8,9 +8,12 @@ public class Child {
     public String medName;
     public String medtime;
     public String medDose;
+    public String allergy;
+    public int strikeCount;
     public String shirtSize;
     public ArrayList<Contact> contacts;
-    public ArrayList<String> allergy;
+    public ArrayList<String> allergies;
+    public ArrayList<Medication> medications;
 
 
     public Child (String firstName, String lastName, String birthday, String gender, String shirtSize){
@@ -20,16 +23,38 @@ public class Child {
         this.gender = gender;
         this.shirtSize = shirtSize;
         contacts = new ArrayList<>();
-        allergy = new ArrayList<>();
+        allergies = new ArrayList<>();
 
+    }
+
+    public Child(){
+        
     }
 
     public void addContact (Contact contact){
+        contacts.add(contact);
 
     }
 
-    public void addMedication(String medName, String medTime, String medDose){
+    public void addMedication(Medication medication){
+        medications.add(medication);
         
+    }
+
+    public void strikeCount(){
+
+    }
+
+    public void addAllergy(String allergy){
+        allergies.add(this.allergy);
+    }
+
+    public String getFirstName(){
+        return firstName;
+    }
+
+    public String getLastName(){
+        return lastName;
     }
 
 }
