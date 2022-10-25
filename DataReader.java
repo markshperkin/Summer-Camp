@@ -137,6 +137,15 @@ public class DataReader extends DataConstants{
                 JSONArray jsonArray = (JSONArray) counselorsJSON.get("contacts");
 
 
+                for(int i = 0; i < jsonArray.size(); i++) {
+                    String contactFname = jsonArray[i].get(FIRSTNAME);
+                    String contactLname = jsonArray[i].get(LASTNAME);
+                    String contactPhoneNum = jsonArray[i].get(PHONENUMBER);
+                    String contactEmail = jsonArray[i].get(EMAIL);
+                    String contactRelationship = jsonArray[i].get(RELATIONSHIP);
+
+                    contacts.add(new Contact(fname, lname, contactPhoneNum, contactEmail, contactRelationship));
+                }
                
         counselors.add(new Counselor(fname, lname, email, password, phoneNum, birthday, street, town, state, country, gender, SSize));
             }
