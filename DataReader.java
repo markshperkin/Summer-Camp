@@ -30,7 +30,7 @@ public class DataReader extends DataConstants{
                 int zipCode = (int)parentJSON.get(ZIPCODE); 
                 String country = (String)parentJSON.get(COUNTRY);
 
-                parents.add(new Parent(fname, lname, email, password, phoneNum, birthday, street, town, state, zipCode, country));
+                parents.add(new Parent(fname, lname, email, password, phoneNum, birthday);
             }
             return parents;
         } catch (Exception e) {

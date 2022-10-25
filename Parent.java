@@ -8,12 +8,11 @@ public class Parent extends User{
     private int numOfWeeks;
     private int price;
 
-    public Parent(String firstName, String lastName, String email, String password, String phoneNum, String birthday, Address address,String gender) {
-        super(firstName, lastName, email, password, phoneNum, birthday, address);
+    public Parent(String fName, String lName, String email, String password, String phoneNum, String birthday, Address address,String gender) {
+        super(fName, lName, email, password, phoneNum, birthday,address);
     }
-
-
-
+ 
+    }
 
     public void addChild(Child child){
 
