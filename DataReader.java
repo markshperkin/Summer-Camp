@@ -136,7 +136,7 @@ public class DataReader extends DataConstants{
                 String aboutme=(String) counselorsJSON.get(ABOUTME);
                 String gender=(String) counselorsJSON.get(GENDER);
                 String allergy=(String) counselorsJSON.get(ALLERGY);
-                String medication=(String) counselorsJSON.get("medication");
+                String medication=(String) counselorsJSON.get(MEDICATION);
                 String SSize=(String) counselorsJSON.get(SHIRSIZE);
                 String str=(String)  counselorsJSON.get("strike");
                 ArrayList <Contact> contacts = new ArrayList<Contact>(); 
