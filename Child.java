@@ -12,7 +12,7 @@ public class Child {
     public int strikeCount;
     public String shirtSize;
     public ArrayList<Contact> contacts;
-    public ArrayList<String> allergies;
+    public ArrayList<String> medication;
   
 
 
@@ -23,7 +23,7 @@ public class Child {
         this.gender = gender;
         this.shirtSize = shirtSize;
         contacts = new ArrayList<>();
-        allergies = new ArrayList<>();
+        medication= new ArrayList<>();
 
     }
 
@@ -41,7 +41,7 @@ public class Child {
     }
 
     public void addAllergy(String allergy){
-        allergies.add(this.allergy);
+        medication.add(this.allergy);
     }
 
     public String getFirstName(){

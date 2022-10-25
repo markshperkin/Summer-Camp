@@ -1,5 +1,147 @@
 [
     {
+        "schedule": {
+            "Monday" : [
+                {
+                    "title": "Canoe",
+                    "description" : "Conoing down river",
+                    "location" : "the river",
+                    "clockHour": 12,
+                    "clockMinute": 0,
+                    "action" : "KAYAKING"
+                }
+            ],
+            "Tuesday": [
+                {
+                    "title": "Canoe",
+                    "description" : "Conoing down river",
+                    "location" : "the river",
+                    "clockHour": 12,
+                    "clockMinute": 0,
+                    "action" : "KAYAKING"
+                }
+            ],
+            "Wednesday" : [
+                {
+                    "title": "Canoe",
+                    "description" : "Conoing down river",
+                    "location" : "the river",
+                    "clockHour": 12,
+                    "clockMinute": 0,
+                    "action" : "KAYAKING"
+                }
+            ],
+            "Thursday": [
+                {
+                    "title": "Canoe",
+                    "description" : "Conoing down river",
+                    "location" : "the river",
+                    "clockHour": 12,
+                    "clockMinute": 0,
+                    "action" : "KAYAKING"
+                }
+            ],
+            "Friday": [
+                {
+                    "title": "Canoe",
+                    "description" : "Conoing down river",
+                    "location" : "the river",
+                    "clockHour": 12,
+                    "clockMinute": 0,
+                    "action" : "KAYAKING"
+                }
+            ],
+            "Saturday": [
+                {
+                    "title": "Canoe",
+                    "description" : "Conoing down river",
+                    "location" : "the river",
+                    "clockHour": 12,
+                    "clockMinute": 0,
+                    "action" : "KAYAKING"
+                }
+            ],
+            "Sunday": [
+                {
+                    "title": "Canoe",
+                    "description" : "Conoing down river",
+                    "location" : "the river",
+                    "clockHour": 12,
+                    "clockMinute": 0,
+                    "action" : "KAYAKING"
+                }
+            ]
+        },
+        
+        "camper" : [
+            {
+                "User": "Child",
+                "firstName": "Kate",
+                "lastName": "Johnson",
+                "Birthday": "11/30/2017",
+                "Gender": "Female",
+                "allergy":["none"],
+                "medName":"None",
+                "medTime":"none",
+                "medDose":"none",
+                "shirtSize":"Small",
+                "strike":"1",
+                "Contact": [
+                {
+                    "firstName":"Karla",
+                    "lastName": "Johnson",
+                    "phoneNum": "803-543-9999"    ,
+                    "email":"kJohnson342@gmail.com",
+                    "relationship": "Mother"
+                },
+                {
+                    "firstName":"Alex",
+                    "lastName": "Johnson",
+                    "phoneNum": "803-654-8554",
+                    "email":"AJH874@gmail.com",
+                    "relationship": "Father"
+                }
+                ]
+            }
+        ],
 
+        "counselor":
+        {
+            "id": "cdc4a273-1ead-43fd-9560-b8096d5416af",
+            "firstName": "Jack",
+            "lastName": "Daniels",
+            "email": "JackDaniels@myhouse.com",
+            "password": "password",
+            "phoneNum": "8904561234",
+            "street" : "Brookgreen",
+            "town": "Columbia",
+            "state": "South Carolina",
+            "zipCode": 29201,
+            "country": "United States",
+            "birthday": "April 15,2003",
+            "aboutME": "Hello I am the counselor",
+            "gender": "Male",
+            "allergy": "none",
+            "medication": "none",
+            "shirtSize": "Medium",
+            "strike": 0,
+            "contacts": [
+                {
+                    "firstName": "Marcus",
+                    "lastName": "Campbell",
+                    "phoneNum": "1236782345",
+                    "email": "mcampbell@asdf.com",
+                    "relationship": "brother"
+                },
+                {
+                    "firstName": "Tyler",
+                    "lastName": "Portia",
+                    "phoneNum": "80912345678",
+                    "email": "BigDawgT@gmail.com",
+                    "relationship": "brother"
+                }
+            ]
+        },
+        "theme" : "SPLASH_WEEK"
     }
 ]

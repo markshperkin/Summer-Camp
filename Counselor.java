@@ -8,7 +8,7 @@ public class Counselor extends User{
     public String medtime;
     public String medDose;
     private ArrayList<Contact> contacts;
-    public ArrayList<String> allergy;
+    public ArrayList<String> medications;
 
 
     public Counselor(String fName, String lName, String email, String password, String phoneNum, String birthday,String shirtSize,String street,String town,String state, String country,String gender) {
@@ -17,7 +17,7 @@ public class Counselor extends User{
         
 
         contacts = new ArrayList();
-        allergy = new ArrayList();    
+        medications = new ArrayList();    
     }
 
     public void addMedication(String medName, String medTime, String medDose){
