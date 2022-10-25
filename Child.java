@@ -9,6 +9,7 @@ public class Child {
     public String medtime;
     public String medDose;
     public String allergy;
+    public int strikeCount;
     public String shirtSize;
     public ArrayList<Contact> contacts;
     public ArrayList<String> allergies;
@@ -26,6 +27,10 @@ public class Child {
 
     }
 
+    public Child(){
+        
+    }
+
     public void addContact (Contact contact){
         contacts.add(contact);
 
@@ -36,8 +41,20 @@ public class Child {
         
     }
 
+    public void strikeCount(){
+
+    }
+
     public void addAllergy(String allergy){
         allergies.add(this.allergy);
+    }
+
+    public String getFirstName(){
+        return firstName;
+    }
+
+    public String getLastName(){
+        return lastName;
     }
 
 }
