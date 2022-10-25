@@ -24,4 +24,10 @@ public class Cabin {
     public void viewSchedule(){
 
     }
+    public boolean hasTheme(Theme theme) {
+        return true;
+    }
+    public void addTheme(Theme theme) {
+        
+    }
 }
