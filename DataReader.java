@@ -131,7 +131,7 @@ public class DataReader extends DataConstants{
                 ArrayList <Contact> contacts = new ArrayList<Contact>(); 
             
 
-                contacts.addAll(counselorsJSON.get("contacts");
+                contacts.addAll(counselorsJSON.get("contacts"));
 
                
         counselors.add(new Counselor(fname, lname, email, password, phoneNum, birthday, street, town, state, i, country, gender, SSize));
