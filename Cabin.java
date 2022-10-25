@@ -11,6 +11,8 @@ public class Cabin {
 
     public Cabin (Counselor counselor){
         this.counselor = counselor;
+        rand = new Random();
+
     }
 
     public void CreateSchedule(Activity activity){

@@ -60,7 +60,18 @@ public class DataReader extends DataConstants{
                 String medDose = (String)childJSON.get(MEDDOSE);
                 ArrayList <Contact> contacts = new ArrayList<Contact>(); //TODO
                
+                JSONArray jsonArray = (JSONArray) childJSON.get("contacts");
 
+                for(int j = 0; j < jsonArray.size(); j++) {
+                    JSONObject contactJSON = (JSONObject) jsonArray.get(j);
+                    String childFname = (String)contactJSON.get(FIRSTNAME);
+                    String childLname = (String) contactJSON.get(LASTNAME);
+                    String childPhoneNum = (String)contactJSON.get(PHONENUMBER);
+                    String childEmail =  (String)contactJSON.get(EMAIL);
+                    String childRelationship = (String)contactJSON.get(RELATIONSHIP);
+
+                    contacts.add(new Contact(childFname, childLname, childPhoneNum, childEmail, childRelationship));
+                }
                 
                 children.add(new Child(fname, lname, birthday, gender, shirtSize));
             }
@@ -122,19 +133,30 @@ public class DataReader extends DataConstants{
                 String state =(String) counselorsJSON.get(STATE);
                 String country=(String) counselorsJSON.get(COUNTRY);
                 String birthday=(String) counselorsJSON.get(BIRTHDAY);
-                String aboutme=(String) counselorsJSON.get("aboutME");
+                String aboutme=(String) counselorsJSON.get(ABOUTME);
                 String gender=(String) counselorsJSON.get(GENDER);
                 String allergy=(String) counselorsJSON.get(ALLERGY);
                 String medication=(String) counselorsJSON.get("medication");
                 String SSize=(String) counselorsJSON.get(SHIRSIZE);
                 String str=(String)  counselorsJSON.get("strike");
                 ArrayList <Contact> contacts = new ArrayList<Contact>(); 
-            
 
-                contacts.addAll(counselorsJSON.get("contacts"));
+        
 
+                JSONArray jsonArray = (JSONArray) counselorsJSON.get("contacts");
+
+                for(int j = 0; j < jsonArray.size(); j++) {
+                    JSONObject contactJSON = (JSONObject) jsonArray.get(j);
+                    String contactFname = (String)contactJSON.get(FIRSTNAME);
+                    String contactLname = (String) contactJSON.get(LASTNAME);
+                    String contactPhoneNum = (String)contactJSON.get(PHONENUMBER);
+                    String contactEmail =  (String)contactJSON.get(EMAIL);
+                    String contactRelationship = (String)contactJSON.get(RELATIONSHIP);
+
+                    contacts.add(new Contact(fname, lname, contactPhoneNum, contactEmail, contactRelationship));
+                }
                
-        counselors.add(new Counselor(fname, lname, email, password, phoneNum, birthday, street, town, state, i, country, gender, SSize));
+        counselors.add(new Counselor(fname, lname, email, password, phoneNum, birthday, street, town, state, country, gender, SSize));
             }
         return counselors;
         } catch (Exception e) {

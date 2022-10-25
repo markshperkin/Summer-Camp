@@ -10,5 +10,6 @@ public class Sessions {
 
     public void addCabin (Cabin cabin){
 
+        
     }
 }
