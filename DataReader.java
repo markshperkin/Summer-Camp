@@ -63,12 +63,12 @@ public class DataReader extends DataConstants{
                 JSONArray jsonArray = (JSONArray) childJSON.get("contacts");
 
                 for(int j = 0; j < jsonArray.size(); j++) {
-                    JSONObject childJSON = (JSONObject) jsonArray.get(j);
-                    String childFname = (String)childJSON.get(FIRSTNAME);
-                    String childLname = (String) childJSON.get(LASTNAME);
-                    String childPhoneNum = (String)childJSON.get(PHONENUMBER);
-                    String childEmail =  (String)childJSON.get(EMAIL);
-                    String childRelationship = (String)childJSON.get(RELATIONSHIP);
+                    JSONObject contactJSON = (JSONObject) jsonArray.get(j);
+                    String childFname = (String)contactJSON.get(FIRSTNAME);
+                    String childLname = (String) contactJSON.get(LASTNAME);
+                    String childPhoneNum = (String)contactJSON.get(PHONENUMBER);
+                    String childEmail =  (String)contactJSON.get(EMAIL);
+                    String childRelationship = (String)contactJSON.get(RELATIONSHIP);
 
                     contacts.add(new Contact(fname, lname, childPhoneNum, childEmail, childRelationship));
                 }
