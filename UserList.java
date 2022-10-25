@@ -11,8 +11,7 @@ public class UserList {
         return null;
     }
 
-    public void addUser(String firstName, String lastName, String userName
-    , String email, String password) {
+    public static void addUser(String firstName, String lastName, String email, String password, String phoneNub, String birthday) {
         
     }
 

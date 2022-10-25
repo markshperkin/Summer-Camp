@@ -16,7 +16,7 @@ public class SummerCamp{
     public String email;
     public String notification;
     public String searchWord;
-    public static final int WEEK=7;
+    public static final int WEEK=10;
 
     public SummerCamp(String question, String answer, String camperNeed, String campAddress, String campEmail, String notification, String searchWord, int campNumber ){
         this.question = question;
@@ -43,7 +43,7 @@ public class SummerCamp{
 
     }
 
-    public void addReview(String review){
+    public static void addReview(String review){
 
     }
 
@@ -55,8 +55,8 @@ public class SummerCamp{
 
     }
 
-    public void Search(String searchWord){
-        
+    public static String Search(String searchWord){
+        return "activity by word";
     }
     public String sendNotif(String email, String notification) {
         return " ";

@@ -19,4 +19,8 @@ public class ActivitiesList {
     public Activity getActivity(String title) {
         return null;
     }
+
+    public static String getAllActivities() {
+        return "all activites";
+    }
 }

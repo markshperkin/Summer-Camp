@@ -11,6 +11,16 @@ public class Cabin {
 
     public Cabin (Counselor counselor){
         this.counselor = counselor;
+        rand = new Random();
+        campers = new ArrayList<Child>();
+        this.theme = Theme.DINOSAUR_WEEK;
+        schedule.put(Days.MONDAY, new ArrayList<Activity>());
+        schedule.put(Days.TUESDAY, null);
+        schedule.put(Days.WEDNESDAY, null);
+        schedule.put(Days.THURSDAY, null);
+        schedule.put(Days.FRIDAY, null);
+
+
     }
 
     public void CreateSchedule(Activity activity){
@@ -19,11 +29,16 @@ public class Cabin {
 
     public void addCamper(Child camper){
 
+        campers.add(camper);
     }
 
-    public void viewSchedule(){
-
+    public static String viewSchedule(){
+        return "schedule";
     }
+    public Theme getTheme() {
+        return this.theme;
+    }
+
     public boolean hasTheme(Theme theme) {
         return true;
     }
