@@ -12,7 +12,7 @@ public class Counselor extends User{
     public ArrayList<String> allergy;
 
 
-    public Counselor(String fName, String lName, String email, String password, String phoneNum, String birthday, String gender, String shirtSize, String state, String country,String sSize) {
+    public Counselor(String fName, String lName, String email, String password, String phoneNum, String birthday, String gender, String shirtSize, String state, String country,String sSize, String sSize2) {
         super(fName, lName, email, password, phoneNum, birthday,);
         this.gender = gender;
         this.shirtSize = shirtSize;

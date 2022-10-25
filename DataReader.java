@@ -154,16 +154,17 @@ public class DataReader extends DataConstants{
                     String contactEmail =  (String)contactJSON.get(EMAIL);
                     String contactRelationship = (String)contactJSON.get(RELATIONSHIP);
 
-                    contacts.add(new Contact(fname, lname, contactPhoneNum, contactEmail, contactRelationship));
+                    contacts.add(new Contact(contactFname, contactLname, contactPhoneNum, contactEmail, contactRelationship));
                 }
                
-        counselors.add(new Counselor(fname, lname, email, password, phoneNum, birthday, street, town, state, country, gender, SSize));
+            counselors.add(new Counselor(fname, lname, email, password, phoneNum, birthday, street, town, state, country, gender, SSize));
             }
         return counselors;
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             e.printStackTrace();
         }
         return null;
     
-}
+    }
 }
