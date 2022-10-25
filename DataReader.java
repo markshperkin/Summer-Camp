@@ -70,7 +70,7 @@ public class DataReader extends DataConstants{
                     String childEmail =  (String)contactJSON.get(EMAIL);
                     String childRelationship = (String)contactJSON.get(RELATIONSHIP);
 
-                    contacts.add(new Contact(fname, lname, childPhoneNum, childEmail, childRelationship));
+                    contacts.add(new Contact(childFname, childLname, childPhoneNum, childEmail, childRelationship));
                 }
                 
                 children.add(new Child(fname, lname, birthday, gender, shirtSize));
