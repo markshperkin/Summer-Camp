@@ -13,7 +13,7 @@ public class Child {
     public String shirtSize;
     public ArrayList<Contact> contacts;
     public ArrayList<String> allergies;
-    public ArrayList<Medication> medications;
+  
 
 
     public Child (String firstName, String lastName, String birthday, String gender, String shirtSize){
@@ -34,11 +34,6 @@ public class Child {
     public void addContact (Contact contact){
         contacts.add(contact);
 
-    }
-
-    public void addMedication(Medication medication){
-        medications.add(medication);
-        
     }
 
     public void strikeCount(){

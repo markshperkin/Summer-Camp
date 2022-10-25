@@ -29,8 +29,9 @@ public class DataReader extends DataConstants{
                 String state = (String)parentJSON.get(STATE); 
                 int zipCode = (int)parentJSON.get(ZIPCODE); 
                 String country = (String)parentJSON.get(COUNTRY);
+                String gender =(String)parentJSON.get(GENDER);
 
-                parents.add(new Parent(fname, lname, email, password, phoneNum, birthday);
+                parents.add(new Parent(fname, lname, email, password, phoneNum, birthday,street,town,state,zipCode,country,gender));
             }
             return parents;
         } catch (Exception e) {

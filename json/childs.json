@@ -11,6 +11,7 @@
       "medTime":"none",
       "medDose":"none",
       "shirtSize":"Small",
+      "strike":"1",
       "Contact": [
         {
           "firstName":"Karla",
@@ -40,6 +41,7 @@
           "medTime":"none",
           "medDose":"none",
           "shirtSize":"Small",
+          "strike":"0",
           "Contact": [
             {
               "firstName":"Karla",
@@ -72,6 +74,7 @@
       "medTime":"none",
       "medDose":"none",
       "shirtSize":"Small",
+      "strike":"0",
       "Contact": [
         {
           "firstName":"Jared",
@@ -103,6 +106,7 @@
       "medTime":"none",
       "medDose":"none",
       "shirtSize":"Medium",
+      "strike":"0",
       "Contact": [
         {
           "firstName":"Jared",
@@ -135,6 +139,7 @@
       "medTime":"none",
       "medDose":"none",
       "shirtSize":"Small",
+      "strike" :"0",
       "Contact": [
         {
           "firstName":"Jared",
