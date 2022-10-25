@@ -57,8 +57,12 @@ public class UI {
         String email = keyboard.nextLine();
         System.out.println("Please entrer your password.");
         String password = keyboard.nextLine();
+        System.out.println("please enter your phone number");
+        String phoneNum = keyboard.nextLine();
+        System.out.println("please enter your birthday");
+        String birthday = keyboard.nextLine();
 
-        CampFacade.signUp(name, lastName, userName, email, password);
+        UserList.addUser(name, lastName, email, password, phoneNum, birthday);
 
         //ui.run();
     }
@@ -83,7 +87,7 @@ public class UI {
         }
 
         else if(command.equalsIgnoreCase("activities")) {
-            CampFacade.getAllActivity();
+            ActivitiesList.getAllActivities();
             ui.in();
 
         }
@@ -95,7 +99,9 @@ public class UI {
         }
 
         else if(command.equalsIgnoreCase("review")) {
-            CampFacade.addReview();
+            System.out.println("please add your review");
+            String review = keyboard.nextLine();
+            SummerCamp.addReview(review);
             ui.in();
 
         }

@@ -21,8 +21,8 @@ public class Cabin {
 
     }
 
-    public void viewSchedule(){
-
+    public static String viewSchedule(){
+        return "schedule";
     }
     public boolean hasTheme(Theme theme) {
         return true;

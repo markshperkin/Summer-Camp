@@ -43,7 +43,7 @@ public class SummerCamp{
 
     }
 
-    public void addReview(String review){
+    public static void addReview(String review){
 
     }
 
@@ -55,8 +55,8 @@ public class SummerCamp{
 
     }
 
-    public void Search(String searchWord){
-        
+    public static String Search(String searchWord){
+        return "activity by word";
     }
     public String sendNotif(String email, String notification) {
         return " ";

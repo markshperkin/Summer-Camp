@@ -17,32 +17,23 @@ public class CampFacade {
         this.cabin = cabin;
     }
 
-    public static boolean login(String username, String password){
-        return true;
+    public static boolean login(String email, String password){
+        if(User.getEmail().equalsIgnoreCase(email) && User.getPassword().equalsIgnoreCase(password))
+            return true;
+        else 
+            return false;
     }
 
-    public static void signUp (String firstName, String lastName, String userName, String email, String password){
-
+    public static void signUp (String firstName, String lastName, String email, String password, String phoneNum, String birthday){
+        UserList.addUser(firstName, lastName, email, password, phoneNum, birthday);
     }
 
     public static String getActivityByKeyWord (String word){
-        return "activity";
-    }
-
-    public static String getAllActivity(){
-        return "activities";
+        return SummerCamp.Search(word);
     }
 
     public static String viewSchedule(){
-        return "schedule";  
-    }
-
-    public void createSchedule(){
-
-    }
-
-    public static void addReview(){
-
+        return Cabin.viewSchedule();  
     }
 
     public void sendNotif(){

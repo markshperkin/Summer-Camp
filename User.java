@@ -1,8 +1,8 @@
 public abstract class User {
     protected String firstName;
     protected String lastName;
-    protected String email;
-    protected String password;
+    protected static String email;
+    protected static String password;
     protected String phoneNum;
     protected String  street;
     protected String town;
@@ -20,6 +20,17 @@ public abstract class User {
         this.birthday = birthday;
     }
 
+    // public static void createUser(String firstName,String lastName,String email,String password, String phoneNum, String birthday) {
+    //     User user = new User(firstName, lastName, email, password, phoneNum, birthday);
+    // }
+
+    public static String getEmail() {
+        return email;
+    }
+
+    public static String getPassword() {
+        return password;
+    }
     public String ViewActivities() {
         return null;
     }
