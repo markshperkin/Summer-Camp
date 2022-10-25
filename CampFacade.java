@@ -7,7 +7,7 @@ public class CampFacade {
     private FAQ faq;
     private Cabin cabin;
 
-    public CampFacade(Counselor counselor, Parent parent, Child child, Contact contact, Activity activities, FAQ faq, Cabin cabin){
+    public CampFacade(Counselor counselor, Parent parent, Child child, Contact contact, Activity activity, FAQ faq, Cabin cabin){
         this.counselor = counselor;
         this.parent = parent;
         this.child = child;
