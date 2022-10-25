@@ -3,33 +3,34 @@ import java.util.Scanner;
 //import org.omg.CORBA.FloatSeqHelper;
 
 public class UI {
-    boolean Run = true;
+    boolean run = true;
     static UI ui = new UI();
     Scanner keyboard = new Scanner(System.in);
 
     public static void main(String[] argc) {
         ui.run();
     }
+
     public void run() {
         System.out.println("Welcome to the Keyboard Smashers Summer Camp!");
-        while(Run) {
-            System.out.println("Please choose an option:\n- For sign in type \"in\"\n- For sign up type \"up\"\n- To quit type \"quit\"");
-            String A = keyboard.nextLine();
-            if(A.equalsIgnoreCase("in")) {
-                ui.login();
-            }
-            else if(A.equalsIgnoreCase("up")) {
-                ui.signUp();
-            }
-            else if(A.equalsIgnoreCase("quit")) {
-                System.out.println("Goodbye");
-                Run = false;
-            }
-            else {
-                System.out.println("Invalid input, please try again.");
-            }
+        System.out.println("Please choose an option:\n- For sign in type \"in\"\n- For sign up type \"up\"\n- To quit type \"quit\"");
+        String A = keyboard.nextLine();
+        if(A.equalsIgnoreCase("in")) {
+            ui.login();
         }
+        else if(A.equalsIgnoreCase("up")) {
+            ui.signUp();
+        }
+        else if(A.equalsIgnoreCase("quit")) {
+            System.out.println("Goodbye");
+            System.exit(0);
+        }
+        else {
+            System.out.println("Invalid input, please try again.");
+            ui.run();
+        } 
     }
+
     public void login() {
         System.out.println("Please enter your email:");
         String logEmail = keyboard.nextLine();
@@ -47,70 +48,59 @@ public class UI {
     }
 
     public void signUp() {
-        System.out.println("Please entrer your first name.");
+        System.out.println("Please enter your first name.");
         String name = keyboard.nextLine();
-        System.out.println("Please entrer your last name.");
+        System.out.println("Please enter your last name.");
         String lastName = keyboard.nextLine();
-        System.out.println("Please enter your userName.");
-        String userName = keyboard.nextLine();
-        System.out.println("Please entrer your email.");
+        System.out.println("Please enter your email.");
         String email = keyboard.nextLine();
-        System.out.println("Please entrer your password.");
+        System.out.println("Please enter your password.");
         String password = keyboard.nextLine();
-
-        CampFacade.signUp(name, lastName, userName, email, password);
-
-        //ui.run();
+        CampFacade.signUp(name, lastName, email, password);
+        ui.in();
     }
 
     public void in() {
-        System.out.println("Please enter your command:\nfor finding an activity by a key word enter \"activity\"");
-        System.out.println("- For finding an activity by a key word enter \"activity\"");
-        System.out.println("- For getting all the activities enter \"activities\"");
-        System.out.println("- For viewing the schedule enter \"schedule\"");
-        System.out.println("- For entering a review enter \"review\"");
-        System.out.println("- For adding a child to your account enter \"addChild\"");
-        System.out.println("- For signing your child up for a session enter \"registerChild\"");
-        System.out.println("- For signing out enter \"signout\"");
-        String command = keyboard.nextLine();
+        while (run){
+            System.out.println("Please enter your command:\nfor finding an activity by a key word enter \"activity\"");
+            System.out.println("- For finding an activity by a key word enter \"activity\"");
+            System.out.println("- For getting all the activities enter \"activities\"");
+            System.out.println("- For viewing the schedule enter \"schedule\"");
+            System.out.println("- For entering a review enter \"review\"");
+            System.out.println("- For adding a child to your account enter \"addChild\"");
+            System.out.println("- For signing your child up for a session enter \"registerChild\"");
+            System.out.println("- For signing out and quitting the program, enter \"signout\"");
+            String command = keyboard.nextLine();
 
-        if(command.equalsIgnoreCase("activity")) {
-            System.out.println("please enter a key word");
-            String keyWord = keyboard.nextLine();
-            CampFacade.getActivityByKeyWord(keyWord);
-            ui.in();
+            if(command.equalsIgnoreCase("activity")) {
+                System.out.println("Please enter a key word:");
+                String keyWord = keyboard.nextLine();
+                CampFacade.getActivityByKeyWord(keyWord);
+            }
 
+            else if(command.equalsIgnoreCase("activities")) {
+                CampFacade.getAllActivity();
+            }
+
+            else if(command.equalsIgnoreCase("schedule")) {
+                CampFacade.viewSchedule();
+            }
+
+            else if(command.equalsIgnoreCase("review")) {
+                CampFacade.addReview();
+            }
+            else if(command.equalsIgnoreCase("addChild")) {
+                CampFacade.addChild();
+            }
+            else if(command.equalsIgnoreCase("registerChild")) {
+                CampFacade.registerChild();
+            }
+            else if(command.equalsIgnoreCase("signout")) {
+                run = false;
+            }
+            else
+                System.out.println("Command not valid.");
+            }
         }
-
-        else if(command.equalsIgnoreCase("activities")) {
-            CampFacade.getAllActivity();
-            ui.in();
-
-        }
-
-        else if(command.equalsIgnoreCase("schedule")) {
-            CampFacade.viewSchedule();
-            ui.in();
-
-        }
-
-        else if(command.equalsIgnoreCase("review")) {
-            CampFacade.addReview();
-            ui.in();
-
-        }
-        else if(command.equalsIgnoreCase("addChild")) {
-            CampFacade.addChild();
-            ui.run();
-        }
-        else if(command.equalsIgnoreCase("registerChild")) {
-            CampFacade.registerChild();
-            ui.run();
-        }
-        else if(command.equalsIgnoreCase("signout")) {
-            ui.run();
-        }
-        else
-            System.out.println("command not valid");
     }
-}
+
