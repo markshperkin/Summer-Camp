@@ -122,7 +122,7 @@ public class DataReader extends DataConstants{
                 String state =(String) counselorsJSON.get(STATE);
                 String country=(String) counselorsJSON.get(COUNTRY);
                 String birthday=(String) counselorsJSON.get(BIRTHDAY);
-                String aboutme=(String) counselorsJSON.get("aboutME");
+                String aboutme=(String) counselorsJSON.get(ABOUTME);
                 String gender=(String) counselorsJSON.get(GENDER);
                 String allergy=(String) counselorsJSON.get(ALLERGY);
                 String medication=(String) counselorsJSON.get("medication");
@@ -131,7 +131,7 @@ public class DataReader extends DataConstants{
                 ArrayList <Contact> contacts = new ArrayList<Contact>(); 
             
 
-                contacts.addAll(counselorsJSON.get("contacts"));
+                contacts.add((Contact) counselorsJSON.get("contacts"));
 
                
         counselors.add(new Counselor(fname, lname, email, password, phoneNum, birthday, street, town, state, i, country, gender, SSize));
