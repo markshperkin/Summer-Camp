@@ -19,8 +19,8 @@ public class Child {
         this.birthday = birthday;
         this.gender = gender;
         this.shirtSize = shirtSize;
-        contacts = new ArrayList();
-        allergy = new ArrayList();
+        contacts = new ArrayList<>();
+        allergy = new ArrayList<>();
 
     }
 

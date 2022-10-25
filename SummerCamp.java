@@ -16,8 +16,18 @@ public class SummerCamp{
     public String email;
     public String notification;
     public String searchWord;
+    public static final int WEEK=7;
 
-    public SummerCamp(){
+    public SummerCamp(String question, String answer, String camperNeed, String campAddress, String campEmail, String notification, String searchWord, int campNumber ){
+        this.question = question;
+        this.answer = answer;
+        this.camperNeed = camperNeed;
+        this.campAddress = campAddress;
+        this.campEmail = campEmail;
+        this.notification = notification;
+        this.searchWord = searchWord;
+        this.campNumber = campNumber;
+
 
     }
 
@@ -48,5 +58,15 @@ public class SummerCamp{
     public void Search(String searchWord){
         
     }
+    public String sendNotif(String email, String notification) {
+        return " ";
+    }
+    public int getWeek() {
+        return WEEK;
+    }
+    public boolean withinWeek() {
+        return true;
+    }
+
     
 }
