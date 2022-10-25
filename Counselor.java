@@ -4,7 +4,6 @@ public class Counselor extends User{
     private String aboutMe;
     private String gender;
     private String shirtSize;
-    private int strike;
     public String medName;
     public String medtime;
     public String medDose;
@@ -12,10 +11,11 @@ public class Counselor extends User{
     public ArrayList<String> allergy;
 
 
-    public Counselor(String fName, String lName, String email, String password, String phoneNum, String birthday, String gender, String shirtSize, String state, String country,String sSize) {
-        super(fName, lName, email, password, phoneNum, birthday,);
-        this.gender = gender;
+    public Counselor(String fName, String lName, String email, String password, String phoneNum, String birthday,String shirtSize,String street,String town,String state, String country,String gender) {
+        super(fName, lName, email, password, phoneNum, birthday,street,town,state,zipCode,country,gender);
         this.shirtSize = shirtSize;
+        
+
         contacts = new ArrayList();
         allergy = new ArrayList();    
     }

@@ -6,12 +6,19 @@
       "lastName": "Johnson",
       "Birthday": "11/30/2017",
       "Gender": "Female",
+      "shirtSize":"Small",
+      "strike":"1",
+      
+      
+      "medication":[
+      {
       "allergy":["none"],
       "medName":"None",
       "medTime":"none",
-      "medDose":"none",
-      "shirtSize":"Small",
-      "strike":"1",
+      "medDose":"none"
+     } 
+    ],
+
       "Contact": [
         {
           "firstName":"Karla",
@@ -36,12 +43,18 @@
           "lastName": "Johnson",
           "Birthday": "10/24/15",
           "Gender": "Male",
+          "shirtSize":"Small",
+          "strike":"0",
+          
+          "medication":
+          [
+          {
           "allergy":["Peanuts"],
           "medName":"None",
           "medTime":"none",
-          "medDose":"none",
-          "shirtSize":"Small",
-          "strike":"0",
+          "medDose":"none"
+      }
+    ],
           "Contact": [
             {
               "firstName":"Karla",
@@ -69,12 +82,18 @@
       "lastName": "Waterman",
       "Birthday": "12/25/15",
       "Gender": "Male",
+      "shirtSize":"Small",
+      "strike":"0",
+      
+      "medication":[ 
+      {
       "allergy":["none"],
       "medName":"None",
       "medTime":"none",
-      "medDose":"none",
-      "shirtSize":"Small",
-      "strike":"0",
+      "medDose":"none"
+     } 
+    ],
+
       "Contact": [
         {
           "firstName":"Jared",
@@ -101,12 +120,19 @@
       "lastName": "Waterman",
       "Birthday": "02/28/14",
       "Gender": "Female",
+      "shirtSize":"Medium",
+      "strike":"0",
+      
+      "medication":[
+      {
       "allergy":["none"],
       "medName":"None",
       "medTime":"none",
-      "medDose":"none",
-      "shirtSize":"Medium",
-      "strike":"0",
+      "medDose":"none"
+
+      }
+      ],
+    
       "Contact": [
         {
           "firstName":"Jared",
@@ -134,12 +160,17 @@
       "lastName": "Waterman",
       "Birthday": "11/13/13",
       "Gender": "Female",
+      "shirtSize":"Small",
+      "strike" :"0",
+      
+      "medication": [ {
       "allergy":["none"],
       "medName":"None",
       "medTime":"none",
-      "medDose":"none",
-      "shirtSize":"Small",
-      "strike" :"0",
+      "medDose":"none"
+  }
+]
+  ,
       "Contact": [
         {
           "firstName":"Jared",

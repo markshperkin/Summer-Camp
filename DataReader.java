@@ -1,5 +1,7 @@
 import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.Collection;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -55,16 +57,30 @@ public class DataReader extends DataConstants{
                 String birthday = (String)childJSON.get(BIRTHDAY);
                 String gender = (String) childJSON.get(GENDER);
                 String shirtSize = (String)childJSON.get(SHIRSIZE);
-                ArrayList <String> allergy = (ArrayList<String>) childJSON.get(ALLERGY); //TODO
-                String medName = (String)childJSON.get(MEDNAME);
-                String medTime = (String)childJSON.get(MEDTIME);
-                String medDose = (String)childJSON.get(MEDDOSE);
+                String strike =(String)childJSON.get(STRIKE);
+            
+                ArrayList <Medication> medications = new ArrayList<Medication>();
+                
+                JSONArray jsonArray1 = (JSONArray) childJSON.get(medications);
+               
+                for(int j = 0; j < jsonArray1.size(); j++) {
+                     JSONObject medicationJSON = (JSONObject) jsonArray1.get(j);
+                     String allergy = (String)medicationJSON.get(ALLERGY);
+                     String medName = (String) medicationJSON.get(MEDNAME);
+                     String medTime = (String)medicationJSON.get(MEDTIME);
+                     String medDose = (String)medicationJSON.get(MEDDOSE);
+                    
+                medications.add(new Medication(allergy, medName, medTime, medDose));
+
+                }
+            
+                
                 ArrayList <Contact> contacts = new ArrayList<Contact>(); //TODO
                
-                JSONArray jsonArray = (JSONArray) childJSON.get("contacts");
+                JSONArray jsonArray2 = (JSONArray) childJSON.get(contacts);
 
-                for(int j = 0; j < jsonArray.size(); j++) {
-                    JSONObject contactJSON = (JSONObject) jsonArray.get(j);
+                for(int k = 0; k < jsonArray2.size(); k++) {
+                    JSONObject contactJSON = (JSONObject) jsonArray2.get(k);
                     String childFname = (String)contactJSON.get(FIRSTNAME);
                     String childLname = (String) contactJSON.get(LASTNAME);
                     String childPhoneNum = (String)contactJSON.get(PHONENUMBER);
@@ -78,11 +94,13 @@ public class DataReader extends DataConstants{
             }
 
             return children;
+           
         } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
-    }
+    
+        }
 
     public static ArrayList<Director> getAllDirectors() {
         ArrayList<Director> directors = new ArrayList<Director>();
@@ -106,7 +124,7 @@ public class DataReader extends DataConstants{
                 String country=(String) directorJSON.get(COUNTRY);
                 String birthday=(String) directorJSON.get(BIRTHDAY);
                
-
+            directors.add(new Director(fname,lname,email,password,phoneNum,street,town,zipCode,state,country,birthday));
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -139,7 +157,7 @@ public class DataReader extends DataConstants{
                 String allergy=(String) counselorsJSON.get(ALLERGY);
                 String medication=(String) counselorsJSON.get(MEDICATION);
                 String SSize=(String) counselorsJSON.get(SHIRSIZE);
-                String str=(String)  counselorsJSON.get("strike");
+                String str=(String)  counselorsJSON.get(STRIKE);
                 ArrayList <Contact> contacts = new ArrayList<Contact>(); 
 
         
@@ -157,7 +175,7 @@ public class DataReader extends DataConstants{
                     contacts.add(new Contact(fname, lname, contactPhoneNum, contactEmail, contactRelationship));
                 }
                
-        counselors.add(new Counselor(fname, lname, email, password, phoneNum, birthday, street, town, state, country, gender, SSize));
+        counselors.add(new Counselor(fname, lname, email, password, phoneNum, birthday, street, town, state,zipCode,country, gender));
             }
         return counselors;
         } catch (Exception e) {
@@ -166,4 +184,5 @@ public class DataReader extends DataConstants{
         return null;
     
 }
+
 }

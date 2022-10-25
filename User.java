@@ -7,10 +7,11 @@ public abstract class User {
     protected String  street;
     protected String town;
     protected String state;
-    protected int zipCode;
+    protected static int zipCode;
     protected String country;
     protected String birthday;
     protected String gender;
+    
 
     public User(String firstName, String lastName, String email, String password, String phoneNum, String birthday,String street, String town, String state, int zipCode, String country, String gender) {
         this.firstName = firstName;
@@ -25,6 +26,7 @@ public abstract class User {
         this.zipCode=zipCode;
         this.country=country;
         this.gender=gender;
+        
     }
 
     // public static void createUser(String firstName,String lastName,String email,String password, String phoneNum, String birthday) {
