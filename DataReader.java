@@ -129,9 +129,7 @@ public class DataReader extends DataConstants{
                 String SSize=(String) counselorsJSON.get(SHIRSIZE);
                 String str=(String)  counselorsJSON.get("strike");
                 ArrayList <Contact> contacts = new ArrayList<Contact>(); 
-            
-
-                contacts.addAll(counselorsJSON.get("contacts"));
+                JSONArray jsonArray = counselorsJSON.get("contacts");
 
                
         counselors.add(new Counselor(fname, lname, email, password, phoneNum, birthday, street, town, state, i, country, gender, SSize));
