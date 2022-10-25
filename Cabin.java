@@ -1,13 +1,13 @@
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Random;
 
 public class Cabin {
-    private ArrayList<Activity> monSchedule;
-    private ArrayList<Activity> tuesSchedule;
-    private ArrayList<Activity> wedSchedule;
-    private ArrayList<Activity> thursSchedule;
-    private ArrayList<Activity> friSchedule;
+    private HashMap<Days,ArrayList<Activity>> schedule;
     private ArrayList<Child> campers;
     private Counselor counselor;
+    public Theme theme;
+    public Random rand;
 
     public Cabin (Counselor counselor){
         this.counselor = counselor;
