@@ -1,6 +1,10 @@
 public class Director {
     private Child camper;
 
+    public Director(String fname, String lname, String email, String password, String phoneNum, String street,
+            String town, String zipCode, String state, String country, String birthday) {
+    }
+
     public String viewCamper(Child camper) {
         return "";
     }
