@@ -16,7 +16,7 @@ public class SummerCamp{
     public String email;
     public String notification;
     public String searchWord;
-    public static final int WEEK=7;
+    public static final int WEEK=10;
 
     public SummerCamp(String question, String answer, String camperNeed, String campAddress, String campEmail, String notification, String searchWord, int campNumber ){
         this.question = question;
