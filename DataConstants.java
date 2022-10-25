@@ -22,6 +22,7 @@ public class DataConstants {
     protected static final String STATE="state";
     protected static final String ZIPCODE= "zipCode";
     protected static final String COUNTRY="country";
+    protected static final String 
 
 
 
