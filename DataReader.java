@@ -195,4 +195,28 @@ public class DataReader extends DataConstants{
     
     }
 
+    public static ArrayList getAllCabins() {
+        ArrayList<Cabin> cabins = new ArrayList<Cabin>();
+        try {
+            FileReader cabinReader = new FileReader(CABIN_FILE);
+            JSONParser parser = new JSONParser();
+            JSONArray cabinJSON = (JSONArray)new JSONParser().parse(cabinReader);
+
+            for(int i = 0; i < cabinJSON.size(); i++) {
+                JSONObject cabinsJSON = (JSONObject) cabinJSON.get(i);
+
+                ArrayList <Child> camper = new ArrayList<Child>();
+                JSONObject camperArray = (JSONObject) cabinsJSON.get("camper");
+
+
+            }
+
+            return cabins;
+        } 
+        catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return null;
+    }
 }
