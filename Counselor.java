@@ -11,8 +11,8 @@ public class Counselor extends User{
     public ArrayList<String> medications;
 
 
-    public Counselor(String fName, String lName, String email, String password, String phoneNum, String birthday,String shirtSize,String street,String town,String state, String country,String gender) {
-        super(fName, lName, email, password, phoneNum, birthday,street,town,state,zipCode,country,gender);
+    public Counselor(String fName, String lName, String email, String password, String phoneNum, String birthday,String shirtSize,String street,String town,String zipCode, String country,String gender) {
+        super(fName, lName, email, password, phoneNum, birthday,street,town,zipCode,zipCode,country,gender);
         this.shirtSize = shirtSize;
         
 
