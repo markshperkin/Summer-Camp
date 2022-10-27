@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class CampFacade {
     private Counselor counselor;
     private Parent parent;
@@ -25,15 +28,15 @@ public class CampFacade {
     }
 
     public static void signUp (String firstName, String lastName, String email, String password, String phoneNum, String birthday){
-        UserList.addUser(firstName, lastName, email, password, phoneNum, birthday);
+        //UserList.addUser(firstName, lastName, email, password, phoneNum, birthday);
     }
 
     public static String getActivityByKeyWord (String word){
         return SummerCamp.Search(word);
     }
 
-    public static String viewSchedule(){
-        return Cabin.viewSchedule();  
+    public HashMap<Days,ArrayList<Activity>> viewSchedule(){
+        return cabin.getSchedule();  
     }
 
     public void sendNotif(){

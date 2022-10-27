@@ -14,7 +14,6 @@ public class Activity {
     private int clockHour;
     private int clockMinute;
     private Action action;
-    private ArrayList<String> actions;
     
     
     private static final Random RANDOM = new Random();
@@ -29,10 +28,10 @@ public class Activity {
         this.clockMinute = clockMinute;
         this.action = action;
 
-        actions.add(randomAction());
-        actions.add(randomAction());
-        actions.add(randomAction());
     }
+
+    public Activity(){}
+
 
     public String randomAction() { //static Action
 
@@ -57,6 +56,8 @@ public class Activity {
         }else if(r==8) {
             a += Action.ZIPLINING;
         }
+
+        
         return a;    
     }
 
@@ -64,6 +65,6 @@ public class Activity {
         return true;
     }
     public String toString() {
-        return "";
+        return title + ", " + description + ", " + location + ", " + clockHour + ":" + clockMinute ;
     }
 }

@@ -15,6 +15,9 @@ public class Child {
     public ArrayList<Contact> contacts;
     public ArrayList<Medication> medication;
     public ArrayList<String> allergies;
+    public int monthInt;
+    public int dayInt;
+    public int yearInt;
   
 
 
@@ -52,6 +55,21 @@ public class Child {
 
     public String getLastName(){
         return lastName;
+    }
+
+    public void splitBirthday(){
+        int f = birthday.indexOf("/");
+		int l = birthday.lastIndexOf("/");
+		String month = birthday.substring(0,f);
+		String day = birthday.substring(f+1,l);
+		String year = birthday.substring(l+1);
+		monthInt = Integer.parseInt(month);
+		dayInt = Integer.parseInt(day);
+		yearInt = Integer.parseInt(year);
+    }
+
+    public int getYear(){
+        return yearInt;
     }
 
 }
