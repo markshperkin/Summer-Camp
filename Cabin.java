@@ -5,26 +5,34 @@ import java.util.Random;
 public class Cabin {
     private HashMap<Days,ArrayList<Activity>> schedule;
     private ArrayList<Child> campers;
-    private Counselor counselor;
-    public Theme theme;
     public Random rand;
+    private Counselor counselor;
+    private String title;
+    private String description;
+    private String location;
+    private int clockHour;
+    private int clockMinute;
+    
 
-    public Cabin (Counselor counselor){
+    public Cabin (String title, String description, String location, int clockHour, int clockMinute, Counselor counselor, ArrayList<Child> campers){
+        
+        this.title = title;
+        this.description = description;
+        this.location = location;
+        this.clockHour = clockHour;
+        this.clockMinute = clockMinute;
         this.counselor = counselor;
         rand = new Random();
-        campers = new ArrayList<Child>();
-        this.theme = Theme.DINOSAUR_WEEK;
+    }
+
+    public void CreateSchedule(Activity activity){
+
+        
         schedule.put(Days.MONDAY, new ArrayList<Activity>());
         schedule.put(Days.TUESDAY, null);
         schedule.put(Days.WEDNESDAY, null);
         schedule.put(Days.THURSDAY, null);
         schedule.put(Days.FRIDAY, null);
-
-
-    }
-
-    public void CreateSchedule(Activity activity){
-
     }
 
     public void addCamper(Child camper){
@@ -35,14 +43,6 @@ public class Cabin {
     public static String viewSchedule(){
         return "schedule";
     }
-    public Theme getTheme() {
-        return this.theme;
-    }
+    
 
-    public boolean hasTheme(Theme theme) {
-        return true;
-    }
-    public void addTheme(Theme theme) {
-        
-    }
 }

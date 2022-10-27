@@ -8,8 +8,15 @@ public class Sessions {
         this.theme = theme;
     }
 
+    public String getTheme() {
+        return theme;
+    }
+
     public void addCabin (Cabin cabin){
 
         
     }
+
+    
+
 }
