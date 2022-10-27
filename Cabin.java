@@ -7,27 +7,19 @@ public class Cabin {
     private ArrayList<Child> campers;
     public Random rand;
     private Counselor counselor;
-    private String title;
-    private String description;
-    private String location;
-    private int clockHour;
-    private int clockMinute;
+    
     
 
-    public Cabin (String title, String description, String location, int clockHour, int clockMinute, Counselor counselor, ArrayList<Child> campers){
+    public Cabin (Counselor counselor, ArrayList<Child> campers){
         
-        this.title = title;
-        this.description = description;
-        this.location = location;
-        this.clockHour = clockHour;
-        this.clockMinute = clockMinute;
+      
         this.counselor = counselor;
         rand = new Random();
     }
 
     public void CreateSchedule(Activity activity){
 
-        
+
         schedule.put(Days.MONDAY, new ArrayList<Activity>());
         schedule.put(Days.TUESDAY, null);
         schedule.put(Days.WEDNESDAY, null);
