@@ -9,7 +9,7 @@
         "street" : "Brookgreen",
         "town": "Columbia",
         "state": "South Carolina",
-        "zipCode": 29201,
+        "zipCode": "29201",
         "country": "United States",
         "birthday": "April 15,2003",
         "aboutME": "Hello I am the counselor",
@@ -17,7 +17,7 @@
         "allergy": "none",
         "medication": "none",
         "shirtSize": "Medium",
-        "strike": 0,
+        "strike": "0",
         "contacts": [
             {
                 "firstName": "Marcus",
@@ -45,7 +45,7 @@
         "street" : "Coldstone",
         "town": "Columbia",
         "state": "South Carolina",
-        "zipCode": 29201,
+        "zipCode": "29201",
         "country": "United States",
         "birthday": "April 19,2000",
         "aboutME": "Hello I am the counselor",
@@ -53,7 +53,7 @@
         "allergy": "none",
         "medication": "none",
         "shirtSize": "Medium",
-        "strike": 0,
+        "strike": "0",
         "contacts": [
             {
                 "firstName": "Mark",

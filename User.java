@@ -7,13 +7,13 @@ public abstract class User {
     protected String  street;
     protected String town;
     protected String state;
-    protected static int zipCode;
+    protected static String zipCode;
     protected String country;
     protected String birthday;
     protected String gender;
     
 
-    public User(String firstName, String lastName, String email, String password, String phoneNum, String birthday,String street, String town, String state, int zipCode, String country, String gender) {
+    public User(String firstName, String lastName, String email, String password, String phoneNum, String birthday,String street, String town, String state, String zipCode, String country, String gender) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -44,7 +44,7 @@ public abstract class User {
         return null;
     }
 
-    public String addAddress(String street, String town, String state, int zipCode, String country) {
+    public String addAddress(String street, String town, String state, String zipCode, String country) {
         return "";
     }
 }

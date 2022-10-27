@@ -1,3 +1,4 @@
+import java.io.Console;
 import java.util.ArrayList;
 
 public class Child {
@@ -12,18 +13,19 @@ public class Child {
     public int strikeCount;
     public String shirtSize;
     public ArrayList<Contact> contacts;
-    public ArrayList<String> medication;
+    public ArrayList<Medication> medication;
+    public ArrayList<String> allergies;
   
 
 
-    public Child (String firstName, String lastName, String birthday, String gender, String shirtSize){
+    public Child (String firstName, String lastName, String birthday, String gender, String shirtSize, ArrayList<Contact> contacts, ArrayList<Medication> medication){
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthday = birthday;
         this.gender = gender;
         this.shirtSize = shirtSize;
-        contacts = new ArrayList<>();
-        medication= new ArrayList<>();
+        this.contacts = contacts;
+        this.medication = medication;
 
     }
 
@@ -41,7 +43,7 @@ public class Child {
     }
 
     public void addAllergy(String allergy){
-        medication.add(this.allergy);
+        allergies.add(this.allergy);
     }
 
     public String getFirstName(){

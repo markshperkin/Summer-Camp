@@ -9,7 +9,7 @@
     "street": "814 Cookie St",
     "town": "Columbia",
     "state": "SC",
-    "zipCode" : 29201,
+    "zipCode" : "29201",
     "country": "USA",
     "birthday":"April 15, 1984",
     "director": true
@@ -24,7 +24,7 @@
     "street": "815 Cookie St",
     "town": "Columbia",
     "state": "SC",
-    "zipCode" : 29201,
+    "zipCode" : "29201",
     "country": "USA",
     "birthday":"April 16, 1974",
     "director": true
@@ -39,7 +39,7 @@
     "street": "316 joker St",
     "town": "Columbia",
     "state": "SC",
-    "zipCode" : 29201,
+    "zipCode" : "29201",
     "country": "USA",
     "birthday":"March 27, 1984",
     "director": true

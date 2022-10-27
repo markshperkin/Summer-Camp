@@ -5,44 +5,52 @@ import java.util.Random;
 public class Cabin {
     private HashMap<Days,ArrayList<Activity>> schedule;
     private ArrayList<Child> campers;
-    private Counselor counselor;
-    public Theme theme;
     public Random rand;
+    private Counselor counselor;
+    private int ageRange;
+    Cabin cabin = new Cabin();
+    
+    
 
-    public Cabin (Counselor counselor){
+    public Cabin (Counselor counselor, ArrayList<Child> campers, HashMap<Days,ArrayList<Activity>> schedule){
         this.counselor = counselor;
         rand = new Random();
+        schedule = new HashMap<Days,ArrayList<Activity>>();
         campers = new ArrayList<Child>();
-        this.theme = Theme.DINOSAUR_WEEK;
-        schedule.put(Days.MONDAY, new ArrayList<Activity>());
-        schedule.put(Days.TUESDAY, null);
-        schedule.put(Days.WEDNESDAY, null);
-        schedule.put(Days.THURSDAY, null);
-        schedule.put(Days.FRIDAY, null);
+    }
 
+    public Cabin(){}
 
+    public Counselor getCounselor() {
+        return counselor;
     }
 
     public void CreateSchedule(Activity activity){
-
+        schedule.put(Days.MONDAY, new ArrayList<Activity>());
+        schedule.put(Days.TUESDAY, new ArrayList<Activity>());
+        schedule.put(Days.WEDNESDAY, new ArrayList<Activity>());
+        schedule.put(Days.THURSDAY, new ArrayList<Activity>());
+        schedule.put(Days.FRIDAY, new ArrayList<Activity>());
     }
 
     public void addCamper(Child camper){
-
+//up to nine campers
         campers.add(camper);
     }
 
     public static String viewSchedule(){
-        return "schedule";
+        return "Schedule";
     }
-    public Theme getTheme() {
-        return this.theme;
-    }
-
-    public boolean hasTheme(Theme theme) {
+    
+    public boolean withinAgeRange() {
         return true;
     }
-    public void addTheme(Theme theme) {
-        
+
+    public Cabin getCabin(){
+        for (int x = 0; x < 9; x++){
+
+        }
+        return cabin;
     }
+
 }

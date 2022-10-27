@@ -10,12 +10,30 @@
   "phoneNum":"803-543-9999",
   "street" :"543 Lowery Ct",
   "town": "West Columbia",
-  "zipCode":"29172",
+  "zipCode": "29172",
   "state": "South Carolina",
   "country": "United States",
-  "Gender":"Female"
-  
-  },{
+  "Gender":"Female",
+  "Child contact":[ 
+    {
+    "firstName":"Kate",
+    "lastName": "Johnson",
+    "phoneNum": "NA",
+    "email":"NA",
+    "relationship":"daughter"
+    },
+    {
+      "firstName":"Alex",
+      "lastName": "Johnson",
+      "phoneNum": "NA"    ,
+      "email":"NA",
+      "relationship":"son"
+     
+    }
+    
+  ]
+  },
+  {
   "id":"6d217b18-dc3e-4612-bb2a-43bf7547ba10",
   "User": "Parent",
   "firstName": "Alex",
@@ -29,7 +47,25 @@
   "zipCode": "29170",
   "state": "South Carolina",
   "country": "United States",
-  "Gender":"Male"
+  "Gender":"Male",
+  "Child contact":[ 
+    {
+    "firstName":"Kate",
+    "lastName": "Johnson",
+    "phoneNum": "NA",
+    "email":"NA",
+    "relationship":"daughter"
+    },
+    {
+      "firstName":"Alex",
+      "lastName": "Johnson",
+      "phoneNum": "NA"    ,
+      "email":"NA",
+      "relationship":"son"
+     
+    }
+    
+  ]
     
   },{
     "id":"d043fb8b-06a2-4f95-bb25-4306df4448e3",

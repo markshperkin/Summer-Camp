@@ -29,7 +29,7 @@ public class DataReader extends DataConstants{
                 String street = (String)parentJSON.get(STREET);
                 String town = (String)parentJSON.get(TOWN); 
                 String state = (String)parentJSON.get(STATE); 
-                int zipCode = (int)parentJSON.get(ZIPCODE); 
+                String zipCode = (String)parentJSON.get(ZIPCODE); 
                 String country = (String)parentJSON.get(COUNTRY);
                 String gender =(String)parentJSON.get(GENDER);
 
@@ -61,23 +61,30 @@ public class DataReader extends DataConstants{
             
                 ArrayList <Medication> medications = new ArrayList<Medication>();
                 
-                JSONArray jsonArray1 = (JSONArray) childJSON.get(medications);
+                JSONArray jsonArray1 = (JSONArray) childJSON.get("medication");
                
                 for(int j = 0; j < jsonArray1.size(); j++) {
                      JSONObject medicationJSON = (JSONObject) jsonArray1.get(j);
-                     String allergy = (String)medicationJSON.get(ALLERGY);
+
+                     JSONArray allergy = (JSONArray)medicationJSON.get(ALLERGY);
+                     ArrayList <String> allergyList = new ArrayList<String>();
+
+                     for(int l = 0; l < allergy.size(); l++) {
+                        allergyList.add((String) allergy.get(l));
+                     }
+
                      String medName = (String) medicationJSON.get(MEDNAME);
                      String medTime = (String)medicationJSON.get(MEDTIME);
                      String medDose = (String)medicationJSON.get(MEDDOSE);
                     
-                medications.add(new Medication(allergy, medName, medTime, medDose));
+                medications.add(new Medication(allergyList, medName, medTime, medDose));
 
                 }
             
                 
-                ArrayList <Contact> contacts = new ArrayList<Contact>(); //TODO
+                ArrayList <Contact> contacts = new ArrayList<Contact>();
                
-                JSONArray jsonArray2 = (JSONArray) childJSON.get(CONTACTS);
+                JSONArray jsonArray2 = (JSONArray) childJSON.get("contacts");
 
                 for(int k = 0; k < jsonArray2.size(); k++) {
                     JSONObject contactJSON = (JSONObject) jsonArray2.get(k);
@@ -90,7 +97,7 @@ public class DataReader extends DataConstants{
                     contacts.add(new Contact(childFname, childLname, childPhoneNum, childEmail, childRelationship));
                 }
                 
-                children.add(new Child(fname, lname, birthday, gender, shirtSize));
+                children.add(new Child(fname, lname, birthday, gender, shirtSize, contacts, medications));
             }
 
             return children;
@@ -124,8 +131,10 @@ public class DataReader extends DataConstants{
                 String country=(String) directorJSON.get(COUNTRY);
                 String birthday=(String) directorJSON.get(BIRTHDAY);
                
-            directors.add(new Director(fname,lname,email,password,phoneNum,street,town,zipCode,state,country,birthday));
+                directors.add(new Director(fname,lname,email,password,phoneNum,street,town,zipCode,state,country,birthday));
+                
             }
+            return directors;
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -160,9 +169,7 @@ public class DataReader extends DataConstants{
                 String str=(String)  counselorsJSON.get(STRIKE);
                 ArrayList <Contact> contacts = new ArrayList<Contact>(); 
 
-        
-
-                JSONArray jsonArray = (JSONArray) counselorsJSON.get(CONTACTS);
+                JSONArray jsonArray = (JSONArray) counselorsJSON.get("contacts");
 
                 for(int j = 0; j < jsonArray.size(); j++) {
                     JSONObject contactJSON = (JSONObject) jsonArray.get(j);
@@ -175,7 +182,7 @@ public class DataReader extends DataConstants{
                     contacts.add(new Contact(contactFname, contactLname, contactPhoneNum, contactEmail, contactRelationship));
                 }
                
-        counselors.add(new Counselor(fname, lname, email, password, phoneNum, birthday, street, town, state,zipCode,country, gender));
+                counselors.add(new Counselor(fname, lname, email, password, phoneNum, birthday, street, town, state,zipCode,country, gender));
             }
         return counselors;
         }
@@ -186,4 +193,28 @@ public class DataReader extends DataConstants{
     
     }
 
+    public static ArrayList getAllCabins() {
+        ArrayList<Cabin> cabins = new ArrayList<Cabin>();
+        try {
+            FileReader cabinReader = new FileReader(CABIN_FILE);
+            JSONParser parser = new JSONParser();
+            JSONArray cabinJSON = (JSONArray)new JSONParser().parse(cabinReader);
+
+            for(int i = 0; i < cabinJSON.size(); i++) {
+                JSONObject cabinsJSON = (JSONObject) cabinJSON.get(i);
+
+                ArrayList <Child> camper = new ArrayList<Child>();
+                JSONObject camperArray = (JSONObject) cabinsJSON.get("camper");
+
+
+            }
+
+            return cabins;
+        } 
+        catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return null;
+    }
 }

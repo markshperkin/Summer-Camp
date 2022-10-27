@@ -11,13 +11,13 @@
       
       
       "medication":[
-      {
-      "allergy":["none"],
-      "medName":"None",
-      "medTime":"none",
-      "medDose":"none"
-     } 
-    ],
+        {
+        "allergy":["none"],
+        "medName":"None",
+        "medTime":"none",
+        "medDose":"none"
+        } 
+      ],
 
       "Contact": [
         {
@@ -48,13 +48,13 @@
           
           "medication":
           [
-          {
-          "allergy":["Peanuts"],
-          "medName":"None",
-          "medTime":"none",
-          "medDose":"none"
-      }
-    ],
+            {
+              "allergy":["Peanuts"],
+              "medName":"None",
+              "medTime":"none",
+              "medDose":"none"
+            }
+          ],
           "Contact": [
             {
               "firstName":"Karla",
@@ -86,13 +86,13 @@
       "strike":"0",
       
       "medication":[ 
-      {
-      "allergy":["none"],
-      "medName":"None",
-      "medTime":"none",
-      "medDose":"none"
-     } 
-    ],
+        {
+        "allergy":["none"],
+        "medName":"None",
+        "medTime":"none",
+        "medDose":"none"
+        } 
+      ],
 
       "Contact": [
         {
@@ -124,13 +124,12 @@
       "strike":"0",
       
       "medication":[
-      {
-      "allergy":["none"],
-      "medName":"None",
-      "medTime":"none",
-      "medDose":"none"
-
-      }
+        {
+        "allergy":["none"],
+        "medName":"None",
+        "medTime":"none",
+        "medDose":"none"
+        }
       ],
     
       "Contact": [
@@ -186,8 +185,7 @@
           "phoneNum": "803-531-3255",
           "email":"NWat32@gmail.com",
           "relationship": "Mother"
-
-           }
+        }
         ]
       }
   ]   
