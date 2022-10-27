@@ -14,8 +14,6 @@ public class Activity {
     private int clockMinute;
     private Action action;
     
-    //private static final List<Action> VALUES = Collections.unmodifiableList(Arrays.asList());//values()
-    //private static final int SIZE = VALUES.size();
     private static final Random RANDOM = new Random();
 
 
@@ -31,14 +29,12 @@ public class Activity {
 
     public void randomAction() { //static Action
 
-        int r = RANDOM.nextInt(9);
+        int r = RANDOM.nextInt(1);
         if(r==0)
         {
             System.out.println(Action.ARTS_AND_CRAFTS);
             
         }
-        
-        //return VALUES.get(RANDOM.nextInt(SIZE));
         
     }
 
