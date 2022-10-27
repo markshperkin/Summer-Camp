@@ -8,25 +8,24 @@ public class Cabin {
     public Random rand;
     private Counselor counselor;
     private int ageRange;
+    Cabin cabin = new Cabin();
     
     
 
-    public Cabin (Counselor counselor, ArrayList<Child> campers, int ageRange){
-        this.ageRange = ageRange;
+    public Cabin (Counselor counselor, ArrayList<Child> campers, HashMap<Days,ArrayList<Activity>> schedule){
         this.counselor = counselor;
         rand = new Random();
         schedule = new HashMap<Days,ArrayList<Activity>>();
+        campers = new ArrayList<Child>();
     }
+
+    public Cabin(){}
 
     public Counselor getCounselor() {
         return counselor;
-
     }
 
     public void CreateSchedule(Activity activity){
-
-
-
         schedule.put(Days.MONDAY, new ArrayList<Activity>());
         schedule.put(Days.TUESDAY, new ArrayList<Activity>());
         schedule.put(Days.WEDNESDAY, new ArrayList<Activity>());
@@ -45,6 +44,13 @@ public class Cabin {
     
     public boolean withinAgeRange() {
         return true;
+    }
+
+    public Cabin getCabin(){
+        for (int x = 0; x < 9; x++){
+
+        }
+        return cabin;
     }
 
 }
