@@ -32,6 +32,21 @@ public class DataReader extends DataConstants{
                 String zipCode = (String)parentJSON.get(ZIPCODE); 
                 String country = (String)parentJSON.get(COUNTRY);
                 String gender =(String)parentJSON.get(GENDER);
+                
+                ArrayList <Contact> childcontacts = new ArrayList<Contact>();
+               
+                JSONArray jsonArray2 = (JSONArray) parentJSON.get("contacts");
+
+                for(int k = 0; k < jsonArray2.size(); k++) {
+                    JSONObject contactJSON = (JSONObject) jsonArray2.get(k);
+                    String childcontactFname = (String)contactJSON.get(FIRSTNAME);
+                    String childcontactLname = (String) contactJSON.get(LASTNAME);
+                    String childcontactPhoneNum = (String)contactJSON.get(PHONENUMBER);
+                    String childcontactEmail =  (String)contactJSON.get(EMAIL);
+                    String childcontactRelationship = (String)contactJSON.get(RELATIONSHIP);
+
+                    childcontacts.add(new Contact(childcontactFname, childcontactLname, childcontactPhoneNum, childcontactEmail, childcontactRelationship));
+                }
 
                 parents.add(new Parent(fname, lname, email, password, phoneNum, birthday,street,town,state,zipCode,country,gender));
             }
@@ -130,8 +145,11 @@ public class DataReader extends DataConstants{
                 String state =(String) directorJSON.get(STATE);
                 String country=(String) directorJSON.get(COUNTRY);
                 String birthday=(String) directorJSON.get(BIRTHDAY);
+                String Directproof=(String) directorJSON.get(DIRECTORS);
                
-                directors.add(new Director(fname,lname,email,password,phoneNum,street,town,zipCode,state,country,birthday));
+               
+                
+              directors.add(new Director(fname,lname,email,password,phoneNum,street,town,zipCode,state,country,birthday));
                 
             }
             return directors;
@@ -169,7 +187,7 @@ public class DataReader extends DataConstants{
                 String str=(String)  counselorsJSON.get(STRIKE);
                 ArrayList <Contact> contacts = new ArrayList<Contact>(); 
 
-                JSONArray jsonArray = (JSONArray) counselorsJSON.get("contacts");
+                JSONArray jsonArray = (JSONArray) counselorsJSON.get(CONTACTS);
 
                 for(int j = 0; j < jsonArray.size(); j++) {
                     JSONObject contactJSON = (JSONObject) jsonArray.get(j);

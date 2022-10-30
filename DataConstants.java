@@ -26,6 +26,7 @@ public class DataConstants {
     protected static final String MEDICATION="medication";
     protected static final String STRIKE ="strike";
     protected static final String CONTACTS="contacts";
+    protected static final String DIRECTORS= "director";
 
 
 
