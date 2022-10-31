@@ -1,7 +1,5 @@
 import java.io.FileReader;
 import java.util.ArrayList;
-import java.util.Collection;
-
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -35,7 +33,7 @@ public class DataReader extends DataConstants{
                 
                 ArrayList <Contact> childcontacts = new ArrayList<Contact>();
                
-                JSONArray jsonArray2 = (JSONArray) parentJSON.get("contacts");
+                JSONArray jsonArray2 = (JSONArray) parentJSON.get(CONTACTS);
 
                 for(int k = 0; k < jsonArray2.size(); k++) {
                     JSONObject contactJSON = (JSONObject) jsonArray2.get(k);
@@ -145,11 +143,8 @@ public class DataReader extends DataConstants{
                 String state =(String) directorJSON.get(STATE);
                 String country=(String) directorJSON.get(COUNTRY);
                 String birthday=(String) directorJSON.get(BIRTHDAY);
-                String Directproof=(String) directorJSON.get(DIRECTORS);
                
-               
-                
-              directors.add(new Director(fname,lname,email,password,phoneNum,street,town,zipCode,state,country,birthday));
+                directors.add(new Director(fname,lname,email,password,phoneNum,street,town,zipCode,state,country,birthday));
                 
             }
             return directors;

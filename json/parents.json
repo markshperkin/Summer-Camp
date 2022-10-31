@@ -14,7 +14,7 @@
   "state": "South Carolina",
   "country": "United States",
   "Gender":"Female",
-  "Child contact":[ 
+  "contacts":[ 
     {
     "firstName":"Kate",
     "lastName": "Johnson",
@@ -48,7 +48,7 @@
   "state": "South Carolina",
   "country": "United States",
   "Gender":"Male",
-  "Child contact":[ 
+  "contacts":[ 
     {
     "firstName":"Kate",
     "lastName": "Johnson",
@@ -82,7 +82,7 @@
     "state": "South Carolina",
     "country": "United States",
     "Gender":"Male",
-    "Child contact":[ 
+    "contacts":[ 
       {
       "firstName":"Jared",
       "lastName": "Waterman",
@@ -125,7 +125,7 @@
     "state": "South Carolina",
     "country": "United States",
     "Gender":"Male",
-    "Child contact":[ 
+    "contacts":[ 
       {
       "firstName":"Jared",
       "lastName": "Waterman",
