@@ -30,23 +30,15 @@ public class DataReader extends DataConstants{
                 String zipCode = (String)parentJSON.get(ZIPCODE); 
                 String country = (String)parentJSON.get(COUNTRY);
                 String gender =(String)parentJSON.get(GENDER);
-                
-                ArrayList <Contact> childcontacts = new ArrayList<Contact>();
+                ArrayList <String> children = new ArrayList<String>();
                
-                JSONArray jsonArray2 = (JSONArray) parentJSON.get(CONTACTS);
+                JSONArray jsonArray2 = (JSONArray) parentJSON.get("children");
 
                 for(int k = 0; k < jsonArray2.size(); k++) {
-                    JSONObject contactJSON = (JSONObject) jsonArray2.get(k);
-                    String childcontactFname = (String)contactJSON.get(FIRSTNAME);
-                    String childcontactLname = (String) contactJSON.get(LASTNAME);
-                    String childcontactPhoneNum = (String)contactJSON.get(PHONENUMBER);
-                    String childcontactEmail =  (String)contactJSON.get(EMAIL);
-                    String childcontactRelationship = (String)contactJSON.get(RELATIONSHIP);
-
-                    childcontacts.add(new Contact(childcontactFname, childcontactLname, childcontactPhoneNum, childcontactEmail, childcontactRelationship));
+                    children.add((String) jsonArray2.get(k));
                 }
 
-                parents.add(new Parent(fname, lname, email, password, phoneNum, birthday,street,town,state,zipCode,country,gender));
+                parents.add(new Parent(fname, lname, email, password, phoneNum, birthday,street,town,state,zipCode,country,gender, children));
             }
             return parents;
         } catch (Exception e) {
@@ -144,7 +136,7 @@ public class DataReader extends DataConstants{
                 String country=(String) directorJSON.get(COUNTRY);
                 String birthday=(String) directorJSON.get(BIRTHDAY);
                
-                directors.add(new Director(fname,lname,email,password,phoneNum,street,town,zipCode,state,country,birthday));
+               directors.add(new Director(fname,lname,email,password,phoneNum,street,town,zipCode,state,country,birthday));
                 
             }
             return directors;
