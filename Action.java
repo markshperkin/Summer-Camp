@@ -18,7 +18,8 @@ public enum Action {
      CORNHOLE,
      BASKETBALL, 
      TALKTIME,
-     
+     WATERSPORTS
+
 
 
 }

@@ -64,91 +64,577 @@
                 "clockMinute": 0,
                 "timeofday":"PM",
                 "action" : "KAYAKING"
+               },
+              {
+              "title": "DINNER",
+              "description" : "The last meal of the day you got to eat",
+              "location" : "Campsite Main",
+              "clockHour": 6,
+              "clockMinute": 0,
+              "timeofday":"PM",
+              "action" : "DINNER"
             },
             {
-            "title": "DINNER",
-            "description" : "The last meal of the day you got to eat",
-            "location" : "Campsite Main",
-            "clockHour": 6,
-            "clockMinute": 0,
+             "title": "Free TIme",
+            "description" : "enjoy the your night",
+            "location" : "Campsite One",
+            "clockHour": 7,
+            "clockMinute": 30,
             "timeofday":"PM",
-            "action" : "DINNER"
-        },
-        {
-        "title": "Free TIme",
-        "description" : "enjoy the your night",
-        "location" : "Campsite One",
-        "clockHour": 7,
-        "clockMinute": 30,
-        "timeofday":"PM",
-        "action" : "FREETIME"
+            "action" : "FREETIME"
             }
             ],
             "Tuesday": [
                 {
-                    "title": "Canoe",
-                    "description" : "Conoing down river",
-                    "location" : "the river",
-                    "clockHour": 12,
+                    "title": "Breakfast",
+                    "description" : "Good Morning, the first meal of the Day",
+                    "location" : "At the Cabins",
+                    "clockHour": 8,
                     "clockMinute": 0,
-                    "action" : "KAYAKING"
-                }
-            ],
-            "Wednesday" : [
+                    "timeofday":"AM",
+                    "action" : "BREAKFAST"
+                },
                 {
-                    "title": "Canoe",
-                    "description" : "Conoing down river",
-                    "location" : "the river",
+                    "title": "Free Time ",
+                    "description" : "Relax and chill and just get to know people",
+                    "location" : "At the Cabins",
+                    "clockHour": 9,
+                    "clockMinute": 30,
+                    "timeofday":"AM",
+                    "action" : "FREETIME"
+                },
+                {
+                    "title": "Rock wall",
+                    "description" : "Enjoy the Climbing the wall",
+                    "location" : "Camp Field",
+                    "clockHour": 10,
+                    "clockMinute": 0,
+                    "timeofday":"AM",
+                    "action" : "ROCK_WALL"
+                },
+                {
+                    "title": "Meeting at Campsite One",
+                    "description" : "Gather around before we go to the swimming in the pool",
+                    "location" : "Campsite One ",
+                    "clockHour": 11,
+                    "clockMinute": 0,
+                    "timeofday":"AM",
+                    "action" : "MEETING"
+                },
+                {
+                    "title": "Swimming",
+                    "description" : "enjoy the relaxing water",
+                    "location" : "Camp pool",
                     "clockHour": 12,
                     "clockMinute": 0,
-                    "action" : "KAYAKING"
-                }
-            ],
+                    "timeofday":"PM",
+                    "action" : "SWIMMING"
+                },
+                {
+                "title": "Lunch",
+                "description" : "One taking in the middle of the day",
+                "location" : "Campsite Main",
+                "clockHour": 1,
+                "clockMinute": 0,
+                "timeofday":"PM",
+                "action" : "LUNCH"
+                },
+                {
+                "title": "FLag football",
+                "description" : "enjoy the competive and fun game",
+                "location" : "Camp Field",         
+                "clockHour": 1,                  
+                "clockMinute": 0,
+                "timeofday":"PM",
+                "action" : "FLAGFOOTBALL"
+                },
+                {
+                "title": "Swimming",
+                "description" : "rest of the day of swimming and relax and chill in the hot weather",
+                "location" : "the river",
+                "clockHour": 3,
+                "clockMinute": 0,
+                "timeofday":"PM",
+                "action" : "SWIMMING"
+                },
+                {
+                "title": "DINNER",
+                "description" : "The last meal of the day you got to eat",
+                "location" : "Campsite Main",                
+                "clockHour": 6,    
+                "clockMinute": 0,
+                "timeofday":"PM",
+                "action" : "DINNER"
+                },
+                {
+                "title": "Free TIme",
+                "description" : "enjoy the your night",
+                "location" : "Campsite One",
+                "clockHour": 7,
+                "clockMinute": 30,
+                "timeofday":"PM",
+                "action" : "FREETIME"
+                    }   
+        ],    
+            "Wednesday" :  [
+                {
+                    "title": "Breakfast",
+                    "description" : "Good Morning, the first meal of the Day",
+                    "location" : "At the Cabins",
+                    "clockHour": 8,
+                    "clockMinute": 0,
+                    "timeofday":"AM",
+                    "action" : "BREAKFAST"
+                },
+                {
+                    "title": "Free Time ",
+                    "description" : "Relax and chill and just get to know people",
+                    "location" : "At the Cabins",
+                    "clockHour": 9,
+                    "clockMinute": 30,
+                    "timeofday":"AM",
+                    "action" : "FREETIME"
+                },
+                {
+                    "title": "Arts and Crafts",
+                    "description" : "Enjoy the arts and Crafts",
+                    "location" : "Campsite Main",
+                    "clockHour": 10,
+                    "clockMinute": 30,
+                    "timeofday":"AM",
+                    "action" : "ART_AND_CRAFTS"
+                },
+                {
+                    "title": "Meeting at Campsite One",
+                    "description" : "Gather around before we go to the water sport games in the pool",
+                    "location" : "Campsite One ",
+                    "clockHour": 11,
+                    "clockMinute": 0,
+                    "timeofday":"AM",
+                    "action" : "MEETING"
+                },
+                {
+                    "title": "Water sport",
+                    "description" : "enjoy the relaxing water",
+                    "location" : "Camp pool",
+                    "clockHour": 12,
+                    "clockMinute": 0,
+                    "timeofday":"PM",
+                    "action" : "WATERSPORT"
+                },
+                {
+                "title": "Lunch",
+                "description" : "One taking in the middle of the day",
+                "location" : "Campsite Main",
+                "clockHour": 1,
+                "clockMinute": 0,
+                "timeofday":"PM",
+                "action" : "LUNCH"
+                },
+                {
+                "title": "Basketball",
+                "description" : "enjoy the competive and fun game",
+                "location" : "Camp Field",         
+                "clockHour": 1,                  
+                "clockMinute": 0,
+                "timeofday":"PM",
+                "action" : "BASKETBALL"
+                },
+                {
+                "title": "WATERSPORT",
+                "description" : "rest of the day of swimming and relax and chill in the hot weather",
+                "location" : "Camp pool",
+                "clockHour": 3,
+                "clockMinute": 0,
+                "timeofday":"PM",
+                "action" : "WATERSPORT"
+                },
+                {
+                "title": "DINNER",
+                "description" : "The last meal of the day you got to eat",
+                "location" : "Campsite Main",                
+                "clockHour": 6,    
+                "clockMinute": 0,
+                "timeofday":"PM",
+                "action" : "DINNER"
+                },
+                {
+                "title": "Talking event",
+                "description" : "enjoy the your night with other group",
+                "location" : "Campsite Main",
+                "clockHour": 7,
+                "clockMinute": 30,
+                "timeofday":"PM",
+                "action" : "TALKING"
+                    }   
+        ],
             "Thursday": [
                 {
-                    "title": "Canoe",
-                    "description" : "Conoing down river",
-                    "location" : "the river",
-                    "clockHour": 12,
+                    "title": "Breakfast",
+                    "description" : "Good Morning, the first meal of the Day",
+                    "location" : "At the Cabins",
+                    "clockHour": 8,
                     "clockMinute": 0,
-                    "action" : "KAYAKING"
-                }
-            ],
-            "Friday": [
+                    "timeofday":"AM",
+                    "action" : "BREAKFAST"
+                },
                 {
-                    "title": "Canoe",
-                    "description" : "Conoing down river",
+                    "title": "Free Time ",
+                    "description" : "Relax and chill and just get to know people",
+                    "location" : "At the Cabins",
+                    "clockHour": 9,
+                    "clockMinute": 30,
+                    "timeofday":"AM",
+                    "action" : "FREETIME"
+                },
+                {
+                    "title": "Arts and Crafts",
+                    "description" : "Enjoy the arts and Crafts",
+                    "location" : "Campsite Main",
+                    "clockHour": 10,
+                    "clockMinute": 30,
+                    "timeofday":"AM",
+                    "action" : "ART_AND_CRAFTS"
+                },
+                {
+                    "title": "Meeting at Campsite One",
+                    "description" : "Gather around before we go to river",
+                    "location" : "Campsite One ",
+                    "clockHour": 11,
+                    "clockMinute": 0,
+                    "timeofday":"AM",
+                    "action" : "MEETING"
+                },
+                {
+                    "title": "KAYAKING",
+                    "description" : "enjoy the relaxing water",
                     "location" : "the river",
                     "clockHour": 12,
                     "clockMinute": 0,
+                    "timeofday":"PM",
                     "action" : "KAYAKING"
-                }
-            ],
+                },
+                {
+                "title": "Lunch",
+                "description" : "One taking in the middle of the day",
+                "location" : "Campsite Main",
+                "clockHour": 1,
+                "clockMinute": 0,
+                "timeofday":"PM",
+                "action" : "LUNCH"
+                },
+                {
+                "title": "Basketball",
+                "description" : "enjoy the competive and fun game",
+                "location" : "Camp Field",         
+                "clockHour": 1,                  
+                "clockMinute": 0,
+                "timeofday":"PM",
+                "action" : "BASKETBALL"
+                },
+                {
+                "title": "KAYAKING",
+                "description" : "rest of the day of kaykaing and relax and chill in the hot weather",
+                "location" : "the river",
+                "clockHour": 3,
+                "clockMinute": 0,
+                "timeofday":"PM",
+                "action" : "WATERSPORT"
+                },
+                {
+                "title": "DINNER",
+                "description" : "The last meal of the day you got to eat",
+                "location" : "Campsite Main",                
+                "clockHour": 6,    
+                "clockMinute": 0,
+                "timeofday":"PM",
+                "action" : "DINNER"
+                },
+                {
+                "title": "Talking event",
+                "description" : "enjoy the your night with other group",
+                "location" : "Campsite Main",
+                "clockHour": 7,
+                "clockMinute": 30,
+                "timeofday":"PM",
+                "action" : "TALKING"
+                    }   
+        ],
+            "Friday":  [
+                {
+                    "title": "Breakfast",
+                    "description" : "Good Morning, the first meal of the Day",
+                    "location" : "At the Cabins",
+                    "clockHour": 8,
+                    "clockMinute": 0,
+                    "timeofday":"AM",
+                    "action" : "BREAKFAST"
+                },
+                {
+                    "title": "Free Time ",
+                    "description" : "Relax and chill and just get to know people",
+                    "location" : "At the Cabins",
+                    "clockHour": 9,
+                    "clockMinute": 30,
+                    "timeofday":"AM",
+                    "action" : "FREETIME"
+                },
+                {
+                    "title": "Arts and Crafts",
+                    "description" : "Enjoy the arts and Crafts",
+                    "location" : "Campsite Main",
+                    "clockHour": 10,
+                    "clockMinute": 30,
+                    "timeofday":"AM",
+                    "action" : "ART_AND_CRAFTS"
+                },
+                {
+                    "title": "Meeting at Campsite One",
+                    "description" : "Gather around before we go to the water sport games in the pool",
+                    "location" : "Campsite One ",
+                    "clockHour": 11,
+                    "clockMinute": 0,
+                    "timeofday":"AM",
+                    "action" : "MEETING"
+                },
+                {
+                    "title": "Water sport",
+                    "description" : "enjoy the relaxing water",
+                    "location" : "Camp pool",
+                    "clockHour": 12,
+                    "clockMinute": 0,
+                    "timeofday":"PM",
+                    "action" : "WATERSPORT"
+                },
+                {
+                "title": "Lunch",
+                "description" : "One taking in the middle of the day",
+                "location" : "Campsite Main",
+                "clockHour": 1,
+                "clockMinute": 0,
+                "timeofday":"PM",
+                "action" : "LUNCH"
+                },
+                {
+                "title": "Basketball",
+                "description" : "enjoy the competive and fun game",
+                "location" : "Camp Field",         
+                "clockHour": 1,                  
+                "clockMinute": 0,
+                "timeofday":"PM",
+                "action" : "BASKETBALL"
+                },
+                {
+                "title": "WATERSPORT",
+                "description" : "rest of the day of swimming and relax and chill in the hot weather",
+                "location" : "Camp pool",
+                "clockHour": 3,
+                "clockMinute": 0,
+                "timeofday":"PM",
+                "action" : "WATERSPORT"
+                },
+                {
+                "title": "DINNER",
+                "description" : "The last meal of the day you got to eat",
+                "location" : "Campsite Main",                
+                "clockHour": 6,    
+                "clockMinute": 0,
+                "timeofday":"PM",
+                "action" : "DINNER"
+                },
+                {
+                "title": "Talking event",
+                "description" : "enjoy the your night with other group",
+                "location" : "Campsite Main",
+                "clockHour": 7,
+                "clockMinute": 30,
+                "timeofday":"PM",
+                "action" : "TALKING"
+                    }   
+        ],
             "Saturday": [
                 {
-                    "title": "Canoe",
-                    "description" : "Conoing down river",
-                    "location" : "the river",
+                    "title": "Breakfast",
+                    "description" : "Good Morning, the first meal of the Day",
+                    "location" : "At the Cabins",
+                    "clockHour": 8,
+                    "clockMinute": 0,
+                    "timeofday":"AM",
+                    "action" : "BREAKFAST"
+                },
+                {
+                    "title": "Free Time ",
+                    "description" : "Relax and chill and just get to know people",
+                    "location" : "At the Cabins",
+                    "clockHour": 9,
+                    "clockMinute": 30,
+                    "timeofday":"AM",
+                    "action" : "FREETIME"
+                },
+                {
+                    "title": "Rock wall",
+                    "description" : "Enjoy the Climbing the wall",
+                    "location" : "Camp Field",
+                    "clockHour": 10,
+                    "clockMinute": 0,
+                    "timeofday":"AM",
+                    "action" : "ROCK_WALL"
+                },
+                {
+                    "title": "Meeting at Campsite One",
+                    "description" : "Gather around before we go to the swimming in the pool",
+                    "location" : "Campsite One ",
+                    "clockHour": 11,
+                    "clockMinute": 0,
+                    "timeofday":"AM",
+                    "action" : "MEETING"
+                },
+                {
+                    "title": "Swimming",
+                    "description" : "enjoy the relaxing water",
+                    "location" : "Camp pool",
                     "clockHour": 12,
                     "clockMinute": 0,
-                    "action" : "KAYAKING"
-                }
-            ],
+                    "timeofday":"PM",
+                    "action" : "SWIMMING"
+                },
+                {
+                "title": "Lunch",
+                "description" : "One taking in the middle of the day",
+                "location" : "Campsite Main",
+                "clockHour": 1,
+                "clockMinute": 0,
+                "timeofday":"PM",
+                "action" : "LUNCH"
+                },
+                {
+                "title": "FLag football",
+                "description" : "enjoy the competive and fun game",
+                "location" : "Camp Field",         
+                "clockHour": 1,                  
+                "clockMinute": 0,
+                "timeofday":"PM",
+                "action" : "FLAGFOOTBALL"
+                },
+                {
+                "title": "Swimming",
+                "description" : "rest of the day of swimming and relax and chill in the hot weather",
+                "location" : "the river",
+                "clockHour": 3,
+                "clockMinute": 0,
+                "timeofday":"PM",
+                "action" : "SWIMMING"
+                },
+                {
+                "title": "DINNER",
+                "description" : "The last meal of the day you got to eat",
+                "location" : "Campsite Main",                
+                "clockHour": 6,    
+                "clockMinute": 0,
+                "timeofday":"PM",
+                "action" : "DINNER"
+                },
+                {
+                "title": "Free TIme",
+                "description" : "enjoy the your night",
+                "location" : "Campsite One",
+                "clockHour": 7,
+                "clockMinute": 30,
+                "timeofday":"PM",
+                "action" : "FREETIME"
+                    }   
+        ],
             "Sunday": [
+                {
+                    "title": "Breakfast",
+                    "description" : "Good Morning, the first meal of the Day",
+                    "location" : "At the Cabins",
+                    "clockHour": 8,
+                    "clockMinute": 0,
+                    "timeofday":"AM",
+                    "action" : "BREAKFAST"
+                },
+                {
+                    "title": "Free Time ",
+                    "description" : "Relax and chill and just get to know people",
+                    "location" : "At the Cabins",
+                    "clockHour": 9,
+                    "clockMinute": 30,
+                    "timeofday":"AM",
+                    "action" : "FREETIME"
+                },
+                {
+                    "title": "Meeting at Campsite One",
+                    "description" : "Gather around before we go to the river",
+                    "location" : "Campsite One ",
+                    "clockHour": 11,
+                    "clockMinute": 0,
+                    "timeofday":"AM",
+                    "action" : "Meeting"
+                },
                 {
                     "title": "Canoe",
                     "description" : "Conoing down river",
                     "location" : "the river",
                     "clockHour": 12,
                     "clockMinute": 0,
+                    "timeofday":"PM",
                     "action" : "KAYAKING"
-                }
+                },
+                {
+                "title": "Lunch",
+                "description" : "One taking in the middle of the day",
+                "location" : "Campsite Main",
+                "clockHour": 1,
+                "clockMinute": 0,
+                "timeofday":"PM",
+                "action" : "LUNCH"
+                 },
+                 {
+                 "title": "FieldGames",
+                 "description" : "varies of different games on the field",
+                 "location" : "Camp Field",
+                 "clockHour": 1,
+                 "clockMinute": 0,
+                 "timeofday":"PM",
+                 "action" : "FIELDGAMES"
+                },
+                {
+                "title": "KAYAKING",
+                "description" : "The canoe down the river rest of the day",
+                "location" : "the river",
+                "clockHour": 3,
+                "clockMinute": 0,
+                "timeofday":"PM",
+                "action" : "KAYAKING"
+               },
+              {
+              "title": "DINNER",
+              "description" : "The last meal of the day you got to eat",
+              "location" : "Campsite Main",
+              "clockHour": 6,
+              "clockMinute": 0,
+              "timeofday":"PM",
+              "action" : "DINNER"
+            },
+            {
+             "title": "Free TIme",
+            "description" : "enjoy the your night",
+            "location" : "Campsite One",
+            "clockHour": 7,
+            "clockMinute": 30,
+            "timeofday":"PM",
+            "action" : "FREETIME"
+            }
             ]
         },
         
         "camper" : [
             "c09b6c24-d0cd-4d01-8768-4e37badc7fc1", 
-            "0e0dd772-2209-4d89-a96c-ce7f77706e9f"
+            "0e0dd772-2209-4d89-a96c-ce7f77706e9f",
+            "c45c2bf7-5126-4179-9854-f7804bbc1031",
+            "9b6925c3-1493-471b-8561-12bdb69567d8"
+
         ],
 
         "counselor": [
