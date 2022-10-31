@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.UUID;
 
 public class Counselor extends User{
     private String aboutMe;
@@ -11,13 +12,13 @@ public class Counselor extends User{
     private ArrayList<Contact> contacts;
     public ArrayList<String> medications;
     public ArrayList<String> allergies;
+    private UUID id;
 
 
-    public Counselor(String fName, String lName, String email, String password, String phoneNum, String birthday,String shirtSize,String street,String town,String zipCode, String country,String gender) {
+    public Counselor(UUID id, String fName, String lName, String email, String password, String phoneNum, String birthday,String shirtSize,String street,String town,String zipCode, String country,String gender) {
         super(fName, lName, email, password, phoneNum, birthday,street,town,zipCode,zipCode,country,gender);
         this.shirtSize = shirtSize;
-        
-
+        this.id = id;
         contacts = new ArrayList();
         medications = new ArrayList();    
     }
@@ -40,5 +41,10 @@ public class Counselor extends User{
 
     public String addAddress(String street, String town, String state, int zipCode, String country){
         return "";
+    }
+
+    public UUID getUUID() {
+        return id;
+        
     }
 }
