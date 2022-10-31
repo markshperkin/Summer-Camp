@@ -5,7 +5,6 @@ import java.util.*;
 
 public class Activity {
     private String title;
-    private String description;
     private String location;
     private int clockHour;
     private int clockMinute;
@@ -15,10 +14,9 @@ public class Activity {
     private static final Random RANDOM = new Random();
 
 
-    public Activity(String title, String description, String location, int clockHour
+    public Activity(String title, String location, int clockHour
     , int clockMinute, Action action) {
         this.title = title;
-        this.description = description;
         this.location = location;
         this.clockHour = clockHour;
         this.clockMinute = clockMinute;
@@ -61,6 +59,6 @@ public class Activity {
         return true;
     }
     public String toString() {
-        return title + ", " + description + ", " + location + ", " + clockHour + ":" + clockMinute ;
+        return title  + ", " + location + ", " + clockHour + ":" + clockMinute ;
     }
 }
