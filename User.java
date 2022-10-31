@@ -1,3 +1,5 @@
+import java.util.UUID;
+
 public abstract class User {
     protected String firstName;
     protected String lastName;
@@ -11,6 +13,7 @@ public abstract class User {
     protected String country;
     protected String birthday;
     protected String gender;
+    protected UUID id;
     
 
     public User(String firstName, String lastName, String email, String password, String phoneNum, String birthday,String street, String town, String state, String zipCode, String country, String gender) {
@@ -26,12 +29,17 @@ public abstract class User {
         this.zipCode=zipCode;
         this.country=country;
         this.gender=gender;
+        this.id = UUID.randomUUID();
         
     }
 
     // public static void createUser(String firstName,String lastName,String email,String password, String phoneNum, String birthday) {
     //     User user = new User(firstName, lastName, email, password, phoneNum, birthday);
     // }
+
+    public UUID getUUID() {
+        return id;
+    }
 
     public static String getEmail() {
         return email;
