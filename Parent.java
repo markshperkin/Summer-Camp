@@ -4,12 +4,13 @@ import java.util.ArrayList;
 
 public class Parent extends User{
     private boolean waiver;
-    private ArrayList<Child> children;
+    private ArrayList<String> children = new ArrayList<String>();
     private int numOfWeeks;
     private int price;
 
-    public Parent(String fName, String lName, String email, String password, String phoneNum, String birthday, String street, String town, String state, String zipCode, String country,String gender) {
+    public Parent(String fName, String lName, String email, String password, String phoneNum, String birthday, String street, String town, String state, String zipCode, String country,String gender, ArrayList<String>children) {
         super(fName, lName, email, password, phoneNum, birthday,street,town,state,zipCode,country,gender);
+        this.children = children;
     }
  
     

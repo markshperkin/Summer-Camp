@@ -19,7 +19,7 @@
         } 
       ],
 
-      "Contact": [
+      "contacts": [
         {
           "firstName":"Karla",
           "lastName": "Johnson",
@@ -55,7 +55,7 @@
               "medDose":"none"
             }
           ],
-          "Contact": [
+          "contacts": [
             {
               "firstName":"Karla",
               "lastName": "Johnson",
@@ -94,7 +94,7 @@
         } 
       ],
 
-      "Contact": [
+      "contacts": [
         {
           "firstName":"Jared",
           "lastName": "Waterman",
@@ -132,7 +132,7 @@
         }
       ],
     
-      "Contact": [
+      "contacts": [
         {
           "firstName":"Jared",
           "lastName": "Waterman",
@@ -170,7 +170,7 @@
   }
 ]
   ,
-      "Contact": [
+      "contacts": [
         {
           "firstName":"Jared",
           "lastName": "Waterman",

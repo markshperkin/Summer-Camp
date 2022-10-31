@@ -14,24 +14,7 @@
   "state": "South Carolina",
   "country": "United States",
   "Gender":"Female",
-  "Child contact":[ 
-    {
-    "firstName":"Kate",
-    "lastName": "Johnson",
-    "phoneNum": "NA",
-    "email":"NA",
-    "relationship":"daughter"
-    },
-    {
-      "firstName":"Alex",
-      "lastName": "Johnson",
-      "phoneNum": "NA"    ,
-      "email":"NA",
-      "relationship":"son"
-     
-    }
-    
-  ]
+  "children" : ["d72fe20f-f381-4b6d-898c-2f12551e1d62"],    
   },
   {
   "id":"6d217b18-dc3e-4612-bb2a-43bf7547ba10",
@@ -48,24 +31,7 @@
   "state": "South Carolina",
   "country": "United States",
   "Gender":"Male",
-  "Child contact":[ 
-    {
-    "firstName":"Kate",
-    "lastName": "Johnson",
-    "phoneNum": "NA",
-    "email":"NA",
-    "relationship":"daughter"
-    },
-    {
-      "firstName":"Alex",
-      "lastName": "Johnson",
-      "phoneNum": "NA"    ,
-      "email":"NA",
-      "relationship":"son"
-     
-    }
-    
-  ]
+  "children": ["d72fe20f-f381-4b6d-898c-2f12551e1d62"],  
     
   },{
     "id":"d043fb8b-06a2-4f95-bb25-4306df4448e3",
@@ -82,33 +48,7 @@
     "state": "South Carolina",
     "country": "United States",
     "Gender":"Male",
-    "Child contact":[ 
-      {
-      "firstName":"Jared",
-      "lastName": "Waterman",
-      "phoneNum": "NA",
-      "email":"NA",
-      "relationship":"son"
-      },
-      {
-        "firstName":"Marie",
-        "lastName": "Waterman",
-        "phoneNum": "NA"    ,
-        "email":"NA",
-        "relationship":"daughter"
-       
-      },  
-      {
-        "firstName":"Scarlett",
-        "lastName": "Waterman",
-        "phoneNum": "NA"    ,
-        "email":"NA",
-        "relationship":"daughter"
-       
-      }    
-   
-      
-    ]
+    "children": ["d72fe20f-f381-4b6d-898c-2f12551e1d62"],
    
   },{
     "id":"d7851dcd-7936-4fa6-a721-4ab30876773f",
@@ -125,40 +65,7 @@
     "state": "South Carolina",
     "country": "United States",
     "Gender":"Male",
-    "Child contact":[ 
-      {
-      "firstName":"Jared",
-      "lastName": "Waterman",
-      "phoneNum": "NA",
-      "email":"NA",
-      "relationship":"son"
-      },
-      {
-        "firstName":"Marie",
-        "lastName": "Waterman",
-        "phoneNum": "NA"    ,
-        "email":"NA",
-        "relationship":"daughter"
-       
-      },  
-      {
-        "firstName":"Scarlett",
-        "lastName": "Waterman",
-        "phoneNum": "NA"    ,
-        "email":"NA",
-        "relationship":"daughter"
-       
-      }    
-    
-
-  
-
-    ]
-    
-
+    "children": ["d72fe20f-f381-4b6d-898c-2f12551e1d62"],
     }
-  
-    
-
 ]
   
