@@ -30,11 +30,6 @@ public class Sessions {
 
     }
 
-    public void addCabin (Cabin cabin){
-
-        
-    }
-
     public void createSession(){
         for (int x = 0; x < 10; x++){
             Sessions session = new Sessions(themes[x], cabin.getCabins());
