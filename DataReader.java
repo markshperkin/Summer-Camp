@@ -57,6 +57,7 @@ public class DataReader extends DataConstants{
             
             for(int i = 0; i < childrenJSON.size(); i++) {
                 JSONObject childJSON = (JSONObject) childrenJSON.get(i);
+                String UUID = (String) childJSON.get("id");
                 String fname = (String)childJSON.get(FIRSTNAME);
                 String lname = (String)childJSON.get(LASTNAME);
                 String birthday = (String)childJSON.get(BIRTHDAY);
@@ -102,7 +103,7 @@ public class DataReader extends DataConstants{
                     contacts.add(new Contact(childFname, childLname, childPhoneNum, childEmail, childRelationship));
                 }
                 
-                children.add(new Child(fname, lname, birthday, gender, shirtSize, contacts, medications));
+                children.add(new Child(UUID,fname, lname, birthday, gender, shirtSize, contacts, medications));
             }
 
             return children;

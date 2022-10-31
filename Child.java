@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class Child {
+    public String UUID;
     public String firstName;
     public String lastName;
     public String birthday;
@@ -20,7 +21,8 @@ public class Child {
   
 
 
-    public Child (String firstName, String lastName, String birthday, String gender, String shirtSize, ArrayList<Contact> contacts, ArrayList<Medication> medication){
+    public Child (String UUID, String firstName, String lastName, String birthday, String gender, String shirtSize, ArrayList<Contact> contacts, ArrayList<Medication> medication){
+        this.UUID = UUID;
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthday = birthday;
