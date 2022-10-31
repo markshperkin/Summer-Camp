@@ -68,11 +68,20 @@
             {
             "title": "DINNER",
             "description" : "The last meal of the day you got to eat",
-            "location" : "the river",
+            "location" : "Campsite Main",
             "clockHour": 6,
             "clockMinute": 0,
             "timeofday":"PM",
             "action" : "DINNER"
+        },
+        {
+        "title": "Free TIme",
+        "description" : "enjoy the your night",
+        "location" : "Campsite One",
+        "clockHour": 7,
+        "clockMinute": 30,
+        "timeofday":"PM",
+        "action" : "FREETIME"
             }
             ],
             "Tuesday": [
