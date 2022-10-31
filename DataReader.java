@@ -99,7 +99,7 @@ public class DataReader extends DataConstants{
                 
                 ArrayList <Contact> contacts = new ArrayList<Contact>();
                
-                JSONArray jsonArray2 = (JSONArray) childJSON.get("contacts");
+                JSONArray jsonArray2 = (JSONArray) childJSON.get(CONTACTS);
 
                 for(int k = 0; k < jsonArray2.size(); k++) {
                     JSONObject contactJSON = (JSONObject) jsonArray2.get(k);

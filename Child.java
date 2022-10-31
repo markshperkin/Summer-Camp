@@ -10,7 +10,7 @@ public class Child {
     public String medtime;
     public String medDose;
     public String allergy;
-    public int strikeCount;
+    public String strikeCount;
     public String shirtSize;
     public ArrayList<Contact> contacts;
     public ArrayList<Medication> medication;
