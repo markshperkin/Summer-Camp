@@ -37,7 +37,7 @@ public class Sessions {
 
     public void createSession(){
         for (int x = 0; x < 10; x++){
-            Sessions session = new Sessions(themes[x], cabin.getCabins);
+            Sessions session = new Sessions(themes[x], cabin.getCabins());
         }
     }
 
