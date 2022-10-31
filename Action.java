@@ -8,5 +8,17 @@ public enum Action {
      SCAV_HUNT,
      BREAKFAST,
      LUNCH,
-     DINNER
+     DINNER, 
+     CAPTURETHEFLAG,
+     SWIMMING,
+     FREETIME,
+     FLAGFOOTBALL,
+     MEETING,
+     WALKING, 
+     CORNHOLE,
+     BASKETBALL, 
+     TALKTIME,
+     
+
+
 }

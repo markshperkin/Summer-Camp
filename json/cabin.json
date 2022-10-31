@@ -3,13 +3,77 @@
         "schedule": {
             "Monday" : [
                 {
+                    "title": "Breakfast",
+                    "description" : "Good Morning, the first meal of the Day",
+                    "location" : "At the Cabins",
+                    "clockHour": 8,
+                    "clockMinute": 0,
+                    "timeofday":"AM",
+                    "action" : "BREAKFAST"
+                },
+                {
+                    "title": "Free Time ",
+                    "description" : "Relax and chill and just get to know people",
+                    "location" : "At the Cabins",
+                    "clockHour": 9,
+                    "clockMinute": 30,
+                    "timeofday":"AM",
+                    "action" : "FREETIME"
+                },
+                {
+                    "title": "Meeting at Campsite One",
+                    "description" : "Gather around before we go to the river",
+                    "location" : "Campsite One ",
+                    "clockHour": 11,
+                    "clockMinute": 0,
+                    "timeofday":"AM",
+                    "action" : "Meeting"
+                },
+                {
                     "title": "Canoe",
                     "description" : "Conoing down river",
                     "location" : "the river",
                     "clockHour": 12,
                     "clockMinute": 0,
+                    "timeofday":"PM",
                     "action" : "KAYAKING"
-                }
+                },
+                {
+                "title": "Lunch",
+                "description" : "One taking in the middle of the day",
+                "location" : "Campsite Main",
+                "clockHour": 1,
+                "clockMinute": 0,
+                "timeofday":"PM",
+                "action" : "LUNCH"
+                 },
+                 {
+                 "title": "FieldGames",
+                 "description" : "varies of different games on the field",
+                 "location" : "Camp Field",
+                 "clockHour": 1,
+                 "clockMinute": 0,
+                 "timeofday":"PM",
+                 "action" : "FIELDGAMES"
+                },
+                {
+                "title": "KAYAKING",
+                "description" : "The canoe down the river rest of the day",
+                "location" : "the river",
+                "clockHour": 3,
+                "clockMinute": 0,
+                "timeofday":"PM",
+                "action" : "KAYAKING"
+            },
+            {
+            "title": "DINNER",
+            "description" : "The last meal of the day you got to eat",
+            "location" : "the river",
+            "clockHour": 6,
+            "clockMinute": 0,
+            "timeofday":"PM",
+            "action" : "DINNER"
+            }
             ],
             "Tuesday": [
                 {
