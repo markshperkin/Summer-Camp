@@ -217,7 +217,6 @@ public class DataReader extends DataConstants{
             FileReader cabinReader = new FileReader(CABIN_FILE);
             JSONParser parser = new JSONParser();
             JSONArray cabinJSON = (JSONArray)new JSONParser().parse(cabinReader);
-
             for(int i = 0; i < cabinJSON.size(); i++) {
                 JSONObject cabinsJSON = (JSONObject) cabinJSON.get(i);
 
