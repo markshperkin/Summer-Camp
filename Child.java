@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.UUID;
 
 public class Child {
     public String UUID;
@@ -18,6 +19,7 @@ public class Child {
     public int monthInt;
     public int dayInt;
     public int yearInt;
+    private UUID id;
   
 
 
@@ -30,6 +32,7 @@ public class Child {
         this.shirtSize = shirtSize;
         this.contacts = contacts;
         this.medication = medication;
+        this.id = UUID.randomUUID();
 
     }
 
@@ -71,6 +74,10 @@ public class Child {
 
     public int getYear(){
         return yearInt;
+    }
+
+    public UUID getUUID() {
+        return id;
     }
 
 }
