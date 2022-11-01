@@ -47,6 +47,10 @@ public class CampFacade {
         SummerCamp.campers.add(childChild);
     }
 
+    public static void addCounselor(Counselor counselorCounselor){
+        SummerCamp.counselors.add(counselorCounselor);
+    }
+
     public static void viewChild (String viewFirstName, String viewLastName){
 
     }
