@@ -42,7 +42,7 @@ public class Child {
         this.medtime = medtime;
         this.medDose = medDose;
         this.allergy = allergy;
-        this.id = UUID.randomUUID();
+        this.id = UUID.randomUUID().toString();
         contacts = new ArrayList<Contact>();
         medications = new ArrayList<Medication>();
         allergies = new ArrayList<String>();
