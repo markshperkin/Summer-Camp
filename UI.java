@@ -246,7 +246,10 @@ public class UI {
         System.out.println("Please enter your gender.");
         String counselorGender = keyboard.nextLine();
         System.out.println("Please enter your shirt size.");
-        String counselorShirtSize = keyboard.nextLine();
+        String counselorShirtSize = keyboard.nextLine(); 
+        System.out.println("What is the name of your summer camp?");
+        String campName = keyboard.nextLine();
+        ui.inAdmin();
     }
 
     public void inGuardian() {
@@ -412,6 +415,17 @@ public class UI {
     }
 
     public void inCounselor(){
+        while (run) {
+            System.out.println("Please enter your command:\nfor finding an activity by a key word enter \"activity\"");
+            System.out.println("- For finding an activity by a key word enter \"activity\"");
+            System.out.println("- For getting all the activities enter \"all activities\"");
+            System.out.println("- For viewing an example schedule enter \"example schedule\"");
+            System.out.println("- For entering a review enter \"enter review\"");
+            System.out.println("- For reading reviews enter \"read reviews\"");
+            System.out.println("- For adding a child to your account enter \"add child\"");
+            System.out.println("- For viewing a child's profile on your account enter \"view child\"");
+            System.out.println("- For signing your child up for a session enter \"register child\"");
+            System.out.println("- For signing out and quitting the program, enter \"signout\"");
 
     }
 
