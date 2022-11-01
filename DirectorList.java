@@ -21,18 +21,7 @@ private DirectorList(){
     {
         return directors;
     }
-public Child addChildren()
-{
-    
-}
-public Parent addParents()
-{
 
-}
-public Counselor addCounselors()
-{
-
-}
 public boolean login(String username, String password) {
     for(Director d: directors) {
         if(d.email.equals(username) && d.password.equals(password))
