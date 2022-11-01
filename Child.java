@@ -151,15 +151,17 @@ public class Child {
         contacts.add(contact);
     }
     /**
-     * 
-     * @param medication from med
+     * adds medication to the arraylist of medication 
+     * @param medication from medication class
      */
     public void addMedication(Medication medication) {
 
         medications.add(medication);
         
     }
-
+    /**
+     * splits up the month day and year from the string birthday
+     */
     public void splitBirthday(){
         int f = birthday.indexOf("/");
 		int l = birthday.lastIndexOf("/");
@@ -170,7 +172,10 @@ public class Child {
 		dayInt = Integer.parseInt(day);
 		yearInt = Integer.parseInt(year);
     }
-
+    /**
+     * get the year of the child 
+     * @return int yearint
+     */
     public int getYear(){
         return yearInt;
     }
