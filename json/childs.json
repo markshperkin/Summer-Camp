@@ -8,11 +8,9 @@
       "Gender": "Female",
       "shirtSize":"Small",
       "strike":"1",
-      
-      
+      "allergy":["none"],
       "medication":[
         {
-        "allergy":["none"],
         "medName":"None",
         "medTime":"none",
         "medDose":"none"
@@ -45,11 +43,10 @@
           "Gender": "Male",
           "shirtSize":"Small",
           "strike":"0",
-          
+          "allergy":["Peanuts"],
           "medication":
           [
             {
-              "allergy":["Peanuts"],
               "medName":"None",
               "medTime":"none",
               "medDose":"none"
@@ -84,10 +81,9 @@
       "Gender": "Male",
       "shirtSize":"Small",
       "strike":"0",
-      
+      "allergy":["none"],
       "medication":[ 
         {
-        "allergy":["none"],
         "medName":"None",
         "medTime":"none",
         "medDose":"none"
@@ -122,10 +118,9 @@
       "Gender": "Female",
       "shirtSize":"Medium",
       "strike":"0",
-      
+      "allergy":["none"],
       "medication":[
         {
-        "allergy":["none"],
         "medName":"None",
         "medTime":"none",
         "medDose":"none"
@@ -161,9 +156,9 @@
       "Gender": "Female",
       "shirtSize":"Small",
       "strike" :"0",
-      
-      "medication": [ {
       "allergy":["none"],
+      "medication": [ 
+      {
       "medName":"None",
       "medTime":"none",
       "medDose":"none"

@@ -15,8 +15,13 @@ public class Counselor extends User{
     private UUID id;
 
 
+<<<<<<< HEAD
     public Counselor(UUID id, String fName, String lName, String email, String password, String phoneNum, String gender, String birthday,String shirtSize,String street,String town,String state, String zipCode, String country, ArrayList<Contact> contacts, ArrayList<Medication> medications, ArrayList<String> allergies) {
         super(fName, lName, email, password, phoneNum, birthday,street,town,state,zipCode,country,gender);
+=======
+    public Counselor(String fName, String lName, String email, String password, String phoneNum, String birthday,String shirtSize,String street,String town,String zipCode, String country,String gender) {
+        super(fName, lName, email, password, phoneNum, birthday,street,town,zipCode,zipCode,country,gender);
+>>>>>>> ebb38f20ef12d8ee58b52c381c5afc9bf920a02e
         this.shirtSize = shirtSize;
         this.id = id;
         contacts = new ArrayList();

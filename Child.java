@@ -19,7 +19,7 @@ public class Child {
     public int monthInt;
     public int dayInt;
     public int yearInt;
-    public UUID id;
+    public String id;
     /**
      * Creates a child with new UUID for UI
      * @param firstName string of the child first name
@@ -42,7 +42,7 @@ public class Child {
         this.medtime = medtime;
         this.medDose = medDose;
         this.allergy = allergy;
-        this.id = UUID.randomUUID();
+        this.id = UUID.randomUUID().toString();
         contacts = new ArrayList<Contact>();
         medications = new ArrayList<Medication>();
         allergies = new ArrayList<String>();
@@ -63,7 +63,7 @@ public class Child {
      * @param medications an arraylist of medications of the child
      * @param allergies an arraylist of allergies 
      */
-    public Child(UUID id, String firstName, String lastName, String birthday, String gender, String shirtSize, ArrayList<Contact> contacts, ArrayList<Medication> medications, ArrayList<String> allergies) {
+    public Child(String id, String firstName, String lastName, String birthday, String gender, String shirtSize, ArrayList<Contact> contacts, ArrayList<Medication> medications, ArrayList<String> allergies) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
