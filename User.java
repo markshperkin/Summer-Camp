@@ -16,7 +16,7 @@ public abstract class User {
     protected UUID id;
     
 
-    public User(String firstName, String lastName, String email, String password, String phoneNum, String birthday,String street, String town, String state, String zipCode, String country, String gender) {
+    public User(String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -31,6 +31,10 @@ public abstract class User {
         this.gender=gender;
         this.id = UUID.randomUUID();
         
+    }
+
+    public User(String fname, String lname, String email2, String password2, String phoneNum2, String street2,
+            String town2, String zipCode2, String state2, String country2, String birthday2, String gender2) {
     }
 
     // public static void createUser(String firstName,String lastName,String email,String password, String phoneNum, String birthday) {

@@ -63,7 +63,7 @@ public class Child {
      * @param medications an arraylist of medications of the child
      * @param allergies an arraylist of allergies 
      */
-    public Child(UUID id, String firstName, String lastName, String birthday, String gender, String shirtSize, String medName, String medtime, String medDose, String allergy, ArrayList<Contact> contacts, ArrayList<Medication> medications, ArrayList<String> allergies) {
+    public Child(String id, String firstName, String lastName, String birthday, String gender, String shirtSize, ArrayList<Contact> contacts, ArrayList<Medication> medications, ArrayList<String> allergies) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;

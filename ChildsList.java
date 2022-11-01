@@ -7,13 +7,18 @@ public class ChildsList {
     private ChildsList(){
         children = DataReader.getAllChild();
     }
-
+    
     public static ChildsList getInstance(){
         if (childsList == null){
             childsList = new ChildsList();
         }
         return childsList;
     }
+   public ArrayList<Child> getAllChild()
+   {
+       return children;
+   }
+
 
     public void showAllChildren() {
         for(Child c: children) {
