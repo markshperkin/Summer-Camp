@@ -38,7 +38,7 @@ public class UI {
         String logEmail = keyboard.nextLine();
         System.out.println("Please enter your password:");
         String logPassword = keyboard.nextLine();
-        if (CampFacade.login(logEmail, logPassword) == true) {
+        if (CampFacade.login(logEmail, logPassword)) {
             System.out.println("Hello " + logEmail);
             if (typeUser.equalsIgnoreCase("guardian")){
                 ui.inGuardian();
