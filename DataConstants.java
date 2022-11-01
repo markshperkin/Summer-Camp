@@ -44,6 +44,16 @@ public class DataConstants {
     protected static final String SUNDAY="Sunday";
     protected static final String CAMPER="camper";
     protected static final String THEME="theme";
+    
+    protected static final String CHILD_ID="id";
+    protected static final String CHILD_FIRST="firstName";
+    protected static final String CHILD_LAST="lastName";
+    protected static final String CHILD_BIRTH="Birthday";
+    protected static final String CHILD_GENDER="Gender";
+    protected static final String CHILD_SHIRTSIZE="shirtSize";
+    protected static final String CHILD_STRIKE="strike";
+    protected static final String CHILD_ALLEGERY="allergy";
+    
 
 
 

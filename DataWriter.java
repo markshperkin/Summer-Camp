@@ -1,7 +1,7 @@
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.*;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -110,6 +110,11 @@ public static void saveCabins(){
     }
 }
 
-public 
+public static JSONObject getChildsJSON(Child child){
+
+    HashMap<String,Object> Childinfo =new HashMap<String,Object>();
+    Childinfo.put(CHILD_ID,child.getID().toString());
+
+}
 
 }

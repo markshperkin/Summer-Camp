@@ -12,6 +12,10 @@ public class Director extends User {
     
             }
 
+    public Child getCamper() {
+        return camper;
+    }
+
     public String viewCamper(Child camper) {
         return "";
     }
