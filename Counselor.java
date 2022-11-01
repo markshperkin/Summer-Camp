@@ -12,10 +12,10 @@ public class Counselor extends User{
     private ArrayList<Contact> contacts;
     public ArrayList<String> medications;
     public ArrayList<String> allergies;
-    private UUID id;
+    private String id;
 
 
-    public Counselor(UUID id, String fName, String lName, String email, String password, String phoneNum, String gender, String birthday,String shirtSize,String street,String town,String state, String zipCode, String country, ArrayList<Contact> contacts, ArrayList<Medication> medications, ArrayList<String> allergies) {
+    public Counselor(String id, String fName, String lName, String email, String password, String phoneNum, String gender, String birthday,String shirtSize,String street,String town,String state, String zipCode, String country, ArrayList<Contact> contacts, ArrayList<Medication> medications, ArrayList<String> allergies) {
         super(fName, lName, email, password, phoneNum, birthday,street,town,state,zipCode,country,gender);
         this.shirtSize = shirtSize;
         this.id = id;
@@ -50,9 +50,8 @@ public class Counselor extends User{
         return "";
     }
 
-    public UUID getUUID() {
-        return id;
-        
+    public String getUUID() {
+        return id.toString();
     }
 
 }

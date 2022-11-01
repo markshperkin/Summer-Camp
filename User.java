@@ -66,7 +66,7 @@ public abstract class User {
         return gender;
 
     }
-    public UUID getUUID() {
+    public String getUUID() {
         return id;
     }
 
