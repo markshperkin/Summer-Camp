@@ -11,13 +11,13 @@ public class Schedule {
     public String clockmin;
     public String timeofday;
     public String action;
-    private ArrayList<String> Monday;
-    private ArrayList<String>Tuesday;
-    private ArrayList<String> Wednesday;
-    private ArrayList<String>Thursday;
-    private ArrayList<String>Friday;
-    private ArrayList<String>Saturday;
-    private ArrayList<String>Sunday;
+    private ArrayList<Schedule> Monday;
+    private ArrayList<Schedule>Tuesday;
+    private ArrayList<Schedule> Wednesday;
+    private ArrayList<Schedule>Thursday;
+    private ArrayList<Schedule>Friday;
+    private ArrayList<Schedule>Saturday;
+    private ArrayList<Schedule>Sunday;
 
 
 /**
@@ -47,22 +47,6 @@ public Schedule(String title,String description,String location, String clockhou
     Friday=new ArrayList<>();
     Saturday=new ArrayList();
     Sunday=new ArrayList<>();
-}
-
-public ArrayList<String> getThursday() {
-    return Thursday;
-}
-
-public ArrayList<String> getFriday() {
-    return Friday;
-}
-
-public ArrayList<String> getSaturday() {
-    return Saturday;
-}
-
-public ArrayList<String> getSunday() {
-    return Sunday;
 }
 
 public ArrayList<Schedule> getSchedule() {
