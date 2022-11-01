@@ -220,7 +220,7 @@ public class UI {
     
 
     public void signUpAdmin(){
-        
+
     }
 
     public void inGuardian() {
@@ -348,7 +348,7 @@ public class UI {
                             }
                         }
                     }
-                    Child childAdded = new Child (UUID.randomUUID(), childFirstName, childLastName, childGender, childBirthday, childShirtSize, emergencyContacts, medications, allergies);
+                    Child childAdded = new Child (UUID.randomUUID().toString(), childFirstName, childLastName, childGender, childBirthday, childShirtSize, emergencyContacts, medications, allergies);
                     CampFacade.addChild(childAdded);
                 }
                 else if (command.equalsIgnoreCase("view child")) {
