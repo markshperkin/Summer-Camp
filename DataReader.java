@@ -105,7 +105,7 @@ public class DataReader extends DataConstants{
                     contacts.add(new Contact(childFname, childLname, childPhoneNum, childEmail, childRelationship));
                 }
                 
-                children.add(new Child(UUID,fname, lname, birthday, gender, shirtSize, contacts, medications));
+                children.add(new Child(null, UUID,fname, lname, birthday, gender, shirtSize, strike, strike, strike, contacts, medications, jsonArray2));
             }
 
             return children;

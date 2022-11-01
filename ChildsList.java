@@ -23,7 +23,7 @@ public class ChildsList {
 
     public Child showChild(String UUID) {
         for(Child c: children) {
-            if(c.UUID.equals(UUID)) {
+            if(c.id.equals(UUID)) {
                 return c;
             }
         }
