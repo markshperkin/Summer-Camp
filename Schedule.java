@@ -34,8 +34,8 @@ public Schedule(String title,String description,String location, String clockhou
      this.title=title;
      this.descripton=description;
      this.location=location;
-     this.clockhour=0;
-     this.clockmin=00;
+     this.clockhour=clockhour;
+     this.clockmin=clockmin;
      this.timeofday=timeofday;
      this.action=action;
 
