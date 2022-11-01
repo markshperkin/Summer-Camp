@@ -24,6 +24,10 @@ public class Counselor extends User{
         allergies = new ArrayList();
     }
 
+        
+
+        
+
     public void addMedication(String medName, String medTime, String medDose){
         
     }
@@ -48,4 +52,5 @@ public class Counselor extends User{
         return id;
         
     }
+
 }

@@ -10,6 +10,7 @@ public class CampFacade {
     private SummerCamp summerCamp;
     private FAQ faq;
     private static Cabin cabin;
+    public static ParentsList parentList = ParentsList.getInstance();
 
     public CampFacade(Counselor counselor, Parent parent, Child child, Contact contact, Activity activity, FAQ faq, Cabin cabin, SummerCamp summerCamp){
         this.counselor = counselor;
@@ -23,10 +24,7 @@ public class CampFacade {
     }
 
     public static boolean login(String email, String password){
-        if(User.getEmail().equalsIgnoreCase(email) && User.getPassword().equalsIgnoreCase(password))
-            return true;
-        else 
-            return false;
+        return parentList.login(email, password);
     }
 
     public static void signUp (String firstName, String lastName, String email, String password, String phoneNum, String birthday,String street, String town, String state, String zipCode, String country, String gender ){

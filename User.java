@@ -3,8 +3,8 @@ import java.util.UUID;
 public abstract class User {
     protected String firstName;
     protected String lastName;
-    protected static String email;
-    protected static String password;
+    protected String email;
+    protected String password;
     protected String phoneNum;
     protected String  street;
     protected String town;
