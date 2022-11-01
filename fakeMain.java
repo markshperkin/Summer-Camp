@@ -4,5 +4,6 @@ public class fakeMain {
     System.out.println(DataReader.getAllCounselors());
     System.out.println(DataReader.getAllDirectors());
     System.out.println(DataReader.getAllParents());
+    System.out.println(DataReader.getAllCabins());
   }
 }

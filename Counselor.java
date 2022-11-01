@@ -1,28 +1,116 @@
 import java.util.ArrayList;
 import java.util.UUID;
 
-public class Counselor extends User{
-    private String aboutMe;
-    private String gender;
-    private String shirtSize;
+import java.util.ArrayList;
+import java.util.UUID;
+/**
+ * Creates a child
+ */
+public class Counselor {
+    public String firstName;
+    public String lastName;
+    public String birthday;
+    public String gender;
     public String medName;
     public String medtime;
     public String medDose;
     public String allergy;
-    private ArrayList<Contact> contacts;
-    public ArrayList<String> medications;
+    public String Aboutme;
+    public String shirtSize;
+    public ArrayList<Contact> contacts;
+    public ArrayList<Medication> medications;
     public ArrayList<String> allergies;
-    private String id;
+    public String UUid;
+    public String email;
+    public String password;
 
+public Counselor (String firstName, String lastName, String birthday, String gender, String shirtSize, String medName, String medtime, String medDose,String email,String password,String allegery, String allergy2){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.birthday = birthday;
+    this.gender = gender;
+    this.shirtSize = shirtSize;
+    this.medName = medName;
+    this.medtime = medtime;
+    this.medDose = medDose;
+    this.allergy = allergy;
+    this.email= email;
+    this.password=password;
+    this.UUid = UUID.randomUUID().toString();
+    contacts = new ArrayList<Contact>();
+    medications = new ArrayList<Medication>();
+    allergies = new ArrayList<String>();
 
-    public Counselor(String id, String fName, String lName, String email, String password, String phoneNum, String gender, String birthday,String shirtSize,String street,String town,String state, String zipCode, String country, ArrayList<Contact> contacts, ArrayList<Medication> medications, ArrayList<String> allergies) {
-        super(fName, lName, email, password, phoneNum, birthday,street,town,state,zipCode,country,gender);
-        this.shirtSize = shirtSize;
-        this.id = id;
-        contacts = new ArrayList();
-        medications = new ArrayList();        
-        allergies = new ArrayList();
+}
+    
+    public String getFirstName() {
+        return firstName;
     }
+
+
+
+    public String getLastName() {
+        return lastName;
+    }
+
+
+
+    public String getBirthday() {
+        return birthday;
+    }
+
+
+
+    public String getGender() {
+        return gender;
+    }
+
+
+
+    public String getMedName() {
+        return medName;
+    }
+
+
+
+    public String getMedtime() {
+        return medtime;
+    }
+
+
+
+    public String getMedDose() {
+        return medDose;
+    }
+
+
+
+    public String getAllergy() {
+        return allergy;
+    }
+
+
+
+    public String getAboutme() {
+        return Aboutme;
+    }
+
+
+
+    public ArrayList<Contact> getContacts() {
+        return contacts;
+    }
+
+
+
+    public ArrayList<Medication> getMedications() {
+        return medications;
+    }
+
+    
+
+    
+    
 
     public String getshirtSize(){
         return shirtSize; 
@@ -51,7 +139,8 @@ public class Counselor extends User{
     }
 
     public String getUUID() {
-        return id.toString();
+        return UUid.toString();
     }
-
 }
+
+

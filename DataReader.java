@@ -193,7 +193,7 @@ public class DataReader extends DataConstants{
                     contacts.add(new Contact(contactFname, contactLname, contactPhoneNum, contactEmail, contactRelationship));
                 }
                
-                counselors.add(new Counselor(UUID, fname, lname, email, password, phoneNum, gender, birthday, size, street, town, state,zipCode,country, contacts, medication, allergy));
+                counselors.add(new Counselor(lname, fname, birthday, gender, size, lname, medication, size, email, password, str,allergy));
             }
         return counselors;
         }
