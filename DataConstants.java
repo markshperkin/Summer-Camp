@@ -26,11 +26,12 @@ public class DataConstants {
     protected static final String MEDICATION="medication";
     protected static final String STRIKE ="strike";
     protected static final String CONTACTS="contacts";
+    protected static final String COUNSELORS="counselors";
     protected static final String DIRECTORS= "director";
     protected static final String TITLE= "title";
     protected static final String DESCRIPTION="description";
     protected static final String LOCATION="location";
-    protected static final String CLOCKHOURS="clockHours";
+    protected static final String CLOCKHOURS="clockHour";
     protected static final String CLOCKMINUTE="clockMinute";
     protected static final String TIMEOFDAY="timeofday";
     protected static final String ACTION="action";
@@ -41,6 +42,8 @@ public class DataConstants {
     protected static final String FRIDAY="Friday";
     protected static final String SATURDAY="Saturday";
     protected static final String SUNDAY="Sunday";
+    protected static final String CAMPER="camper";
+    protected static final String THEME="theme";
 
 
 

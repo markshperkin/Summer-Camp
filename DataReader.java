@@ -193,7 +193,7 @@ public class DataReader extends DataConstants{
                     contacts.add(new Contact(contactFname, contactLname, contactPhoneNum, contactEmail, contactRelationship));
                 }
                
-                counselors.add(new Counselor(fname, lname, email, password, phoneNum, birthday, street, town, state,zipCode,country, gender));
+                counselors.add(new Counselor(UUID, fname, lname, email, password, phoneNum, gender, birthday, Size, street, town, state, zipCode, country, contacts, counselorJSON, jsonArray))
             }
         return counselors;
         }
@@ -314,7 +314,7 @@ public class DataReader extends DataConstants{
                 ArrayList<Schedule> SUNDAY =new ArrayList<Schedule>();
                 JSONArray jsonArray6 = (JSONArray) cabinsJSON.get(SUNDAY);
                 
-                for(int su=0;su < jsonArray5.size(); su++){
+                for(int su=0;su < jsonArray6.size(); su++){
 
                  JSONObject SUNDAYJSON = (JSONObject) jsonArray.get(su);
                  String SUNDAYtitle=(String)SUNDAYJSON.get(TITLE);
@@ -325,11 +325,17 @@ public class DataReader extends DataConstants{
                  String SUNDAYTOD=(String)SUNDAYJSON.get(TIMEOFDAY);
                  String SUNDAYaction=(String)SUNDAYJSON.get(ACTION);
  
+                SUNDAY.add(new Schedule(SUNDAYtitle, SUNDAYdescription, SUNDAYlocation, SUNDAYclockhour, SUNDAYclockmin, SUNDAYTOD, SUNDAYaction));
                 }
 
                 ArrayList <Child> camper = new ArrayList<Child>();
-                JSONObject camperArray = (JSONObject) cabinsJSON.get("camper");
+                JSONObject camperArray = (JSONObject) cabinsJSON.get(CAMPER);
 
+                ArrayList<Counselor> counselor = new ArrayList<Counselor>();
+                JSONObject counselorArray =(JSONObject) cabinsJSON.get(COUNSELORS);
+
+                ArrayList<Theme> THeme = new ArrayList<Theme>();
+                JSONObject themearray =(JSONObject) cabinsJSON.get(THEME);
                 
             
             }
