@@ -14,6 +14,7 @@ public class Parent extends User{
         super(fName, lName, email, password, phoneNum, birthday,street,town,state,zipCode,country,gender);
         this.children = children;
         this.id = id;
+        
        
     }
  

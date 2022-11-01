@@ -36,7 +36,32 @@ public abstract class User {
     // public static void createUser(String firstName,String lastName,String email,String password, String phoneNum, String birthday) {
     //     User user = new User(firstName, lastName, email, password, phoneNum, birthday);
     // }
+    public String getfirstname()
+    {
+        return firstName;
 
+    }
+    public String getlastname()
+    {
+        return lastName;
+
+    }
+    public String getphonenum()
+    {
+        return phoneNum;
+
+    
+    }
+    public String getbirthday()
+    {
+       return birthday;
+
+    }
+    public String getgender()
+    {
+        return gender;
+
+    }
     public UUID getUUID() {
         return id;
     }

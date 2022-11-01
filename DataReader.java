@@ -85,7 +85,7 @@ public class DataReader extends DataConstants{
                      String medTime = (String)medicationJSON.get(MEDTIME);
                      String medDose = (String)medicationJSON.get(MEDDOSE);
                     
-                medications.add(new Medication(allergyList, medName, medTime, medDose));
+                medications.add(new Medication(medName, medTime, medDose));
 
                 }
             
