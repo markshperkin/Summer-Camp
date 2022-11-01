@@ -15,12 +15,13 @@ public class Counselor extends User{
     private UUID id;
 
 
-    public Counselor(UUID id, String fName, String lName, String email, String password, String phoneNum, String birthday,String shirtSize,String street,String town,String zipCode, String country,String gender) {
-        super(fName, lName, email, password, phoneNum, birthday,street,town,zipCode,zipCode,country,gender);
+    public Counselor(UUID id, String fName, String lName, String email, String password, String phoneNum, String gender, String birthday,String shirtSize,String street,String town,String state, String zipCode, String country, ArrayList<Contact> contacts, ArrayList<Medication> medications, ArrayList<String> allergies) {
+        super(fName, lName, email, password, phoneNum, birthday,street,town,state,zipCode,country,gender);
         this.shirtSize = shirtSize;
         this.id = id;
         contacts = new ArrayList();
-        medications = new ArrayList();    
+        medications = new ArrayList();        
+        allergies = new ArrayList();
     }
 
     public void addMedication(String medName, String medTime, String medDose){

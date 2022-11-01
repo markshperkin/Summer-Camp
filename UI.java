@@ -21,7 +21,20 @@ public class UI {
         if (A.equalsIgnoreCase("in")) {
             ui.login();
         } else if (A.equalsIgnoreCase("up")) {
-            ui.signUp();
+            System.out.println("Are you signing up as a counselor, admin, or guardian?");
+            String signUpChoice = keyboard.nextLine();
+            if (signUpChoice.equalsIgnoreCase("counselor")){
+                ui.signUpCounselor();
+            }
+            else if (signUpChoice.equalsIgnoreCase("admin")){
+                ui.signUpAdmin();
+            }
+            else if (signUpChoice.equalsIgnoreCase("guardian")){
+                ui.signUpGuardian();
+            }
+            else{
+                System.out.println("Try again.");
+            }
         } else if (A.equalsIgnoreCase("quit")) {
             System.out.println("Goodbye");
             System.exit(0);
@@ -63,7 +76,7 @@ public class UI {
 
     }
 
-    public void signUp() {
+    public void signUpGuardian() {
         System.out.println("Please enter your first name.");
         String firstName = keyboard.nextLine();
         System.out.println("Please enter your last name.");
@@ -92,6 +105,122 @@ public class UI {
         
         CampFacade.signUp(firstName, lastName, email, password, phoneNum, birthday, street, town, state, zipCode, country, gender);
         ui.inGuardian();
+    }
+    
+    public void signUpCounselor() {
+        System.out.println("Please enter your first name.");
+        String counselorFirstName = keyboard.nextLine();
+        System.out.println("Please enter your last name.");
+        String counselorLastName = keyboard.nextLine();
+        System.out.println("Please enter your email.");
+        String counselorEmail = keyboard.nextLine();
+        System.out.println("Please enter your password.");
+        String counselorPassword = keyboard.nextLine();
+        System.out.println("Please enter your phone number");
+        String counselorPhoneNum = keyboard.nextLine();
+        System.out.println("Please enter your birthday");
+        String counselorBirthday = keyboard.nextLine();
+        System.out.println("Please enter your address");
+        System.out.println("Street:");
+        String street = keyboard.nextLine();
+        System.out.println("Town:");
+        String town = keyboard.nextLine();
+        System.out.println("State:");
+        String state = keyboard.nextLine();
+        System.out.println("ZipCode:");
+        String zipCode = keyboard.nextLine();
+        System.out.println("Country:");
+        String country = keyboard.nextLine();
+        System.out.println("Please enter your gender.");
+        String counselorGender = keyboard.nextLine();
+        System.out.println("Please enter your shirt size.");
+        String counselorShirtSize = keyboard.nextLine();
+        System.out.println("Your eemergency contact:");
+                System.out.println("- First Name:");                
+                String emergencyFirstName = keyboard.nextLine();
+                System.out.println("- Last Name:");
+                String emergencyLastName = keyboard.nextLine();
+                System.out.println("- Phone Number:");
+                String emergencyPhoneNum = keyboard.nextLine();
+                System.out.println("- Email:");
+                String emergencyEmail = keyboard.nextLine();
+                System.out.println("- Relationship to child:");
+                String emergencyRelationship = keyboard.nextLine();
+                Contact contact = new Contact(emergencyFirstName, emergencyLastName, emergencyPhoneNum, emergencyEmail, emergencyRelationship);
+                ArrayList<Contact> emergencyContacts = new ArrayList();
+                emergencyContacts.add(contact);
+                System.out.println("Would you like to add another emergency contact? Enter 'yes' or 'no'");
+                String emergencyDecision = keyboard.nextLine();
+                    if (emergencyDecision.equalsIgnoreCase("yes")){
+                        boolean emergencyGo = true;
+                        while (emergencyGo == true){
+                            System.out.println("New contact:");
+                            System.out.println("- First Name:");                
+                            emergencyFirstName = keyboard.nextLine();
+                            System.out.println("- Last Name:");
+                            emergencyLastName = keyboard.nextLine();
+                            System.out.println("- Phone Number:");
+                            emergencyPhoneNum = keyboard.nextLine();
+                            System.out.println("- Email:");
+                            emergencyEmail = keyboard.nextLine();
+                            System.out.println("- Relationship to child:");
+                            emergencyRelationship = keyboard.nextLine();
+                            contact = new Contact(emergencyFirstName, emergencyLastName, emergencyPhoneNum, emergencyEmail, emergencyRelationship);
+                            emergencyContacts.add(contact);
+                            System.out.println("Would you like to add another emergency contact? Enter 'yes' or 'no'");
+                            String decision2 = keyboard.nextLine();
+                            if (decision2.equalsIgnoreCase("no")){
+                                emergencyGo = false;
+                            }
+                        }
+                    }
+                    ArrayList<Medication> medications = new ArrayList();
+                    System.out.println("Do you have a medication to add? Enter 'yes' or 'no'");
+                    String medicationCheck = keyboard.nextLine();
+                    if (medicationCheck.equalsIgnoreCase("yes")){
+                        boolean medicationGo = true;
+                        while (medicationGo == true){
+                            System.out.println("New Medication:");
+                            System.out.println("- Name:");                
+                            String medicationName = keyboard.nextLine();
+                            System.out.println("- Time:");
+                            String medicationTime = keyboard.nextLine();
+                            System.out.println("- Doseage:");
+                            String medicationDosage = keyboard.nextLine();
+                            Medication medication = new Medication(medicationName, medicationTime, medicationDosage);
+                            medications.add(medication);
+                            System.out.println("Would you like to add another medication? Enter 'yes' or 'no'");
+                            String decision2 = keyboard.nextLine();
+                            if (decision2.equalsIgnoreCase("no")){
+                                medicationGo = false;
+                            }
+                        }
+                    }
+                    ArrayList<String> allergies = new ArrayList();
+                    System.out.println("Do you have an allergy to add? Enter 'yes' or 'no'");
+                    String allergyCheck = keyboard.nextLine();
+                    if (allergyCheck.equalsIgnoreCase("yes")){
+                        boolean allergyGo = true;
+                        while (allergyGo == true){
+                            System.out.println("New Allergy:");
+                            System.out.println("- Name:");
+                            String allergyName = keyboard.nextLine();                
+                            allergies.add(allergyName);
+                            System.out.println("Would you like to add another allergy? Enter 'yes' or 'no'");
+                            String decision2 = keyboard.nextLine();
+                            if (decision2.equalsIgnoreCase("no")){
+                                allergyGo = false;
+                            }
+                        }
+                    }
+                    Counselor counselorAdded = new Counselor (UUID.randomUUID(), counselorFirstName, counselorLastName, counselorEmail, counselorPassword, counselorPhoneNum, counselorGender, counselorBirthday, counselorShirtSize, street, town, state, zipCode, country, emergencyContacts, medications, allergies);
+                    CampFacade.addCounselor(counselorAdded);
+                    ui.inCounselor();
+                }
+    
+
+    public void signUpAdmin(){
+        
     }
 
     public void inGuardian() {
