@@ -19,5 +19,5 @@ public class Schedule {
     private ArrayList<Schedule>Saturday;
     private ArrayList<Schedule>Sunday;
 
-    
+
 }
