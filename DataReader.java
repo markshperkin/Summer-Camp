@@ -106,7 +106,7 @@ public class DataReader extends DataConstants{
                     contacts.add(new Contact(childFname, childLname, childPhoneNum, childEmail, childRelationship));
                 }
                 
-                children.add(new Child(fname, lname, birthday, gender, shirtSize, strike, strike, strike, strike, contacts, medications, jsonArray2));
+                children.add(new Child(, fname, lname, birthday, gender, shirtSize, strike, strike, strike, strike, contacts, medications, jsonArray2));
             }
 
             return children;
@@ -118,7 +118,7 @@ public class DataReader extends DataConstants{
     
         }
 
-    public static ArrayList<Director> getAllDirectors() {
+    public static ArrayList<Director> getAllDirectors() {7 
         ArrayList<Director> directors = new ArrayList<Director>();
 
         try {
@@ -141,7 +141,7 @@ public class DataReader extends DataConstants{
                 String country=(String) directorJSON.get(COUNTRY);
                 String birthday=(String) directorJSON.get(BIRTHDAY);
                
-               directors.add(new Director(fname,lname,email,password,phoneNum,street,town,zipCode,state,country,birthday));
+               directors.add(new Director(UUID,fname,lname,email,password,phoneNum,street,town,zipCode,state,country,birthday));
                 
             }
             return directors;
@@ -193,7 +193,7 @@ public class DataReader extends DataConstants{
                     contacts.add(new Contact(contactFname, contactLname, contactPhoneNum, contactEmail, contactRelationship));
                 }
                
-                counselors.add(new Counselor( null, fname, lname, email, password, phoneNum, birthday, street, town, state,zipCode,country, gender));
+                counselors.add(new Counselor( , fname, lname, email, password, phoneNum, birthday, street, town, state,zipCode,country, gender));
             }
         return counselors;
         }

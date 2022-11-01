@@ -1,4 +1,4 @@
-import 
+import java.util.ArrayList;
 public class Director extends User {
    
     private Child camper;
