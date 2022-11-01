@@ -50,10 +50,10 @@ public class CampFacade {
     }
 
     public static void viewChild (String viewFirstName, String viewLastName){
-        
+
     }
 
-    public static void registerChild(){
+    public static void registerChild(String registerFirstName, String registerLastName, int sessionChoice){
         
     }
 
