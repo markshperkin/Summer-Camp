@@ -1,5 +1,7 @@
 import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.UUID;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -38,7 +40,7 @@ public class DataReader extends DataConstants{
                     children.add((String) jsonArray2.get(k));
                 }
 
-                parents.add(new Parent(fname, lname, email, password, phoneNum, birthday,street,town,state,zipCode,country,gender, children));
+                parents.add(new Parent(fname, lname, email, password, phoneNum, birthday,street,town,state,zipCode,country,gender, children, null));
             }
             return parents;
         } catch (Exception e) {
@@ -188,7 +190,7 @@ public class DataReader extends DataConstants{
                     contacts.add(new Contact(contactFname, contactLname, contactPhoneNum, contactEmail, contactRelationship));
                 }
                
-                counselors.add(new Counselor(fname, lname, email, password, phoneNum, birthday, street, town, state,zipCode,country, gender));
+                counselors.add(new Counselor( null, fname, lname, email, password, phoneNum, birthday, street, town, state,zipCode,country, gender));
             }
         return counselors;
         }
