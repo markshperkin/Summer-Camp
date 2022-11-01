@@ -220,7 +220,33 @@ public class UI {
     
 
     public void signUpAdmin(){
-
+        System.out.println("Please enter your first name.");
+        String counselorFirstName = keyboard.nextLine();
+        System.out.println("Please enter your last name.");
+        String counselorLastName = keyboard.nextLine();
+        System.out.println("Please enter your email.");
+        String counselorEmail = keyboard.nextLine();
+        System.out.println("Please enter your password.");
+        String counselorPassword = keyboard.nextLine();
+        System.out.println("Please enter your phone number");
+        String counselorPhoneNum = keyboard.nextLine();
+        System.out.println("Please enter your birthday");
+        String counselorBirthday = keyboard.nextLine();
+        System.out.println("Please enter your address");
+        System.out.println("Street:");
+        String street = keyboard.nextLine();
+        System.out.println("Town:");
+        String town = keyboard.nextLine();
+        System.out.println("State:");
+        String state = keyboard.nextLine();
+        System.out.println("ZipCode:");
+        String zipCode = keyboard.nextLine();
+        System.out.println("Country:");
+        String country = keyboard.nextLine();
+        System.out.println("Please enter your gender.");
+        String counselorGender = keyboard.nextLine();
+        System.out.println("Please enter your shirt size.");
+        String counselorShirtSize = keyboard.nextLine();
     }
 
     public void inGuardian() {
