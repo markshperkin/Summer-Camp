@@ -30,6 +30,10 @@ public class ParentsList {
         
        
     }
+    public ArrayList<Parent> getAllParents()
+    {
+        return parents;
+    }
   
     public boolean login(String username, String password) {
         for(Parent p: parents) {

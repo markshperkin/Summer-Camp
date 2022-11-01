@@ -17,6 +17,10 @@ private DirectorList(){
         }
         return directorList;
     }
+ public ArrayList<Director> getAllDirectors()
+    {
+        return directors;
+    }
 public Child addChildren()
 {
     

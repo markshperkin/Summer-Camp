@@ -18,7 +18,10 @@ public class CounselorList {
         }
         return counselorsList;
     }
-    
+    public ArrayList<Counselor> getAllCounselors()
+    {
+        return counselors;
+    }
     public boolean login(String username, String password) {
         for(Counselor co: counselors) {
             if(co.email.equals(username) && co.password.equals(password))

@@ -20,6 +20,7 @@ public class DataReader extends DataConstants{
             
             for(int i = 0; i < parentsJSON.size(); i++) {
                 JSONObject parentJSON = (JSONObject) parentsJSON.get(i);
+                String UUID = (String) parentJSON.get("id");
                 String fname = (String)parentJSON.get(FIRSTNAME);
                 String lname = (String)parentJSON.get(LASTNAME);
                 String email = (String)parentJSON.get(EMAIL);
@@ -105,7 +106,7 @@ public class DataReader extends DataConstants{
                     contacts.add(new Contact(childFname, childLname, childPhoneNum, childEmail, childRelationship));
                 }
                 
-                children.add(new Child( UUID,fname, lname, birthday, gender, shirtSize, strike, strike, strike, contacts, medications, jsonArray2));
+                children.add(new Child(fname, lname, birthday, gender, shirtSize, strike, strike, strike, strike, contacts, medications, jsonArray2));
             }
 
             return children;
@@ -127,6 +128,7 @@ public class DataReader extends DataConstants{
 
             for(int i = 0; i < directorsJSON.size(); i++) {
                 JSONObject directorJSON = (JSONObject) directorsJSON.get(i);
+                String UUID = (String) directorJSON.get("id");
                 String fname = (String)directorJSON.get(FIRSTNAME);
                 String lname = (String)directorJSON.get(LASTNAME);
                 String email = (String)directorJSON.get(EMAIL);
@@ -158,6 +160,7 @@ public class DataReader extends DataConstants{
 
             for(int i = 0; i < counselorJSON.size(); i++) {
                 JSONObject counselorsJSON = (JSONObject) counselorJSON.get(i);
+                String UUID = (String) counselorsJSON.get("id");
                 String fname = (String)counselorsJSON.get(FIRSTNAME);
                 String lname = (String)counselorsJSON.get(LASTNAME);
                 String email = (String)counselorsJSON.get(EMAIL);
@@ -209,7 +212,7 @@ public class DataReader extends DataConstants{
             JSONArray cabinJSON = (JSONArray)new JSONParser().parse(cabinReader);
             for(int i = 0; i < cabinJSON.size(); i++) {
                 JSONObject cabinsJSON = (JSONObject) cabinJSON.get(i);
-
+                String UUID = (String) cabinsJSON.get("id");
                 ArrayList <Child> camper = new ArrayList<Child>();
                 JSONObject camperArray = (JSONObject) cabinsJSON.get("camper");
 

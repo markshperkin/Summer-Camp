@@ -101,6 +101,8 @@ public class Cabin {
         schedule.put(Days.WEDNESDAY, getActions());
         schedule.put(Days.THURSDAY, getActions());
         schedule.put(Days.FRIDAY, getActions());
+        schedule.put(Days.SATURDAY,getActions());
+        schedule.put(Days.SUNDAY,getActions());
     }
 
     public HashMap<Days,ArrayList<Activity>> getSchedule(){
