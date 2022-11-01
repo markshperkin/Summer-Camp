@@ -21,12 +21,9 @@ public class ParentsList {
         parents = DataReader.getAllParents();
         return null;
     }
-    public Child addChildren()
-    {
         
-    }
     //Shows the parent Children
-    public Child showChildren() {
+    public void showChildren() {
         
        
     }

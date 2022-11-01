@@ -11,6 +11,7 @@ public class SummerCamp{
     public String camperNeed;
     public ArrayList<String> camperNeeds;
     public static ArrayList<Child> campers;
+    public static ArrayList<Counselor> counselors;
     public String campAddress;
     public int campNumber;
     public String campEmail;

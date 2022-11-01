@@ -179,5 +179,12 @@ public class Child {
     public int getYear(){
         return yearInt;
     }
+    /**
+     * gets id of the child
+     * @return String id
+     */
+    public String getID() {
+        return id;
+    }
 
 }
