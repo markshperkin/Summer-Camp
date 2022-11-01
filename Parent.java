@@ -36,7 +36,7 @@ public class Parent extends User{
         return 0;
     }
 
-    public UUID getUUID() {
+    public String getUUID() {
         return id;
     }
 
