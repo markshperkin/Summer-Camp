@@ -452,6 +452,7 @@ public class UI {
         }
         System.out.println("How many cabins will you have?");
         int numOfCabins = keyboard.nextInt();
+        CampFacade.getCabin();
     }
 
     public void allThemes(){
