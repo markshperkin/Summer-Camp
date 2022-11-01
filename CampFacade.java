@@ -7,11 +7,13 @@ public class CampFacade {
     private Child child;
     private Contact contact;
     private Activity activity;
+    private SummerCamp summerCamp;
     private FAQ faq;
     private static Cabin cabin;
 
-    public CampFacade(Counselor counselor, Parent parent, Child child, Contact contact, Activity activity, FAQ faq, Cabin cabin){
+    public CampFacade(Counselor counselor, Parent parent, Child child, Contact contact, Activity activity, FAQ faq, Cabin cabin, SummerCamp summerCamp){
         this.counselor = counselor;
+        this.summerCamp = summerCamp;
         this.parent = parent;
         this.child = child;
         this.contact = contact;
@@ -43,7 +45,11 @@ public class CampFacade {
         
     }
 
-    public static void addChild(){
+    public static void addChild(Child childChild){
+        SummerCamp.campers.add(childChild);
+    }
+
+    public static void viewChild (String viewFirstName, String viewLastName){
         
     }
 
