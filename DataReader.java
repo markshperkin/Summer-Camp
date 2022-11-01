@@ -78,7 +78,7 @@ public class DataReader extends DataConstants{
 
                      JSONArray allergy = (JSONArray)medicationJSON.get(ALLERGY);
 
-                     for(int l = 0; l < allergy.size(); l++) {
+                     for(int l = 0; l < allergyList.size(); l++) {
                         allergyList.add((String) allergy.get(l));
                      }
 

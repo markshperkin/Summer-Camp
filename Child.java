@@ -19,7 +19,7 @@ public class Child {
     public int monthInt;
     public int dayInt;
     public int yearInt;
-    public UUID id;
+    public String id;
     /**
      * Creates a child with new UUID for UI
      * @param firstName string of the child first name
