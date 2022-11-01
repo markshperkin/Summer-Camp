@@ -4,6 +4,7 @@ import java.util.UUID;
  * Creates a child
  */
 public class Child {
+    public String UUID;
     public String firstName;
     public String lastName;
     public String birthday;
@@ -19,6 +20,7 @@ public class Child {
     public int monthInt;
     public int dayInt;
     public int yearInt;
+<<<<<<< HEAD
     private UUID id;
     /**
      * Creates a child with new UUID for UI
@@ -33,16 +35,28 @@ public class Child {
      * @param allergy string of the child allergy
      */
     public Child (String firstName, String lastName, String birthday, String gender, String shirtSize, String medName, String medtime, String medDose, String allergy){
+=======
+  
+
+
+    public Child (String UUID, String firstName, String lastName, String birthday, String gender, String shirtSize, ArrayList<Contact> contacts, ArrayList<Medication> medication){
+        this.UUID = UUID;
+>>>>>>> 5f9e44bf94530dfabd5618d5329db24c3944dbc4
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthday = birthday;
         this.gender = gender;
         this.shirtSize = shirtSize;
+<<<<<<< HEAD
         this.medName = medName;
         this.medtime = medtime;
         this.medDose = medDose;
         this.allergy = allergy;
         this.id = UUID.randomUUID();
+=======
+        this.contacts = contacts;
+        this.medication = medication;
+>>>>>>> 5f9e44bf94530dfabd5618d5329db24c3944dbc4
 
     }
     /**
@@ -132,10 +146,6 @@ public class Child {
 
     public int getYear(){
         return yearInt;
-    }
-
-    public UUID getUUID() {
-        return id;
     }
 
 }

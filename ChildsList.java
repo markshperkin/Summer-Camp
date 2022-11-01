@@ -14,4 +14,21 @@ public class ChildsList {
         }
         return childsList;
     }
+
+    public void showAllChildren() {
+        for(Child c: children) {
+            System.out.println(c);
+        }
+    }
+
+    public Child showChild(String UUID) {
+        for(Child c: children) {
+            if(c.UUID.equals(UUID)) {
+                return c;
+            }
+        }
+        return null;
+    }
+
+    
 }

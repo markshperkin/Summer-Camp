@@ -10,6 +10,7 @@ public class SummerCamp{
     public ArrayList<Sessions> sessions;
     public String camperNeed;
     public ArrayList<String> camperNeeds;
+    public ArrayList<Child> campers;
     public String campAddress;
     public int campNumber;
     public String campEmail;
