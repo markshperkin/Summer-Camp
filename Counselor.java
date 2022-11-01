@@ -24,7 +24,9 @@ public class Counselor extends User{
         allergies = new ArrayList();
     }
 
-        
+    public String getshirtSize(){
+        return shirtSize; 
+    }
 
         
 

@@ -213,6 +213,57 @@ public class DataReader extends DataConstants{
             for(int i = 0; i < cabinJSON.size(); i++) {
                 JSONObject cabinsJSON = (JSONObject) cabinJSON.get(i);
                 String UUID = (String) cabinsJSON.get("id");
+                ArrayList<Schedule> schedule = new ArrayList<Schedule>();
+                ArrayList<Schedule> Monday =new ArrayList<Schedule>();
+                JSONArray jsonArray = (JSONArray) cabinsJSON.get(MONDAY);
+                
+                for(int j=0;j < jsonArray.size(); j++){
+
+                 JSONObject MONDAYJSON = (JSONObject) jsonArray.get(j);
+                 String Mondaytitle=(String)MONDAYJSON.get(TITLE);
+                 String Mondaydescription=(String)MONDAYJSON.get(DESCRIPTION);
+                 String Mondaylocation=(String)MONDAYJSON.get(LOCATION);
+                 String Mondayclockhour=(String)MONDAYJSON.get(CLOCKHOURS);
+                 String Mondayclockmin=(String)MONDAYJSON.get(CLOCKMINUTE);
+                 String MondayTOD=(String)MONDAYJSON.get(TIMEOFDAY);
+                 String Mondayaction=(String)MONDAYJSON.get(ACTION);
+
+                    Monday.add(new Schedule(Mondaytitle, Mondaydescription, Mondaylocation, Mondayclockhour, Mondayclockmin, MondayTOD, Mondayaction));
+                }
+                ArrayList<Schedule> Tuesday =new ArrayList<Schedule>();
+                JSONArray jsonArray1 = (JSONArray) cabinsJSON.get(TUESDAY);
+                
+                for(int k=0;k < jsonArray1.size(); k++){
+
+                 JSONObject TUESDAYJSON = (JSONObject) jsonArray.get(k);
+                 String TUESDAYtitle=(String)TUESDAYJSON.get(TITLE);
+                 String TUESDAYdescription=(String)TUESDAYJSON.get(DESCRIPTION);
+                 String TUESDAYlocation=(String)TUESDAYJSON.get(LOCATION);
+                 String TUESDAYclockhour=(String)TUESDAYJSON.get(CLOCKHOURS);
+                 String TUESDAYclockmin=(String)TUESDAYJSON.get(CLOCKMINUTE);
+                 String TUESDAYTOD=(String)TUESDAYJSON.get(TIMEOFDAY);
+                 String TUESDAYaction=(String)TUESDAYJSON.get(ACTION);
+
+                 Tuesday.add(new Schedule(TUESDAYtitle, TUESDAYdescription, TUESDAYlocation, TUESDAYclockhour, TUESDAYclockmin, TUESDAYTOD, TUESDAYaction));
+                }
+                ArrayList<Schedule> WEDNESDAY =new ArrayList<Schedule>();
+                JSONArray jsonArray2 = (JSONArray) cabinsJSON.get(TUESDAY);
+                
+                for(int l=0;l < jsonArray2.size(); l++){
+
+                 JSONObject WEDNESDAYJSON = (JSONObject) jsonArray.get(l);
+                 String WEDNESDAYtitle=(String)WEDNESDAYJSON.get(TITLE);
+                 String WEDNESDAYdescription=(String)WEDNESDAYJSON.get(DESCRIPTION);
+                 String WEDNESDAYlocation=(String)WEDNESDAYJSON.get(LOCATION);
+                 String WEDNESDAYclockhour=(String)WEDNESDAYJSON.get(CLOCKHOURS);
+                 String WEDNESDAYclockmin=(String)WEDNESDAYJSON.get(CLOCKMINUTE);
+                 String WEDNESDAYTOD=(String)WEDNESDAYJSON.get(TIMEOFDAY);
+                 String WEDNESDAYaction=(String)WEDNESDAYJSON.get(ACTION);
+
+                 WEDNESDAY.add(new Schedule(WEDNESDAYtitle, WEDNESDAYdescription, WEDNESDAYlocation, WEDNESDAYclockhour, WEDNESDAYclockmin, WEDNESDAYTOD, WEDNESDAYaction));
+                }
+               
+
                 ArrayList <Child> camper = new ArrayList<Child>();
                 JSONObject camperArray = (JSONObject) cabinsJSON.get("camper");
 

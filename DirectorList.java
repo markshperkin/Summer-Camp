@@ -31,7 +31,7 @@ public boolean login(String username, String password) {
 }
 
 public void save(){
-    DataWriter.saveDirectors();
+    DataWriter.saveDirector();
 }
 public void save1(){
     DataWriter.saveParents();

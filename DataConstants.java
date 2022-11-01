@@ -27,6 +27,21 @@ public class DataConstants {
     protected static final String STRIKE ="strike";
     protected static final String CONTACTS="contacts";
     protected static final String DIRECTORS= "director";
+    protected static final String TITLE= "title";
+    protected static final String DESCRIPTION="description";
+    protected static final String LOCATION="location";
+    protected static final String CLOCKHOURS="clockHours";
+    protected static final String CLOCKMINUTE="clockMinute";
+    protected static final String TIMEOFDAY="timeofday";
+    protected static final String ACTION="action";
+    protected static final String MONDAY="Monday";
+    protected static final String TUESDAY="Tuesday";
+    protected static final String WEDNESDAY="Wednesday";
+    protected static final String THURSDAY="Thursday";
+    protected static final String FRIDAY="Friday";
+    protected static final String SATURDAY="Saturday";
+    protected static final String SUNDAY="Sunday";
+
 
 
 
