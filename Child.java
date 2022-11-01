@@ -32,7 +32,7 @@ public class Child {
      * @param medDose string of the med dose
      * @param allergy string of the child allergy
      */
-     public Child (String firstName, String lastName, String birthday, String gender, String shirtSize, String medName, String medtime, String medDose, String allergy, int monthInt, int dayInt, int yearInt){
+     public Child (String firstName, String lastName, String birthday, String gender, String shirtSize, String medName, String medtime, String medDose, String allergy){
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthday = birthday;
@@ -42,9 +42,6 @@ public class Child {
         this.medtime = medtime;
         this.medDose = medDose;
         this.allergy = allergy;
-        this.monthInt = monthInt;
-        this.dayInt = dayInt;
-        this.yearInt = yearInt;
         this.id = UUID.randomUUID();
         contacts = new ArrayList<Contact>();
         medications = new ArrayList<Medication>();
@@ -66,7 +63,7 @@ public class Child {
      * @param medications an arraylist of medications of the child
      * @param allergies an arraylist of allergies 
      */
-    public Child(UUID id, String firstName, String lastName, String birthday, String gender, String shirtSize, String medName, String medtime, String medDose, String allergy, int monthInt, int dayInt, int yearInt, ArrayList<Contact> contacts, ArrayList<Medication> medications, ArrayList<String> allergies) {
+    public Child(UUID id, String firstName, String lastName, String birthday, String gender, String shirtSize, String medName, String medtime, String medDose, String allergy, ArrayList<Contact> contacts, ArrayList<Medication> medications, ArrayList<String> allergies) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -77,9 +74,6 @@ public class Child {
         this.medtime = medtime;
         this.medDose = medDose;
         this.allergy = allergy;
-        this.monthInt = monthInt;
-        this.dayInt = dayInt;
-        this.yearInt = yearInt;
         this.contacts = contacts;
         this.medications = medications;
         this.allergies = allergies;
@@ -137,22 +131,29 @@ public class Child {
         return allergy;
     }
     /**
-     * 
-     * @param allergy
+     * adds the allergy to the arraylist 
      */
     public void addAllergy(String allergy){
         allergies.add(this.allergy);
     }
-
+    /**
+     * gets the shirt size of the child
+     * @return String shirtSize
+     */
     public String getShirtSize() {
         return shirtSize;
     }
- 
+    /**
+     * adds the contact to the array list 
+     * @param contact from contact class
+     */
     public void addContact (Contact contact){
         contacts.add(contact);
-
     }
-
+    /**
+     * 
+     * @param medication from med
+     */
     public void addMedication(Medication medication) {
 
         medications.add(medication);
