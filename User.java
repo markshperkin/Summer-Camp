@@ -34,7 +34,7 @@ public abstract class User {
     }
 
     public User(String fname, String lname, String email2, String password2, String phoneNum2, String street2,
-            String town2, String zipCode2, String state2, String country2, String birthday2, String gender2) {
+            String town2, String state2, String zipCode2, String country2, String birthday2, String gender2) {
     }
 
     // public static void createUser(String firstName,String lastName,String email,String password, String phoneNum, String birthday) {
