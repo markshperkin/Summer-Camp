@@ -11,4 +11,8 @@ public class Medication {
     this.medDose=medDose;
     this.medTime=medTime;
     }
+
+    public String toString() {
+        return medName + " at " + medTime + " for this Doses: " + medDose;
+    }
 }
