@@ -4,7 +4,6 @@ import java.util.UUID;
  * Creates a child
  */
 public class Child {
-    public String UUID;
     public String firstName;
     public String lastName;
     public String birthday;
@@ -20,8 +19,7 @@ public class Child {
     public int monthInt;
     public int dayInt;
     public int yearInt;
-<<<<<<< HEAD
-    private UUID id;
+    public UUID id;
     /**
      * Creates a child with new UUID for UI
      * @param firstName string of the child first name
@@ -34,29 +32,57 @@ public class Child {
      * @param medDose string of the med dose
      * @param allergy string of the child allergy
      */
-    public Child (String firstName, String lastName, String birthday, String gender, String shirtSize, String medName, String medtime, String medDose, String allergy){
-=======
-  
-
-
-    public Child (String UUID, String firstName, String lastName, String birthday, String gender, String shirtSize, ArrayList<Contact> contacts, ArrayList<Medication> medication){
-        this.UUID = UUID;
->>>>>>> 5f9e44bf94530dfabd5618d5329db24c3944dbc4
+     public Child (String firstName, String lastName, String birthday, String gender, String shirtSize, String medName, String medtime, String medDose, String allergy, int monthInt, int dayInt, int yearInt){
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthday = birthday;
         this.gender = gender;
         this.shirtSize = shirtSize;
-<<<<<<< HEAD
         this.medName = medName;
         this.medtime = medtime;
         this.medDose = medDose;
         this.allergy = allergy;
+        this.monthInt = monthInt;
+        this.dayInt = dayInt;
+        this.yearInt = yearInt;
         this.id = UUID.randomUUID();
-=======
+        contacts = new ArrayList<Contact>();
+        medications = new ArrayList<Medication>();
+        allergies = new ArrayList<String>();
+    }
+    /**
+     * Creates a child with an existing UUID
+     * @param id Id of a student
+     * @param firstName string of the child first name
+     * @param lastName string of the child last name
+     * @param birthday string of the child birthday
+     * @param gender string of the child gender
+     * @param shirtSize string of the child shirt size
+     * @param medName string of the med name
+     * @param medtime string of the med time
+     * @param medDose string of the med dose
+     * @param allergy string of the child allergy
+     * @param contacts an arraylist of contacts of the child
+     * @param medications an arraylist of medications of the child
+     * @param allergies an arraylist of allergies 
+     */
+    public Child(UUID id, String firstName, String lastName, String birthday, String gender, String shirtSize, String medName, String medtime, String medDose, String allergy, int monthInt, int dayInt, int yearInt, ArrayList<Contact> contacts, ArrayList<Medication> medications, ArrayList<String> allergies) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthday = birthday;
+        this.gender = gender;
+        this.shirtSize = shirtSize;
+        this.medName = medName;
+        this.medtime = medtime;
+        this.medDose = medDose;
+        this.allergy = allergy;
+        this.monthInt = monthInt;
+        this.dayInt = dayInt;
+        this.yearInt = yearInt;
         this.contacts = contacts;
-        this.medication = medication;
->>>>>>> 5f9e44bf94530dfabd5618d5329db24c3944dbc4
+        this.medications = medications;
+        this.allergies = allergies;
 
     }
     /**
