@@ -5,7 +5,6 @@ import java.util.UUID;
 //import org.omg.CORBA.FloatSeqHelper;
 
 public class UI {
-    boolean run = true;
     static UI ui = new UI();
     Scanner keyboard = new Scanner(System.in);
 
@@ -14,9 +13,8 @@ public class UI {
     }
 
     public void run() {
-        System.out.println("Welcome to the Keyboard Smashers Summer Camp!");
-        System.out.println(
-                "Please choose an option:\n- For sign in type \"in\"\n- For sign up type \"up\"\n- To quit type \"quit\"");
+        System.out.println("Welcome to the Summer Camp!");
+        System.out.println("Please choose an option:\n- For sign in type \"in\"\n- For sign up type \"up\"\n- To quit type \"quit\"");
         String A = keyboard.nextLine();
         if (A.equalsIgnoreCase("in")) {
             ui.login();
@@ -51,7 +49,7 @@ public class UI {
         String logEmail = keyboard.nextLine();
         System.out.println("Please enter your password:");
         String logPassword = keyboard.nextLine();
-        if (CampFacade.login(logEmail, logPassword)) {
+        if (CampFacade.login(logEmail, logPassword) == true) {
             System.out.println("Hello " + logEmail);
             if (typeUser.equalsIgnoreCase("guardian")){
                 ui.inGuardian();
@@ -213,7 +211,7 @@ public class UI {
                             }
                         }
                     }
-                    Counselor counselorAdded = new Counselor (UUID.randomUUID(), counselorFirstName, counselorLastName, counselorEmail, counselorPassword, counselorPhoneNum, counselorGender, counselorBirthday, counselorShirtSize, street, town, state, zipCode, country, emergencyContacts, medications, allergies);
+                    Counselor counselorAdded = new Counselor (UUID.randomUUID().toString(), counselorFirstName, counselorLastName, counselorEmail, counselorPassword, counselorPhoneNum, counselorGender, counselorBirthday, counselorShirtSize, street, town, state, zipCode, country, emergencyContacts, medications, allergies);
                     CampFacade.addCounselor(counselorAdded);
                     ui.inCounselor();
                 }
@@ -253,11 +251,13 @@ public class UI {
     }
 
     public void inGuardian() {
-        while (run) {
+        boolean run1 = true;
+        while (run1) {
             System.out.println("Please enter your command:\nfor finding an activity by a key word enter \"activity\"");
             System.out.println("- For finding an activity by a key word enter \"activity\"");
-            System.out.println("- For getting all the activities enter \"all activities\"");
+            System.out.println("- For viewing all the activities enter \"all activities\"");
             System.out.println("- For viewing an example schedule enter \"example schedule\"");
+            System.out.println("- For viewing a list of each weeks theme enter \"view themes\"");
             System.out.println("- For entering a review enter \"enter review\"");
             System.out.println("- For reading reviews enter \"read reviews\"");
             System.out.println("- For adding a child to your account enter \"add child\"");
@@ -279,7 +279,9 @@ public class UI {
             else if (command.equalsIgnoreCase("example schedule")) {
                 CampFacade.viewSchedule();
             }
-
+            else if (command.equalsIgnoreCase("view themes")){
+                ui.allThemes();
+            }
             else if (command.equalsIgnoreCase("enter review")) {
                 System.out.println("Please add your review:");
                 String review = keyboard.nextLine();
@@ -407,7 +409,7 @@ public class UI {
                 } 
                 else if (command.equalsIgnoreCase("signout")) {
                     System.out.println("See you again soon!");
-                    run = false;
+                    run1 = false;
                 } 
                 else
                     System.out.println("command not valid");
@@ -415,21 +417,63 @@ public class UI {
     }
 
     public void inCounselor(){
-        while (run) {
-            System.out.println("Please enter your command:\nfor finding an activity by a key word enter \"activity\"");
-            System.out.println("- For finding an activity by a key word enter \"activity\"");
-            System.out.println("- For getting all the activities enter \"all activities\"");
-            System.out.println("- For viewing an example schedule enter \"example schedule\"");
-            System.out.println("- For entering a review enter \"enter review\"");
-            System.out.println("- For reading reviews enter \"read reviews\"");
-            System.out.println("- For adding a child to your account enter \"add child\"");
-            System.out.println("- For viewing a child's profile on your account enter \"view child\"");
-            System.out.println("- For signing your child up for a session enter \"register child\"");
+        boolean run2 = true;
+        while (run2) {
+            System.out.println("Please enter your command:");
+            System.out.println("- For printing out your cabin's roster enter \"print roster\"");
+            System.out.println("- For printing out camper's information enter  \"print info\"");
+            System.out.println("- For printing out your week's activities enter \"print activities\"");
             System.out.println("- For signing out and quitting the program, enter \"signout\"");
+            String counselorChoice = keyboard.nextLine();
+            if (counselorChoice.equalsIgnoreCase("print roster")){
+                CampFacade.getCabin();
+            }
+            else if (counselorChoice.equalsIgnoreCase("print info")){
+                CampFacade.getCabinCampers();
+            }
+            else if (counselorChoice.equalsIgnoreCase("print activites")){
+                CampFacade.viewSchedule();
+            }
+            else if (counselorChoice.equalsIgnoreCase("signout")){
+                System.out.println("See you next time!");
+                run2 = false;
+            }
+        }
 
     }
 
     public void inAdmin(){
+        System.out.println("Please enter the name of your summer camp to create:");
+        String campName = keyboard.nextLine();
+        System.out.println("Enter the names of your summer camp themes:");
+        for (int x = 0; x < 9; x++){
+            System.out.println("Session " + x + ":");
+            String sessionTheme = keyboard.nextLine();
+        }
+        System.out.println("How many cabins will you have?");
+        int numOfCabins = keyboard.nextInt();
+        CampFacade.getCabin();
+    }
 
+    public void allThemes(){
+        System.out.println("Session 1: 06/18/2023 - 07/01/2023: HAWAIIAN");
+        System.out.println("- It's hawaiian week! Let's drink out of coconuts, put on some lei's and dance at the luau!");
+        System.out.println("Session 2: 07/02/2023 - 07/08/2023: ROCKSTARS");
+        System.out.println("- Music brings people together, so let's bring it to our summer camp! Let's rock out!");
+        System.out.println("Session 3: 07/09/2023 - 07/15/2023: NINJA WARRIORS");
+        System.out.println("- Have you ever wanted to be a ninja? Now you can! Dress up like a ninja and learn how to fight like one!");
+        System.out.println("Session 4: 07/16/2023 - 07/22/2023: WILLY WONKA");
+        System.out.println("- If Willy Wonka is one of your favorite movies, this week is for you! Have all the candy you could imagine this week!");
+        System.out.println("Session 5: 07/23/2023 - 07/29/2023: HOLLY WOOD");
+        System.out.println("- Lights, Cameras, Action! Experience life as if you were a Hollywood celebrity.");
+        System.out.println("Session 6: 07/30/2023 - 08/05/2023: LEGOS");
+        System.out.println("- Who doesn't love to build a good lego set? This week, spend all the time you want experimenting with legos and building sets!");
+        System.out.println("Session 7: 08/06/2023 - 08/12/2023: COPS AND ROBBERS");
+        System.out.println("- Fan favorite week! Lots of fun games to play!");
+        System.out.println("Session 8: 08/13/2023 - 08/19/2023: SHARK TANK");
+        System.out.println("- Let's learn about sharks! With real life shark experts, let's learn about one of the earth's most interesting species.");
+        System.out.println("Session 9: 08/20/2023 - 08/26/2023: SMORES");
+        System.out.println("- Last but not least, let's finish off the summer with good ol' fashioned smores.");
+        
     }
 }

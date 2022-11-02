@@ -5,9 +5,12 @@ import java.util.Random;
 public class Cabin {
     private HashMap<Days,ArrayList<Activity>> schedule;
     private ArrayList<Child> campers;
-    private ArrayList<Child> campersYoung;
-    private ArrayList<Child> campersMid;
-    private ArrayList<Child> campersOld;
+    private ArrayList<Child> campers1;
+    private ArrayList<Child> campers2;
+    private ArrayList<Child> campers3;
+    private ArrayList<Child> campers4;
+    private ArrayList<Child> campers5;
+    private ArrayList<Child> campers6;
     private ArrayList<Counselor> counselors;
     private Counselor counselor;
     private ArrayList<Cabin> allCabins ;
@@ -43,28 +46,47 @@ public class Cabin {
 
     public void setCampers(){
         for (int x = 0; x < campers.size(); x++){
-            if (campers.get(x).getYear() > 2014){
-                campersYoung.add(campers.get(x));
+            if (campers.get(x).getYear() == 2014 || campers.get(x).getYear() == 2015){
+                campers1.add(campers.get(x));
             }
-            else if (campers.get(x).getYear() < 2014 && campers.get(x).getYear() > 2011){
-                campersMid.add(campers.get(x));
+            else if (campers.get(x).getYear() == 2013 || campers.get(x).getYear() == 2012){
+                campers2.add(campers.get(x));
             }
-            else if (campers.get(x).getYear() < 2011){
-                campersOld.add(campers.get(x));
+            else if (campers.get(x).getYear() == 2011 || campers.get(x).getYear() == 2010){
+                campers3.add(campers.get(x));
+            }
+            else if (campers.get(x).getYear() == 2009 || campers.get(x).getYear() == 2008){
+                campers4.add(campers.get(x));
+            }
+            else if (campers.get(x).getYear() == 2007 || campers.get(x).getYear() == 2006){
+                campers5.add(campers.get(x));
+            }
+            else if (campers.get(x).getYear() == 2005 || campers.get(x).getYear() == 2004){
+                campers6.add(campers.get(x));
             }
         }
     }
 
-    public ArrayList<Child> getYoungCampers(){
-        return campersYoung;
+    public ArrayList<Child> getCampers1(){
+        return campers1;
     }
 
-    public ArrayList<Child> getMidCampers(){
-        return campersMid;
+    public ArrayList<Child> getCampers2(){
+        return campers2;
     }
 
-    public ArrayList<Child> getOldCampers(){
-        return campersOld;
+    public ArrayList<Child> getCampers3(){
+        return campers3;
+    }
+
+    public ArrayList<Child> getCampers4(){
+        return campers4;
+    }
+    public ArrayList<Child> getCampers5(){
+        return campers5;
+    }
+    public ArrayList<Child> getCampers6(){
+        return campers6;
     }
 
     public void addCounselor(Counselor counselor){
@@ -110,17 +132,31 @@ public class Cabin {
     }
 
     public ArrayList<Cabin> getCabins(){
-        for (int x = 0; x < 3; x++){
-            Cabin newCabin = new Cabin (counselors.get(x), getYoungCampers(), getSchedule());
-            allCabins.add(newCabin);
-        }
-        for (int x = 3; x < 6; x++){
-            Cabin newCabin = new Cabin (counselors.get(x), getMidCampers(), getSchedule());
-            allCabins.add(newCabin);
-        }
-        for (int x = 6; x < 9; x++){
-            Cabin newCabin = new Cabin (counselors.get(x), getOldCampers(), getSchedule());
-            allCabins.add(newCabin);
+        for (int x = 0; x < 6; x++){
+            if (x == 1){
+                Cabin newCabin = new Cabin (counselors.get(x), getCampers1(), getSchedule());
+                allCabins.add(newCabin);
+            }
+            else if (x == 2){
+                Cabin newCabin = new Cabin (counselors.get(x), getCampers2(), getSchedule());
+                allCabins.add(newCabin);
+            }
+            else if (x == 3){
+                Cabin newCabin = new Cabin (counselors.get(x), getCampers3(), getSchedule());
+                allCabins.add(newCabin);
+            }
+            else if (x == 4){
+                Cabin newCabin = new Cabin (counselors.get(x), getCampers4(), getSchedule());
+                allCabins.add(newCabin);
+            }
+            else if (x == 5){
+                Cabin newCabin = new Cabin (counselors.get(x), getCampers5(), getSchedule());
+                allCabins.add(newCabin);
+            }
+            else if (x == 6){
+                Cabin newCabin = new Cabin (counselors.get(x), getCampers6(), getSchedule());
+                allCabins.add(newCabin);
+            }
         }
         return allCabins;
     }
