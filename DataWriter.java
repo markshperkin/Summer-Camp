@@ -231,6 +231,7 @@ public static JSONObject getDirectorsJSON(Director director)
     Directorsinfo.put(ZIPCODE,director.getzipCode());
     Directorsinfo.put(COUNTRY,director.getCountry());
     Directorsinfo.put(BIRTHDAY, director.getbirthday());
+    
 
     JSONObject DirectorinfoJSON =new JSONObject(Directorsinfo);
     return DirectorinfoJSON;

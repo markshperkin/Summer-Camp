@@ -262,7 +262,6 @@ public class UI {
         boolean run1 = true;
         while (run1) {
             System.out.println("Please enter your command:\nfor finding an activity by a key word enter \"activity\"");
-            System.out.println("- For finding an activity by a key word enter \"activity\"");
             System.out.println("- For viewing all the activities enter \"all activities\"");
             System.out.println("- For viewing an example schedule enter \"example schedule\"");
             System.out.println("- For viewing a list of each weeks theme enter \"view themes\"");
@@ -274,13 +273,9 @@ public class UI {
             System.out.println("- For signing out and quitting the program, enter \"signout\"");
             String command = keyboard.nextLine();
 
-            if (command.equalsIgnoreCase("activity")) {
-                System.out.println("Please enter a key word:");
-                String keyWord = keyboard.nextLine();
-                CampFacade.getActivityByKeyWord(keyWord);
-            }
+            
 
-            else if (command.equalsIgnoreCase("all activities")) {
+             if (command.equalsIgnoreCase("all activities")) {
                 CampFacade.viewAllActivities();
             }
 
@@ -451,16 +446,28 @@ public class UI {
     }
 
     public void inAdmin(){
-        System.out.println("Please enter the name of your summer camp to create:");
-        String campName = keyboard.nextLine();
-        System.out.println("Enter the names of your summer camp themes:");
-        for (int x = 0; x < 9; x++){
-            System.out.println("Session " + x + ":");
-            String sessionTheme = keyboard.nextLine();
+        System.out.println("Please enter your command:");
+        System.out.println("- For creating a summer camp enter \"create camp\"");
+        System.out.println("- For viewing a cabin's schedule enter  \"view schedule\"");
+        String adminChoice = keyboard.nextLine();
+        if (adminChoice.equalsIgnoreCase("create camp")){
+            System.out.println("Please enter the name of your summer camp to create:");
+            String campName = keyboard.nextLine();
+            System.out.println("Enter the names of your summer camp themes:");
+            for (int x = 0; x < 9; x++){
+                System.out.println("Session " + x + ":");
+                String sessionTheme = keyboard.nextLine();
+            }
+            System.out.println("How many cabins will you have?");
+            int numOfCabins = keyboard.nextInt();
+            CampFacade.getCabin();
         }
-        System.out.println("How many cabins will you have?");
-        int numOfCabins = keyboard.nextInt();
-        CampFacade.getCabin();
+        else if (adminChoice.equalsIgnoreCase("view schedule")){
+            System.out.println("Which cabin number would you like to view? Enter a number 1-6.");
+            int cabinViewChoice = keyboard.nextInt();
+            CampFacade.getOneCabin(cabinViewChoice); 
+        }
+        
     }
 
     public void allThemes(){

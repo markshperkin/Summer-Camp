@@ -3,34 +3,22 @@ import java.util.ArrayList;
 public class SummerCamp{
 
     public ArrayList<Activity> activities ;
-    public ArrayList<FAQ> faqs;
-    public String question;
-    public String answer;
     public static ArrayList<String> reviews;
     public Sessions sessions = new Sessions();
-    public String camperNeed;
-    public ArrayList<String> camperNeeds;
     public static ArrayList<Child> campers;
     public static ArrayList<Counselor> counselors;
     public String campAddress;
     public int campNumber;
     public String campEmail;
     public String email;
-    public String notification;
-    public String searchWord;
-    public static final int WEEK=10;
+    public ArrayList<Cabin> cabins;
+    public Cabin cabin;
 
-    public SummerCamp(String question, String answer, String camperNeed, String campAddress, String campEmail, String notification, String searchWord, int campNumber ){
-        this.question = question;
-        this.answer = answer;
-        this.camperNeed = camperNeed;
+    public SummerCamp( String campAddress, String campEmail, int campNumber ){
+        cabin = new Cabin();
         this.campAddress = campAddress;
         this.campEmail = campEmail;
-        this.notification = notification;
-        this.searchWord = searchWord;
         this.campNumber = campNumber;
-
-
     }
 
     public SummerCamp(){}
@@ -43,16 +31,8 @@ public class SummerCamp{
         return sessions.createSessions();
     }
 
-    public void addFAQ(String question, String answer){
-
-    }
-
     public static void addReview(String review){
         reviews.add(review);
-    }
-
-    public void addCamperNeed(String camperNeed){
-
     }
 
     public ArrayList<Child> getAllCampers(){
@@ -63,12 +43,8 @@ public class SummerCamp{
 
     }
 
-    public static String Search(String searchWord){
-        return "activity by word";
-    }
-
-    public String sendNotif(String email, String notification) {
-        return " ";
+    public void getCabins(ArrayList<Cabin> cabinAdded){
+        cabin.getCabins();
     }
 
 

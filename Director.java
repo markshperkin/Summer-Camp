@@ -39,4 +39,7 @@ public class Director extends User {
     public String getzipCode() {
         return zipCode;
     }
+    public boolean getdirector(){
+        return true;
+    }
 }

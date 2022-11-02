@@ -25,7 +25,7 @@ public class Child {
      * @param gender string of the child gender
      * @param shirtSize string of the child shirt size
      */
-     public Child (String firstName, String lastName, String birthday, String gender, String shirtSize, String medName, String medtime, String medDose, String allergy,String Strike){
+     public Child (String firstName, String lastName, String birthday, String gender, String shirtSize, String Strike){
         this.firstName = firstName;
         this.Strike=Strike;
         this.lastName = lastName;
@@ -36,12 +36,6 @@ public class Child {
         contacts = new ArrayList<Contact>();
         medications = new ArrayList<Medication>();
         allergies = new ArrayList<String>();
-    }
-    public ArrayList<Contact> getContacts() {
-        return contacts;
-    }
-    public ArrayList<Medication> getMedications() {
-        return medications;
     }
     /**
      * Creates a child with an existing UUID
@@ -143,16 +137,40 @@ public class Child {
     public String getID() {
         return id;
     }
+    /**
+     * gets the gender of child
+     * @return String gender
+     */
     public String getgender(){
         return gender;
-
     }
+    /**
+     * gets the strike
+     * @return String strike
+     */
     public String getStrike(){
         return Strike;
     }
+    /**
+     * get the arraylist of allergies
+     * @return arraylist allergies
+     */
     public ArrayList<String> getAllergies(){
         return allergies ;
     }
-    
+    /**
+     * gets the arraylist contacts
+     * @return Arraylist contacts
+     */
+    public ArrayList<Contact> getContacts() {
+        return contacts;
+    }
+    /**
+     * gets the medication arraylist
+     * @return arraylist medication
+     */
+    public ArrayList<Medication> getMedications() {
+        return medications;
+    }
 
 }
