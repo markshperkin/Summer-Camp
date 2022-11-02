@@ -86,12 +86,18 @@ public class Parent extends User{
         return town;
 
     }
+    public String getZipCode() {
+        return zipCode;
+    }
     public String getstate(){
         return state;
 
     }
     public String getcountry(){
         return country;
+    }
+    public ArrayList<String> getChildID() {
+      return children;
     }
 
 }
