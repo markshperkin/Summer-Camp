@@ -8,6 +8,7 @@ public class DataConstants {
     protected static final String FIRSTNAME = "firstName";
     protected static final String LASTNAME = "lastName";
     protected static final String PHONENUMBER = "phoneNum";
+    protected static final String SCHEDULE = "schedule";
     protected static final String EMAIL = "email";
     protected static final String RELATIONSHIP="relationship";
     protected static final String PASSWORD = "password";
