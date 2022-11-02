@@ -639,9 +639,13 @@
 
         ],
 
+<<<<<<< HEAD
         "counselor": [
             "cdc4a273-1ead-43fd-9560-b8096d5416af"
         ]
+=======
+        "counselors": "cdc4a273-1ead-43fd-9560-b8096d5416af",
+>>>>>>> 478110864d24eae265dde548732ce0741148b321
         
        
     }

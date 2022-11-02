@@ -14,8 +14,8 @@ public class Cabin {
     private ArrayList<Child> campers5;
     private ArrayList<Child> campers6;
     private ArrayList<Counselor> counselors;
-    private Counselor counselor;
-    public ArrayList<Cabin> allCabins ;
+    private String counselor;
+    private ArrayList<Cabin> allCabins ;
     private ArrayList<Activity> morningActivities;
     private ArrayList<Activity> midActivities;
     private ArrayList<Activity> afternoonActivities;
@@ -27,10 +27,10 @@ public class Cabin {
     public String cMP;
 
 
-    public Cabin (Counselor counselor, ArrayList<Child> campers, HashMap<Days,ArrayList<Activity>> schedule){
+    public Cabin (String counselor, ArrayList<String> campers, HashMap<Days,ArrayList<Activity>> schedule){
         this.counselor = counselor;
         schedule = new HashMap<Days,ArrayList<Activity>>();
-        campers = new ArrayList<Child>();
+        campers = new ArrayList<String>();
         activity = new Activity();
         rand = new Random();
         this.id = UUID.randomUUID().toString();
