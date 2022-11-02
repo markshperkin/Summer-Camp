@@ -215,10 +215,10 @@ public class DataReader extends DataConstants{
                 ArrayList<Schedule> Monday =new ArrayList<Schedule>();
                 JSONObject scheduleObj = (JSONObject) cabinsJSON.get(SCHEDULE);
                 
-                JSONArray monday = (JSONArray) scheduleObj.get(MONDAY);
-                for(int j = 0; j < monday.size(); j++){
+                JSONArray MONDAYJSONS = (JSONArray) scheduleObj.get(MONDAY);
+                for(int j = 0; j < MONDAYJSONS.size(); j++){
 
-                 JSONObject MONDAYJSON = (JSONObject) monday.get(j);
+                 JSONObject MONDAYJSON = (JSONObject) MONDAYJSONS.get(j);
                  String Mondaytitle=(String)MONDAYJSON.get(TITLE);
                  String Mondaydescription=(String)MONDAYJSON.get(DESCRIPTION);
                  String Mondaylocation=(String)MONDAYJSON.get(LOCATION);
@@ -230,11 +230,11 @@ public class DataReader extends DataConstants{
                     Monday.add(new Schedule(Mondaytitle, Mondaydescription, Mondaylocation, Mondayclockhour, Mondayclockmin, MondayTOD, Mondayaction));
                 }
                 ArrayList<Schedule> Tuesday =new ArrayList<Schedule>();
-                JSONArray jsonArray1 = (JSONArray) cabinsJSON.get(TUESDAY);
+                JSONArray TUESDAYJSONS = (JSONArray) cabinsJSON.get(TUESDAY);
                 
-                for(int k=0;k < jsonArray1.size(); k++){
+                for(int k=0;k < TUESDAYJSONS.size(); k++){
 
-                 JSONObject TUESDAYJSON = (JSONObject) monday.get(k);
+                 JSONObject TUESDAYJSON = (JSONObject) TUESDAYJSONS.get(k);
                  String TUESDAYtitle=(String)TUESDAYJSON.get(TITLE);
                  String TUESDAYdescription=(String)TUESDAYJSON.get(DESCRIPTION);
                  String TUESDAYlocation=(String)TUESDAYJSON.get(LOCATION);
@@ -246,11 +246,11 @@ public class DataReader extends DataConstants{
                  Tuesday.add(new Schedule(TUESDAYtitle, TUESDAYdescription, TUESDAYlocation, TUESDAYclockhour, TUESDAYclockmin, TUESDAYTOD, TUESDAYaction));
                 }
                 ArrayList<Schedule> WEDNESDAY =new ArrayList<Schedule>();
-                JSONArray jsonArray2 = (JSONArray) cabinsJSON.get(WEDNESDAY);
+                JSONArray WEDNESDAYJSONS = (JSONArray) cabinsJSON.get(WEDNESDAY);
                 
-                for(int l=0;l < jsonArray2.size(); l++){
+                for(int l=0;l < WEDNESDAYJSONS.size(); l++){
 
-                 JSONObject WEDNESDAYJSON = (JSONObject) monday.get(l);
+                 JSONObject WEDNESDAYJSON = (JSONObject) WEDNESDAYJSONS.get(l);
                  String WEDNESDAYtitle=(String)WEDNESDAYJSON.get(TITLE);
                  String WEDNESDAYdescription=(String)WEDNESDAYJSON.get(DESCRIPTION);
                  String WEDNESDAYlocation=(String)WEDNESDAYJSON.get(LOCATION);
@@ -263,11 +263,11 @@ public class DataReader extends DataConstants{
                 }
                
                 ArrayList<Schedule> THURSDAY =new ArrayList<Schedule>();
-                JSONArray jsonArray3 = (JSONArray) cabinsJSON.get(THURSDAY);
+                JSONArray THURSDAYJSONS = (JSONArray) cabinsJSON.get(THURSDAY);
                 
-                for(int m=0;m < jsonArray3.size(); m++){
+                for(int m=0;m < THURSDAYJSONS.size(); m++){
 
-                 JSONObject THURSDAYJSON = (JSONObject) monday.get(m);
+                 JSONObject THURSDAYJSON = (JSONObject) THURSDAYJSONS.get(m);
                  String THURSDAYtitle=(String)THURSDAYJSON.get(TITLE);
                  String THURSDAYdescription=(String)THURSDAYJSON.get(DESCRIPTION);
                  String THURSDAYlocation=(String)THURSDAYJSON.get(LOCATION);
@@ -279,11 +279,11 @@ public class DataReader extends DataConstants{
                 THURSDAY.add(new Schedule(THURSDAYtitle, THURSDAYdescription, THURSDAYlocation, THURSDAYclockhour, THURSDAYclockmin, THURSDAYTOD, THURSDAYaction));
                 }
                 ArrayList<Schedule> FRIDAY =new ArrayList<Schedule>();
-                JSONArray jsonArray4 = (JSONArray) cabinsJSON.get(FRIDAY);
+                JSONArray FRIDAYJSONS = (JSONArray) cabinsJSON.get(FRIDAY);
                 
-                for(int n=0;n < jsonArray4.size(); n++){
+                for(int n=0;n < FRIDAYJSONS.size(); n++){
 
-                 JSONObject FRIDAYJSON = (JSONObject) monday.get(n);
+                 JSONObject FRIDAYJSON = (JSONObject) FRIDAYJSONS.get(n);
                  String FRIDAYtitle=(String)FRIDAYJSON.get(TITLE);
                  String FRIDAYdescription=(String)FRIDAYJSON.get(DESCRIPTION);
                  String FRIDAYlocation=(String)FRIDAYJSON.get(LOCATION);
@@ -295,11 +295,11 @@ public class DataReader extends DataConstants{
                FRIDAY.add(new Schedule(FRIDAYtitle, FRIDAYdescription, FRIDAYlocation, FRIDAYclockhour, FRIDAYclockmin, FRIDAYTOD, FRIDAYaction));
                 }
                 ArrayList<Schedule> SATURDAY =new ArrayList<Schedule>();
-                JSONArray jsonArray5 = (JSONArray) cabinsJSON.get(FRIDAY);
+                JSONArray SATURDAYJSONS = (JSONArray) cabinsJSON.get(FRIDAY);
                 
-                for(int s=0;s < jsonArray5.size(); s++){
+                for(int s=0;s < SATURDAYJSONS.size(); s++){
 
-                 JSONObject SATURDAYJSON = (JSONObject) monday.get(s);
+                 JSONObject SATURDAYJSON = (JSONObject) SATURDAYJSONS.get(s);
                  String SATURDAYtitle=(String)SATURDAYJSON.get(TITLE);
                  String SATURDAYdescription=(String)SATURDAYJSON.get(DESCRIPTION);
                  String SATURDAYlocation=(String)SATURDAYJSON.get(LOCATION);
@@ -311,11 +311,11 @@ public class DataReader extends DataConstants{
                 SATURDAY.add(new Schedule(SATURDAYtitle, SATURDAYdescription, SATURDAYlocation, SATURDAYclockhour, SATURDAYclockmin, SATURDAYTOD, SATURDAYaction));
                 }
                 ArrayList<Schedule> SUNDAY =new ArrayList<Schedule>();
-                JSONArray jsonArray6 = (JSONArray) cabinsJSON.get(SUNDAY);
+                JSONArray SUNDAYJSONS = (JSONArray) cabinsJSON.get(SUNDAY);
                 
-                for(int su=0;su < jsonArray6.size(); su++){
+                for(int su=0;su < SUNDAYJSONS.size(); su++){
 
-                 JSONObject SUNDAYJSON = (JSONObject) monday.get(su);
+                 JSONObject SUNDAYJSON = (JSONObject) SUNDAYJSONS.get(su);
                  String SUNDAYtitle=(String)SUNDAYJSON.get(TITLE);
                  String SUNDAYdescription=(String)SUNDAYJSON.get(DESCRIPTION);
                  String SUNDAYlocation=(String)SUNDAYJSON.get(LOCATION);
