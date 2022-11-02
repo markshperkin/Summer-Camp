@@ -6,16 +6,12 @@ public class ParentsList {
     private ArrayList<Parent> parents;
 
     private ParentsList(){
-        for(int i = 0; i < DataReader.getAllParents().size(); i++ ) {
-            parents.add(DataReader.getAllParents().get(i));
-        }
-        //parents= DataReader.getAllParents();
+        parents= DataReader.getAllParents();
     }
 
     public static ParentsList getInstance(){
-        if (parentsList == null){
+        if (parentsList == null)
             parentsList = new ParentsList();
-        }
         return parentsList;
     }
 
