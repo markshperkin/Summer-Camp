@@ -15,7 +15,13 @@ public class CabinList {
         return cabinList;
     }
     
-
+    public boolean addCabin(Cabin cabin) {
+        if(cabin == null) 
+            return false;
+        cabins.add(cabin);
+        save();
+        return true;
+    }
     public Cabin getCabin(String id) {
         for(Cabin c: cabins) {
             if(c.getID().equals(id))

@@ -18,9 +18,9 @@ public class CounselorList {
         }
         return counselorsList;
     }
-    public ArrayList<Counselor> getAllCounselors()
-    {
-        return counselors;
+    public void getAllCounselors() {
+        for(Counselor c: counselors) 
+            System.out.println(c);
     }
     public boolean login(String username, String password) {
         for(Counselor co: counselors) {
@@ -29,10 +29,7 @@ public class CounselorList {
         }
         return false;
     }
-    public Child addChildren(){
 
-
-    }
     public Counselor getCounselorsByID(UUID id) {
         for (Counselor counselors : counselors) {
             if (counselors.getUUID().equals(id)) {
@@ -42,4 +39,15 @@ public class CounselorList {
         return null;
     }
 
+    public boolean addCounselor(Counselor counselor) {
+        if(counselor == null)
+            return false;
+        counselors.add(counselor);
+        save();
+        return true;
+    }
+
+    public void save() {
+        DataWriter.saveCounselors();
+    }
 }
