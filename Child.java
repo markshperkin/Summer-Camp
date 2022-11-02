@@ -8,10 +8,6 @@ public class Child {
     public String lastName;
     public String birthday;
     public String gender;
-    public String medName;
-    public String medtime;
-    public String medDose;
-    public String allergy;
     public String shirtSize;
     public ArrayList<Contact> contacts;
     public ArrayList<Medication> medications;
@@ -28,10 +24,6 @@ public class Child {
      * @param birthday string of the child birthday
      * @param gender string of the child gender
      * @param shirtSize string of the child shirt size
-     * @param medName string of the med name
-     * @param medtime string of the med time
-     * @param medDose string of the med dose
-     * @param allergy string of the child allergy
      */
      public Child (String firstName, String lastName, String birthday, String gender, String shirtSize, String medName, String medtime, String medDose, String allergy,String Strike){
         this.firstName = firstName;
@@ -40,10 +32,6 @@ public class Child {
         this.birthday = birthday;
         this.gender = gender;
         this.shirtSize = shirtSize;
-        this.medName = medName;
-        this.medtime = medtime;
-        this.medDose = medDose;
-        this.allergy = allergy;
         this.id = UUID.randomUUID().toString();
         contacts = new ArrayList<Contact>();
         medications = new ArrayList<Medication>();
@@ -78,10 +66,6 @@ public class Child {
         this.birthday = birthday;
         this.gender = gender;
         this.shirtSize = shirtSize;
-        this.medName = medName;
-        this.medtime = medtime;
-        this.medDose = medDose;
-        this.allergy = allergy;
         this.contacts = contacts;
         this.medications = medications;
         this.allergies = allergies;
@@ -108,41 +92,6 @@ public class Child {
     public String getBirthday() {
         splitBirthday();
         return birthday;
-    }
-    /**
-     * get the medication name
-     * @return String medname
-     */
-    public String getMedName() {
-        return medName;
-    }
-    /**
-     * gets the medication time
-     * @return String medtime
-     */
-    public String getMedTime() {
-        return medtime;
-    }
-     /**
-     * get the medication dose
-     * @return medDose
-     */
-    public String getMedDose() {
-         return medDose;
-    }
-    /**
-     * get the allergy
-     * @return string allergy
-     */
-    public String getAllergy() {
-
-        return allergy;
-    }
-    /**
-     * adds the allergy to the arraylist 
-     */
-    public void addAllergy(String allergy){
-        allergies.add(this.allergy);
     }
     /**
      * gets the shirt size of the child

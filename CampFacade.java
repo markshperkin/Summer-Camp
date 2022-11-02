@@ -67,5 +67,16 @@ public class CampFacade {
         
     }
 
+    public static void viewAllActivities(){
+
+    }
+
+    public static void getCabin(){
+        cabin.getCabins();
+    }
+
+    public static void getCabinCampers(){
+
+    }
     
 }

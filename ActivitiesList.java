@@ -5,7 +5,7 @@ public class ActivitiesList {
     private ArrayList<Activity> activities;
 
     private ActivitiesList() {
-        activities = DataReader.getAllActivities();
+        // activities = DataReader.getAllActivities();
     }
 
     public static ActivitiesList getInstance() {
@@ -39,6 +39,6 @@ public class ActivitiesList {
     }
 
     public void save() {
-        DataWriter.saveActivites();
+        // DataWriter.saveActivites();
     }
 }

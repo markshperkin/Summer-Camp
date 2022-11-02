@@ -24,15 +24,12 @@ public class Counselor {
     public String email;
     public String password;
 
-public Counselor (String firstName, String lastName, String birthday, String gender, String shirtSize, String medName, String medtime, String medDose,String email,String password,String allegery, String allergy2){
+public Counselor (String id, String firstName, String lastName, String email, String password, String phoneNum, String birthday, String gender, String shirtSize, String street,String town,String state,String zipCode,String country,ArrayList<Contact> emergencyContacts, ArrayList<Medication> medications, ArrayList <String> allergies){
     this.firstName = firstName;
     this.lastName = lastName;
     this.birthday = birthday;
     this.gender = gender;
     this.shirtSize = shirtSize;
-    this.medName = medName;
-    this.medtime = medtime;
-    this.medDose = medDose;
     this.email= email;
     this.password=password;
     this.UUid = UUID.randomUUID().toString();

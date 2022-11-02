@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
+import java.util.UUID;
+
 
 public class Cabin {
     private HashMap<Days,ArrayList<Activity>> schedule;
@@ -20,6 +22,8 @@ public class Cabin {
     private ArrayList<Activity> cabinActivities;
     private Activity activity;
     private Random rand;
+    public String id;
+
 
     public Cabin (Counselor counselor, ArrayList<Child> campers, HashMap<Days,ArrayList<Activity>> schedule){
         this.counselor = counselor;
@@ -27,8 +31,12 @@ public class Cabin {
         campers = new ArrayList<Child>();
         activity = new Activity();
         rand = new Random();
+        this.id = UUID.randomUUID().toString();
     }
 
+    public String getID() {
+        return id;
+    }
 
     public Cabin(){}
 
