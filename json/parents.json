@@ -8,7 +8,7 @@
     "street": "09\/01\/1977",
     "phoneNum": "803-543-9999",
     "id": "10771103-1199-496c-91f5-babefcc2da51",
-    "Gender": null,
+    "gender": null,
     "email": "kJohnson342@gmail.com"
   },
   {
@@ -20,7 +20,7 @@
     "street": "03\/07\/1976",
     "phoneNum": "803-654-8554",
     "id": "bb7b1d21-df05-457a-b866-31c85ece9259",
-    "Gender": null,
+    "gender": null,
     "email": "AJH874@gmail.com"
   },
   {
@@ -32,7 +32,7 @@
     "street": "07\/31\/1990",
     "phoneNum": "803-853-3255",
     "id": "9370eed4-c0d3-4a51-9d9f-382e7656c33d",
-    "Gender": null,
+    "gender": null,
     "email": "jWat342@gmail.com"
   },
   {
@@ -44,7 +44,7 @@
     "street": "09\/13\/1992",
     "phoneNum": "803-531-3255",
     "id": "a879b966-e2ee-48f6-84ba-28a9961eb3b1",
-    "Gender": null,
+    "gender": null,
     "email": "NWat32@gmail.com"
   }
 ]
