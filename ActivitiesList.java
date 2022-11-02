@@ -1,26 +1,44 @@
 import java.util.ArrayList;
 
 public class ActivitiesList {
-    private ArrayList<Activity> Activities;
-    private ActivitiesList activityList;
+    private static ActivitiesList activitiesList;
+    private ArrayList<Activity> activities;
 
     private ActivitiesList() {
-
+        activities = DataReader.getAllActivities();
     }
 
-    public ActivitiesList getInstance() {
-        return null;
+    public static ActivitiesList getInstance() {
+        if (activitiesList == null) {
+            activitiesList = new ActivitiesList();
+        }
+        return activitiesList;
     }
 
-    public ActivitiesList addActivity(String title, String description) {
-        return null;
+    public boolean addActivity(Activity Activity) {
+        if(Activity == null)
+            return false;
+        else
+            activities.add(Activity);
+        save();
+        return true;
     }
 
     public Activity getActivity(String title) {
+        for (int i = 0; i < activities.size(); i++) {
+            if (activities.get(i).getTitle().equals(title))
+                return activities.get(i);
+        }
         return null;
     }
 
-    public static String getAllActivities() {
-        return "all activites";
+    public void getAllActivities() {
+        for(int i=0;i<activities.size();i++) {
+            System.out.println(activities.get(i));
+        }
+    }
+
+    public void save() {
+        DataWriter.saveActivites();
     }
 }

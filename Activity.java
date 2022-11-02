@@ -61,4 +61,8 @@ public class Activity {
     public String toString() {
         return title  + ", " + location + ", " + clockHour + ":" + clockMinute ;
     }
+
+    public String getTitle() {
+        return this.title;
+    }
 }
