@@ -25,9 +25,10 @@ public class CounselorList {
         return false;
     }
 
-    public void getAllCounselors() {
+    public ArrayList<Counselor> getAllCounselors() {
         for(Counselor c: counselors) 
             System.out.println(c);
+            return counselors;
     }
 
     public Counselor getCounselorsByID(UUID id) {
@@ -36,7 +37,7 @@ public class CounselorList {
                 return counselors;
             }
         }
-        return null;
+     return  null;
     }
 
     public boolean addCounselor(Counselor counselor) {

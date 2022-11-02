@@ -231,4 +231,9 @@ public static JSONObject getDirectorsJSON(Director director)
     JSONObject DirectorinfoJSON =new JSONObject(Directorsinfo);
     return DirectorinfoJSON;
 }
+ public static JSONObject getCabinsjson(Cabins cabin){
+    HashMap<String, Object>Cabininfo=new HashMap<String, Object>();
+    Cabinsinfo.put()
+ }
+
 }

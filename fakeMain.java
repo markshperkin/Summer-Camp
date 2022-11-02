@@ -8,9 +8,9 @@ public class fakeMain {
 
     System.out.println(DataReader.getAllChild());
     System.out.println(DataReader.getAllCounselors());
-    //System.out.println(DataReader.getAllDirectors());
+    System.out.println(DataReader.getAllDirectors());
     System.out.println(DataReader.getAllParents().size());
-    //System.out.println(DataReader.getAllCabins());
+    System.out.println(DataReader.getAllCabins());
 
     System.out.println("Please enter your first name.");
         String firstName = keyboard.nextLine();
