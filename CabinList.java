@@ -34,6 +34,7 @@ public class CabinList {
     public void getAllCabins() {
         for(Cabin c: cabins) {
             System.out.println(c);
+            return cabin
         }
     }
 

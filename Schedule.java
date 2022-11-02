@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.ArrayList;
 
 public class Schedule {
+    public static final String MONDAY = null;
     private ArrayList<Schedule> schedule;
     public String title;
     public String descripton;
@@ -47,6 +48,34 @@ public Schedule(String title,String description,String location, String clockhou
     Friday=new ArrayList<>();
     Saturday=new ArrayList();
     Sunday=new ArrayList<>();
+}
+
+public ArrayList<Schedule> getMonday() {
+    return Monday;
+}
+
+public ArrayList<Schedule> getTuesday() {
+    return Tuesday;
+}
+
+public ArrayList<Schedule> getWednesday() {
+    return Wednesday;
+}
+
+public ArrayList<Schedule> getThursday() {
+    return Thursday;
+}
+
+public ArrayList<Schedule> getFriday() {
+    return Friday;
+}
+
+public ArrayList<Schedule> getSaturday() {
+    return Saturday;
+}
+
+public ArrayList<Schedule> getSunday() {
+    return Sunday;
 }
 
 public ArrayList<Schedule> getSchedule() {

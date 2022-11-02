@@ -24,6 +24,7 @@ public class Cabin {
     private Activity activity;
     private Random rand;
     public String id;
+    public String cMP;
 
 
     public Cabin (Counselor counselor, ArrayList<Child> campers, HashMap<Days,ArrayList<Activity>> schedule){
@@ -33,11 +34,13 @@ public class Cabin {
         activity = new Activity();
         rand = new Random();
         this.id = UUID.randomUUID().toString();
+        this.cMP=cMP;
     }
 
     public String getID() {
         return id;
     }
+    
 
     public Cabin(){}
 
@@ -75,7 +78,10 @@ public class Cabin {
             }
         }
     }
+    public String getcMP(){
 
+        return cMP;
+    }
     public ArrayList<Child> getCampers1(){
         return campers1;
     }

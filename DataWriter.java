@@ -236,10 +236,27 @@ public static JSONObject getDirectorsJSON(Director director)
     JSONObject DirectorinfoJSON =new JSONObject(Directorsinfo);
     return DirectorinfoJSON;
 }
- public static JSONObject getCabinsjson(Cabin cabin){
+ public static JSONObject getCabinsJSON (Cabin cabin){
     HashMap<String, Object>Cabininfo=new HashMap<String, Object>();
     Cabininfo.put(ID, cabin.getID());
     Cabininfo.put(SCHEDULE, cabin.getSchedule());
+    Cabininfo.put(CAMPER, cabin.getcMP());
+    Cabininfo.put(COUNSELORS,cabin.getCounselor());
+
+    JSONObject CabininfoJSON=new JSONObject(Cabininfo);
+    
+    return CabininfoJSON;
+
+    
+
+
+    
+    
+    
+
+    }
+
+
 
  }
 

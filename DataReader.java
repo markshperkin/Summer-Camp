@@ -212,6 +212,7 @@ public class DataReader extends DataConstants{
                 JSONObject cabinsJSON = (JSONObject) cabinJSON.get(i);
                 String UUID = (String) cabinsJSON.get("id");
                 ArrayList<Schedule> schedule = new ArrayList<Schedule>();
+                
                 ArrayList<Schedule> Monday =new ArrayList<Schedule>();
                 JSONObject scheduleObj = (JSONObject) cabinsJSON.get(SCHEDULE);
                 
@@ -229,8 +230,10 @@ public class DataReader extends DataConstants{
 
                     Monday.add(new Schedule(Mondaytitle, Mondaydescription, Mondaylocation, Mondayclockhour, Mondayclockmin, MondayTOD, Mondayaction));
                 }
+                
                 ArrayList<Schedule> Tuesday =new ArrayList<Schedule>();
-                JSONArray TUESDAYJSONS = (JSONArray) cabinsJSON.get(TUESDAY);
+              
+                JSONArray TUESDAYJSONS = (JSONArray) scheduleObj.get(TUESDAY);
                 
                 for(int k=0;k < TUESDAYJSONS.size(); k++){
 
@@ -246,7 +249,7 @@ public class DataReader extends DataConstants{
                  Tuesday.add(new Schedule(TUESDAYtitle, TUESDAYdescription, TUESDAYlocation, TUESDAYclockhour, TUESDAYclockmin, TUESDAYTOD, TUESDAYaction));
                 }
                 ArrayList<Schedule> WEDNESDAY =new ArrayList<Schedule>();
-                JSONArray WEDNESDAYJSONS = (JSONArray) cabinsJSON.get(WEDNESDAY);
+                JSONArray WEDNESDAYJSONS = (JSONArray) scheduleObj.get(WEDNESDAY);
                 
                 for(int l=0;l < WEDNESDAYJSONS.size(); l++){
 
@@ -263,7 +266,7 @@ public class DataReader extends DataConstants{
                 }
                
                 ArrayList<Schedule> THURSDAY =new ArrayList<Schedule>();
-                JSONArray THURSDAYJSONS = (JSONArray) cabinsJSON.get(THURSDAY);
+                JSONArray THURSDAYJSONS = (JSONArray) scheduleObj.get(THURSDAY);
                 
                 for(int m=0;m < THURSDAYJSONS.size(); m++){
 
@@ -279,7 +282,7 @@ public class DataReader extends DataConstants{
                 THURSDAY.add(new Schedule(THURSDAYtitle, THURSDAYdescription, THURSDAYlocation, THURSDAYclockhour, THURSDAYclockmin, THURSDAYTOD, THURSDAYaction));
                 }
                 ArrayList<Schedule> FRIDAY =new ArrayList<Schedule>();
-                JSONArray FRIDAYJSONS = (JSONArray) cabinsJSON.get(FRIDAY);
+                JSONArray FRIDAYJSONS = (JSONArray) scheduleObj.get(FRIDAY);
                 
                 for(int n=0;n < FRIDAYJSONS.size(); n++){
 
@@ -295,7 +298,7 @@ public class DataReader extends DataConstants{
                FRIDAY.add(new Schedule(FRIDAYtitle, FRIDAYdescription, FRIDAYlocation, FRIDAYclockhour, FRIDAYclockmin, FRIDAYTOD, FRIDAYaction));
                 }
                 ArrayList<Schedule> SATURDAY =new ArrayList<Schedule>();
-                JSONArray SATURDAYJSONS = (JSONArray) cabinsJSON.get(FRIDAY);
+                JSONArray SATURDAYJSONS = (JSONArray) scheduleObj.get(FRIDAY);
                 
                 for(int s=0;s < SATURDAYJSONS.size(); s++){
 
@@ -311,7 +314,7 @@ public class DataReader extends DataConstants{
                 SATURDAY.add(new Schedule(SATURDAYtitle, SATURDAYdescription, SATURDAYlocation, SATURDAYclockhour, SATURDAYclockmin, SATURDAYTOD, SATURDAYaction));
                 }
                 ArrayList<Schedule> SUNDAY =new ArrayList<Schedule>();
-                JSONArray SUNDAYJSONS = (JSONArray) cabinsJSON.get(SUNDAY);
+                JSONArray SUNDAYJSONS = (JSONArray) scheduleObj.get(SUNDAY);
                 
                 for(int su=0;su < SUNDAYJSONS.size(); su++){
 
