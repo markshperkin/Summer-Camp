@@ -69,10 +69,6 @@ public class CampFacade {
         return cabin.getSchedule();  
     }
 
-    public void sendNotif(){
-        
-    }
-
     public static void addChild(Child childChild){
         SummerCamp.campers.add(childChild);
     }
@@ -83,6 +79,14 @@ public class CampFacade {
 
     public static void viewChild (String viewFirstName, String viewLastName){
 
+    }
+
+    public static void getOneCabin (int y){
+        for (int x = 0; x<5; x++){
+            if (y == x){
+                cabin.allCabins.get(x);
+            }
+        }
     }
 
     public static void registerChild(String registerFirstName, String registerLastName, int sessionChoice){
