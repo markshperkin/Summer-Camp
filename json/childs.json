@@ -39,7 +39,7 @@
           "User": "Child",
           "firstName": "Jacob",
           "lastName": "Johnson",
-          "Birthday": "10/24/15",
+          "birthday": "10/24/15",
           "Gender": "Male",
           "shirtSize":"Small",
           "strike":"0",
