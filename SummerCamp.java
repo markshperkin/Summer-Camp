@@ -7,7 +7,7 @@ public class SummerCamp{
     public String question;
     public String answer;
     public static ArrayList<String> reviews;
-    public ArrayList<Sessions> sessions;
+    public Sessions sessions = new Sessions();
     public String camperNeed;
     public ArrayList<String> camperNeeds;
     public static ArrayList<Child> campers;
@@ -33,16 +33,14 @@ public class SummerCamp{
 
     }
 
-    public SummerCamp(){
-        
-    }
+    public SummerCamp(){}
 
     public void addActivity(Activity activity){
         
     }
 
-    public void addSession(Sessions sessions){
-        
+    public ArrayList<Sessions> getAllSessions(){
+        return sessions.createSessions();
     }
 
     public void addFAQ(String question, String answer){
@@ -57,7 +55,9 @@ public class SummerCamp{
 
     }
 
-    
+    public ArrayList<Child> getAllCampers(){
+        return campers;
+    }
 
     public void displayCampInfo (String campAddress, String campEmail, String campNumber){
 
@@ -66,15 +66,11 @@ public class SummerCamp{
     public static String Search(String searchWord){
         return "activity by word";
     }
+
     public String sendNotif(String email, String notification) {
         return " ";
     }
-    public int getWeek() {
-        return WEEK;
-    }
-    public boolean withinWeek() {
-        return true;
-    }
+
 
     
 }

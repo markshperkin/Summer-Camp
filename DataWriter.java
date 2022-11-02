@@ -184,7 +184,33 @@ public static JSONObject getCounselorsJSON(Counselor counselor) {
     Counselorsinfo.put(EMAIL, counselor.getEmail());
     Counselorsinfo.put(PASSWORD, counselor.getPassword());
     Counselorsinfo.put(PHONENUMBER, counselor.getPhoneNumber());
-    Counselorsinfo.put();
-}
+    Counselorsinfo.put(STREET, counselor.getStreet());
+    Counselorsinfo.put(ZIPCODE, counselor.getZipCode());
+    Counselorsinfo.put(COUNTRY, counselor.getCountry());
+    Counselorsinfo.put(BIRTHDAY, counselor.getBirthday());
+    Counselorsinfo.put(ABOUTME, counselor.getAboutme());
+    Counselorsinfo.put(GENDER, counselor.getGender());
+    Counselorsinfo.put(ALLERGY, counselor.getAllergy());
+    Counselorsinfo.put(MEDICATION, counselor.getMedications());
+    Counselorsinfo.put(SHIRSIZE, counselor.getshirtSize());
 
+    JSONArray JSONcontacts = new JSONArray();
+    for(int i=0; i<counselor.getContacts().size();i++){
+        HashMap<String, Object> counselorcon= new HashMap<String, Object>();
+        Contact contact = counselor.getContacts().get(i);
+        counselorcon.put(FIRSTNAME,contact.getFirstName());
+        counselorcon.put(LASTNAME ,contact.getLastName());
+        counselorcon.put(EMAIL,contact.getEmail());
+        counselorcon.put(PHONENUMBER,contact.getPhoneNum());
+        counselorcon.put(RELATIONSHIP,contact.getRelationship());
+        JSONObject counselorconJSON = new JSONObject(counselorcon);
+
+       JSONcontacts.add(counselorconJSON);
+    }
+
+    Counselorsinfo.put(CONTACTS, JSONcontacts);
+
+    JSONObject CounselorsinfoJSON = new JSONObject(Counselorsinfo);
+    return CounselorsinfoJSON;
+}
 }

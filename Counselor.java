@@ -25,7 +25,6 @@ public class Counselor extends User{
 public Counselor (String id, String firstName, String lastName, String email, String password, String phoneNum, String birthday, String gender, String shirtSize, String street,String town,String state,String zipCode,String country, String aboutMe, ArrayList<Contact> emergencyContacts, ArrayList<Medication> medications, ArrayList <String> allergies){
    super(firstName, lastName, email, password, phoneNum, birthday,street,town,state,zipCode,country,gender);
    
-   
     this.firstName = firstName;
     this.lastName = lastName;
     this.birthday = birthday;
@@ -50,19 +49,21 @@ public Counselor (String id, String firstName, String lastName, String email, St
         return lastName;
     }
 
-
-
     public String getBirthday() {
         return birthday;
     }
 
+    public String getZipCode(){
+        return zipCode;
+    }
 
+    public String getCountry(){
+        return country;
+    }
 
     public String getGender() {
         return gender;
     }
-
-
 
     public String getEmail(){
         return email;
@@ -87,8 +88,6 @@ public Counselor (String id, String firstName, String lastName, String email, St
     public String getAboutme() {
         return Aboutme;
     }
-
-
 
     public ArrayList<Contact> getContacts() {
         return contacts;
