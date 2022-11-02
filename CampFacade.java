@@ -72,11 +72,11 @@ public class CampFacade {
     }
 
     public static void getCabin(){
-
+        cabin.getCabins();
     }
 
     public static void getCabinCampers(){
-        
+
     }
     
 }
