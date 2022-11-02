@@ -5,23 +5,26 @@ import java.util.*;
 
 public class Activity {
     private String title;
+    private String description;
     private String location;
-    private int clockHour;
-    private int clockMinute;
-    private Action action;
+    private String clockHour;
+    private String clockMinute;
+    private String timeofday;
+    private String action;
     
     
     private static final Random RANDOM = new Random();
 
 
-    public Activity(String title, String location, int clockHour
-    , int clockMinute, Action action) {
+    public Activity(String title, String description, String location, String clockHour, String clockMinute, String timeofday, String action) 
+    {
         this.title = title;
+        this.description = description;
         this.location = location;
         this.clockHour = clockHour;
         this.clockMinute = clockMinute;
+        this.timeofday = timeofday;
         this.action = action;
-
     }
 
     public Activity(){}
