@@ -6,7 +6,7 @@ public class Director extends User {
 
 
     public Director(String fname, String lname, String email, String password, String phoneNum, String street,
-            String town, String zipCode, String state, String country, String birthday,String gender,UUID id) {
+            String town, String zipCode, String state, String country, String birthday,String gender,String id) {
     
                 super(fname,lname,email,password,phoneNum,street,town,zipCode,state,country,birthday,gender);
                 this.id=id;

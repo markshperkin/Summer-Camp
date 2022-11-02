@@ -33,7 +33,6 @@ public Counselor (String firstName, String lastName, String birthday, String gen
     this.medName = medName;
     this.medtime = medtime;
     this.medDose = medDose;
-    this.allergy = allergy;
     this.email= email;
     this.password=password;
     this.UUid = UUID.randomUUID().toString();

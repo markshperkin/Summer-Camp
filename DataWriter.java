@@ -157,4 +157,15 @@ public static JSONObject getChildsJSON(Child child){
 
 }
 
+public static JSONObject getCounselorsJSON(Counselor counselor) {
+    HashMap<String,Object> Counselorsinfo = new HashMap<String,Object>();
+    Counselorsinfo.put(ID, counselor.getUUID().toString());
+    Counselorsinfo.put(FIRSTNAME, counselor.getFirstName());
+    Counselorsinfo.put(LASTNAME, counselor.getLastName());
+    Counselorsinfo.put(EMAIL, counselor.getEmail());
+    Counselorsinfo.put(PASSWORD, counselor.getPassword());
+    Counselorsinfo.put(PHONENUMBER, counselor.getPhoneNumber());
+    Counselorsinfo.put();
+}
+
 }
