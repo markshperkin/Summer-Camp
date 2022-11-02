@@ -7,6 +7,7 @@ import java.util.UUID;
 public class UI {
     static UI ui = new UI();
     Scanner keyboard = new Scanner(System.in);
+    SummerCamp summerCamp = new SummerCamp();
 
     public static void main(String[] argc) {
         ui.run();
@@ -133,7 +134,7 @@ public class UI {
         String counselorGender = keyboard.nextLine();
         System.out.println("Please enter your shirt size.");
         String counselorShirtSize = keyboard.nextLine();
-        System.out.println("Your eemergency contact:");
+        System.out.println("Your emergency contact:");
                 System.out.println("- First Name:");                
                 String emergencyFirstName = keyboard.nextLine();
                 System.out.println("- Last Name:");
@@ -211,10 +212,14 @@ public class UI {
                             }
                         }
                     }
-                    Counselor counselorAdded = new Counselor (UUID.randomUUID().toString(), counselorFirstName, counselorLastName, counselorEmail, counselorPassword, counselorPhoneNum, counselorGender, counselorBirthday, counselorShirtSize, street, town, state, zipCode, country, emergencyContacts, medications, allergies);
-                    CampFacade.addCounselor(counselorAdded);
-                    ui.inCounselor();
-                }
+
+            System.out.println("Enter a few sentences about yourself:");
+            String aboutMe = keyboard.nextLine();
+            Counselor counselorAdded = new Counselor (UUID.randomUUID().toString(), counselorFirstName, counselorLastName, counselorEmail, counselorPassword, counselorPhoneNum, counselorBirthday, counselorGender, counselorShirtSize, street, town, state, zipCode, country, aboutMe, emergencyContacts, medications, allergies);
+            CampFacade.addCounselor(counselorAdded);
+            ui.inCounselor();
+
+    }
     
 
     public void signUpAdmin(){
@@ -273,7 +278,7 @@ public class UI {
             }
 
             else if (command.equalsIgnoreCase("all activities")) {
-                ActivitiesList.getAllActivities();
+                CampFacade.viewAllActivities();
             }
 
             else if (command.equalsIgnoreCase("example schedule")) {
@@ -285,7 +290,7 @@ public class UI {
             else if (command.equalsIgnoreCase("enter review")) {
                 System.out.println("Please add your review:");
                 String review = keyboard.nextLine();
-                CampFacade.addReview(review);
+                SummerCamp.addReview(review);
             } 
             else if (command.equalsIgnoreCase("read reviews")) {
                 CampFacade.readReviews();
@@ -474,6 +479,5 @@ public class UI {
         System.out.println("- Let's learn about sharks! With real life shark experts, let's learn about one of the earth's most interesting species.");
         System.out.println("Session 9: 08/20/2023 - 08/26/2023: SMORES");
         System.out.println("- Last but not least, let's finish off the summer with good ol' fashioned smores.");
-        
     }
 }
