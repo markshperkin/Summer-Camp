@@ -23,6 +23,7 @@ public class Counselor {
     public String UUid;
     public String email;
     public String password;
+    public String phoneNum;
 
 public Counselor (String id, String firstName, String lastName, String email, String password, String phoneNum, String birthday, String gender, String shirtSize, String street,String town,String state,String zipCode,String country,ArrayList<Contact> emergencyContacts, ArrayList<Medication> medications, ArrayList <String> allergies){
     this.firstName = firstName;
@@ -31,6 +32,7 @@ public Counselor (String id, String firstName, String lastName, String email, St
     this.gender = gender;
     this.shirtSize = shirtSize;
     this.email= email;
+    this.phoneNum = phoneNum;
     this.password=password;
     this.UUid = UUID.randomUUID().toString();
     contacts = new ArrayList<Contact>();
@@ -63,23 +65,17 @@ public Counselor (String id, String firstName, String lastName, String email, St
 
 
 
-    public String getMedName() {
-        return medName;
+    public String getEmail(){
+        return email;
     }
 
-
-
-    public String getMedtime() {
-        return medtime;
+    public String getPassword(){
+        return password;
     }
 
-
-
-    public String getMedDose() {
-        return medDose;
+    public String getPhoneNumber(){
+        return phone
     }
-
-
 
     public String getAllergy() {
         return allergy;

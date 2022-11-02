@@ -59,12 +59,8 @@ public class CampFacade {
         
     }
 
-    public static void addReview(String review){
-        
-    }
-
-    public static void readReviews(){
-        
+    public static ArrayList<String> readReviews(){
+        return SummerCamp.reviews;
     }
 
     public static void viewAllActivities(){
