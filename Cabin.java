@@ -19,6 +19,7 @@ public class Cabin {
     private ArrayList<Activity> morningActivities;
     private ArrayList<Activity> midActivities;
     private ArrayList<Activity> afternoonActivities;
+    private ArrayList<Activity> allActivities;
     private ArrayList<Activity> cabinActivities;
     private Activity activity;
     private Random rand;
@@ -113,6 +114,10 @@ public class Cabin {
         afternoonActivities.add(new Activity("Rock Wall", "West Camp", 4,30, Action.KAYAKING));
         afternoonActivities.add(new Activity("Hiking", "Forest", 4,30, Action.KAYAKING));
         afternoonActivities.add(new Activity("Scavenger Hunt", "Field", 4,30, Action.KAYAKING));
+    }
+
+    public ArrayList<Activity> getAllActivities(){
+        
     }
 
     public ArrayList<Activity> getActions(){

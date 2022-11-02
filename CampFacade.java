@@ -11,6 +11,7 @@ public class CampFacade {
     private SummerCamp summerCamp;
     private FAQ faq;
     private static Cabin cabin;
+    private static Sessions session;
     static ParentsList parentList = ParentsList.getInstance();
     static CounselorList counselorList = CounselorList.getInstance();
     static DirectorList directorList = DirectorList.getInstance();
@@ -61,10 +62,6 @@ public class CampFacade {
         DataWriter.saveCounselors();
     }
 
-    public static String getActivityByKeyWord (String word){
-        return SummerCamp.Search(word);
-    }
-
     public static HashMap<Days,ArrayList<Activity>> viewSchedule(){
         return cabin.getSchedule();  
     }
@@ -78,7 +75,8 @@ public class CampFacade {
     }
 
     public static void viewChild (String viewFirstName, String viewLastName){
-
+    // need to be able to find the child uuID using the first and last name, 
+        //then get that child object, and print it 
     }
 
     public static void getOneCabin (int y){
@@ -90,7 +88,11 @@ public class CampFacade {
     }
 
     public static void registerChild(String registerFirstName, String registerLastName, int sessionChoice){
-        
+        Sessions session2 = session.sessions.get(sessionChoice);
+        // need to be able to find the child uuID using the first and last name, 
+        //then get that child object, and add it to the session above (session2)
+
+
     }
 
     public static ArrayList<String> readReviews(){
@@ -98,7 +100,7 @@ public class CampFacade {
     }
 
     public static void viewAllActivities(){
-
+        cabin.getAllActivities();
     }
 
     public static void getCabin(){
@@ -106,6 +108,7 @@ public class CampFacade {
     }
 
     public static void getCabinCampers(){
+
 
     }
     
