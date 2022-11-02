@@ -15,7 +15,7 @@ public class Cabin {
     private ArrayList<Child> campers6;
     private ArrayList<Counselor> counselors;
     private Counselor counselor;
-    private ArrayList<Cabin> allCabins ;
+    public ArrayList<Cabin> allCabins ;
     private ArrayList<Activity> morningActivities;
     private ArrayList<Activity> midActivities;
     private ArrayList<Activity> afternoonActivities;
