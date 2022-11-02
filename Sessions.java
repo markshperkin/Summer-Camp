@@ -5,6 +5,7 @@ public class Sessions {
     public String [] themes;
     public String weeklyTheme;
     public ArrayList<Cabin> cabins;
+    public ArrayList<Sessions> sessions;
     Random ranNum = new Random();
     Cabin cabin = new Cabin();
 
@@ -30,10 +31,12 @@ public class Sessions {
 
     }
 
-    public void createSession(){
+    public ArrayList<Sessions> createSessions(){
         for (int x = 0; x < 10; x++){
             Sessions session = new Sessions(themes[x], cabin.getCabins());
+            sessions.add(session);
         }
+        return sessions;
     }
 
 }
