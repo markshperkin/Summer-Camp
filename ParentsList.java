@@ -9,6 +9,10 @@ public class ParentsList {
         parents= DataReader.getAllParents();
     }
 
+    public void addParentToList(Parent parent) {
+        parents.add(parent);
+    }
+
     public static ParentsList getInstance(){
         if (parentsList == null)
             parentsList = new ParentsList();

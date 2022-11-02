@@ -8,8 +8,6 @@ import org.json.simple.parser.JSONParser;
 
 public class DataReader extends DataConstants{
     
-    private static final JSONObject JSONObject = null;
-
     public static ArrayList<Parent> getAllParents(){
         ArrayList<Parent> parents = new ArrayList<Parent>();
 

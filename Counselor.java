@@ -41,6 +41,11 @@ public Counselor (String id, String firstName, String lastName, String email, St
 
 }
     
+    public Counselor(String firstName2, String lastName2, String email2, String password2, String phoneNum2,
+        String birthday2, String gender2, String gender3, String street, String town, String state, String zipCode,
+        String country, String userType, Object object, Object object2, Object object3) {
+}
+
     public String getFirstName() {
         return firstName;
     }

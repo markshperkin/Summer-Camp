@@ -52,7 +52,7 @@ public class UI {
 
         System.out.println("Please enter your password:");
         String logPassword = keyboard.nextLine();
-        
+
         if (CampFacade.login(logEmail, logPassword, typeUser) == true) {
             System.out.println("Hello " + logEmail);
             if (typeUser.equalsIgnoreCase("guardian")){
@@ -105,7 +105,7 @@ public class UI {
         System.out.println("Please enter your gender.");
         String gender = keyboard.nextLine();
         
-        CampFacade.signUp(firstName, lastName, email, password, phoneNum, birthday, street, town, state, zipCode, country, gender);
+        CampFacade.signUp(firstName, lastName, email, password, phoneNum, birthday, street, town, state, zipCode, country, gender,"guardian");
         ui.inGuardian();
     }
     
