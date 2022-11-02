@@ -114,6 +114,46 @@ public static JSONObject getChildsJSON(Child child){
 
     HashMap<String,Object> Childinfo =new HashMap<String,Object>();
     Childinfo.put(CHILD_ID,child.getID().toString());
+    Childinfo.put(CHILD_FIRST,child.getFirstName());
+    Childinfo.put(CHILD_LAST,child.getLastName());
+    Childinfo.put(CHILD_BIRTH,child.getBirthday());
+    Childinfo.put(CHILD_GENDER,child.getgender());
+    Childinfo.put(CHILD_SHIRTSIZE,child.getShirtSize());
+    Childinfo.put(CHILD_STRIKE,child.getStrike());
+    Childinfo.put(CHILD_ALLEGERY,child.getAllergy());
+
+    JSONArray JSONmedication =new JSONArray();
+
+    for(int i=0;i<child.getMedications().size();i++){
+        HashMap<String, Object> Childmed =new HashMap<String, Object>();
+        Medication medication=child.getMedications().get(i);
+        Childmed.put(CHILD_MEDNAME,medication.getMedName());
+        Childmed.put(CHILD_MEDTIME,medication.getMedTime());
+        Childmed.put(CHILD_MEDDOSE,medication.getMedDose());
+        JSONObject ChildmedJSON =new JSONObject();
+
+        JSONmedication.add(ChildmedJSON);
+    }
+
+    Childinfo.put(CHILD_MEDICATION,JSONmedication);
+
+    JSONArray JSONcontacts = new JSONArray();
+    for(int i=0; i<child.getContacts().size();i++){
+        HashMap<String, Object> childcon= new HashMap<String, Object>();
+        Contact contact =child.getContacts().get(i);
+        childcon.put(CHILD_CONTACT_FIRST,contact.getFirstName());
+        childcon.put(CHILD_CONTACT_LAST,contact.getLastName());
+        childcon.put(CHILD_CONTACT_EMAIL,contact.getEmail());
+        childcon.put(CHILD_CONTACT_PHONEN,contact.getPhoneNum());
+        childcon.put(CHILD_CONTACT_RELAT,contact.getRelationship());
+        JSONObject childconJSON = new JSONObject(childcon);
+
+       JSONcontacts.add(childconJSON);
+    }
+       Childinfo.put(CHILD_CONTACT,JSONcontacts);
+
+       JSONObject ChildinfoJSON= new JSONObject(Childinfo);
+       return ChildinfoJSON;
 
 }
 

@@ -16,6 +16,7 @@ public class Child {
     public ArrayList<Contact> contacts;
     public ArrayList<Medication> medications;
     public ArrayList<String> allergies;
+    public String Strike;
     public int monthInt;
     public int dayInt;
     public int yearInt;
@@ -32,8 +33,9 @@ public class Child {
      * @param medDose string of the med dose
      * @param allergy string of the child allergy
      */
-     public Child (String firstName, String lastName, String birthday, String gender, String shirtSize, String medName, String medtime, String medDose, String allergy){
+     public Child (String firstName, String lastName, String birthday, String gender, String shirtSize, String medName, String medtime, String medDose, String allergy,String Strike){
         this.firstName = firstName;
+        this.Strike=Strike;
         this.lastName = lastName;
         this.birthday = birthday;
         this.gender = gender;
@@ -46,6 +48,12 @@ public class Child {
         contacts = new ArrayList<Contact>();
         medications = new ArrayList<Medication>();
         allergies = new ArrayList<String>();
+    }
+    public ArrayList<Contact> getContacts() {
+        return contacts;
+    }
+    public ArrayList<Medication> getMedications() {
+        return medications;
     }
     /**
      * Creates a child with an existing UUID
@@ -186,5 +194,13 @@ public class Child {
     public String getID() {
         return id;
     }
+    public String getgender(){
+        return gender;
+
+    }
+    public String getStrike(){
+        return Strike;
+    }
+    
 
 }

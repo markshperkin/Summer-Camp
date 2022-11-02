@@ -53,6 +53,16 @@ public class DataConstants {
     protected static final String CHILD_SHIRTSIZE="shirtSize";
     protected static final String CHILD_STRIKE="strike";
     protected static final String CHILD_ALLEGERY="allergy";
+    protected static final String CHILD_MEDNAME="medName";
+    protected static final String CHILD_MEDTIME="medTime";
+    protected static final String CHILD_MEDDOSE="medDose";
+    protected static final String CHILD_MEDICATION="medication";
+    protected static final String CHILD_CONTACT_FIRST="firstName";
+    protected static final String CHILD_CONTACT_LAST="lastName";
+    protected static final String CHILD_CONTACT_PHONEN="phoneNum";
+    protected static final String CHILD_CONTACT_EMAIL="email";
+    protected static final String CHILD_CONTACT_RELAT="relationship";
+    protected static final String CHILD_CONTACT="contacts";
     
 
 

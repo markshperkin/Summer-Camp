@@ -141,7 +141,7 @@ public class DataReader extends DataConstants{
                 String country=(String) directorJSON.get(COUNTRY);
                 String birthday=(String) directorJSON.get(BIRTHDAY);
                
-               directors.add(new Director(UUID,fname,lname,email,password,phoneNum,street,town,zipCode,state,country,birthday));
+               directors.add(new Director(UUID,fname,lname,email,password,phoneNum,street,town,zipCode,state,country,birthday, null));
                 
             }
             return directors;
@@ -217,7 +217,7 @@ public class DataReader extends DataConstants{
                 ArrayList<Schedule> Monday =new ArrayList<Schedule>();
                 JSONArray jsonArray = (JSONArray) cabinsJSON.get(MONDAY);
                 
-                for(int j=0;j < jsonArray.size(); j++){
+                for(int j = 0; j < jsonArray.size(); j++){
 
                  JSONObject MONDAYJSON = (JSONObject) jsonArray.get(j);
                  String Mondaytitle=(String)MONDAYJSON.get(TITLE);
