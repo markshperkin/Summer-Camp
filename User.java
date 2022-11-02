@@ -13,7 +13,7 @@ public abstract class User {
     protected String country;
     protected String birthday;
     protected String gender;
-    protected UUID id;
+    protected String id;
     
 
     public User(String firstName, String lastName, String email) {
@@ -29,7 +29,7 @@ public abstract class User {
         this.zipCode=zipCode;
         this.country=country;
         this.gender=gender;
-        this.id = UUID.randomUUID();
+        this.id = UUID.randomUUID().toString();
         
     }
 
