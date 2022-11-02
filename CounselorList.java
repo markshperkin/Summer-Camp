@@ -21,6 +21,7 @@ public class CounselorList {
     public void getAllCounselors() {
         for(Counselor c: counselors) 
             System.out.println(c);
+            
     }
     public boolean login(String username, String password) {
         for(Counselor co: counselors) {

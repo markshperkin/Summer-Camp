@@ -193,7 +193,7 @@ public class DataReader extends DataConstants{
                     contacts.add(new Contact(contactFname, contactLname, contactPhoneNum, contactEmail, contactRelationship));
                 }
                
-                counselors.add(new Counselor(lname, fname, birthday, gender, size, lname, medication, size, email, password, str,allergy));
+                counselors.add(new Counselor(lname, fname, birthday, gender, size, lname, medication, size, email, password, str,allergy, str, str, str, contacts, jsonArray, jsonArray));
             }
         return counselors;
         }
@@ -334,8 +334,6 @@ public class DataReader extends DataConstants{
                 ArrayList<Counselor> counselor = new ArrayList<Counselor>();
                 JSONObject counselorArray =(JSONObject) cabinsJSON.get(COUNSELORS);
 
-                ArrayList<Theme> THeme = new ArrayList<Theme>();
-                JSONObject themearray =(JSONObject) cabinsJSON.get(THEME);
                 
             
             }
