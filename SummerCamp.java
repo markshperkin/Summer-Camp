@@ -7,7 +7,7 @@ public class SummerCamp{
     public String question;
     public String answer;
     public static ArrayList<String> reviews;
-    public ArrayList<Sessions> sessions;
+    public Sessions sessions = new Sessions();
     public String camperNeed;
     public ArrayList<String> camperNeeds;
     public static ArrayList<Child> campers;
@@ -39,8 +39,8 @@ public class SummerCamp{
         
     }
 
-    public void addSession(Sessions sessions){
-        
+    public ArrayList<Sessions> getAllSessions(){
+        return sessions.createSessions();
     }
 
     public void addFAQ(String question, String answer){
