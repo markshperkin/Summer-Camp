@@ -8,27 +8,26 @@ public class CounselorList {
     private static ArrayList<Counselor> counselors;
 
     private CounselorList(){
-
         counselors = DataReader.getAllCounselors();
     }
 
     public static CounselorList getInstance(){
-        if (counselorsList == null){
+        if (counselorsList == null)
             counselorsList = new CounselorList();
-        }
         return counselorsList;
     }
-    public void getAllCounselors() {
-        for(Counselor c: counselors) 
-            System.out.println(c);
-            
-    }
+
     public boolean login(String username, String password) {
-        for(Counselor co: counselors) {
-            if(co.email.equals(username) && co.password.equals(password))
+        for(Counselor p: counselors) {
+            if(p.email.equals(username) && p.password.equals(password))
                 return true;
         }
         return false;
+    }
+
+    public void getAllCounselors() {
+        for(Counselor c: counselors) 
+            System.out.println(c);
     }
 
     public Counselor getCounselorsByID(UUID id) {

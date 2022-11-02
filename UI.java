@@ -46,20 +46,23 @@ public class UI {
     public void login() {
         System.out.println("Are you a guardian, counselor, or an admin?");
         String typeUser = keyboard.nextLine();
+
         System.out.println("Please enter your email:");
         String logEmail = keyboard.nextLine();
+
         System.out.println("Please enter your password:");
         String logPassword = keyboard.nextLine();
-        if (CampFacade.login(logEmail, logPassword) == true) {
+
+        if (CampFacade.login(logEmail, logPassword, typeUser) == true) {
             System.out.println("Hello " + logEmail);
             if (typeUser.equalsIgnoreCase("guardian")){
                 ui.inGuardian();
             }
-            else if (typeUser.equalsIgnoreCase("counselor")){
+            if (typeUser.equalsIgnoreCase("counselor")){
                 ui.inCounselor();
     
             }
-            else if (typeUser.equalsIgnoreCase("admin")){
+            if (typeUser.equalsIgnoreCase("admin")){
                 ui.inAdmin();
             }
             else{
@@ -102,7 +105,7 @@ public class UI {
         System.out.println("Please enter your gender.");
         String gender = keyboard.nextLine();
         
-        CampFacade.signUp(firstName, lastName, email, password, phoneNum, birthday, street, town, state, zipCode, country, gender);
+        CampFacade.signUp(firstName, lastName, email, password, phoneNum, birthday, street, town, state, zipCode, country, gender,"guardian");
         ui.inGuardian();
     }
     

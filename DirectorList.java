@@ -12,9 +12,8 @@ private DirectorList(){
     
 
     public static DirectorList getInstance(){
-        if (directorList == null){
+        if (directorList == null)
             directorList = new DirectorList();
-        }
         return directorList;
     }
  public ArrayList<Director> getAllDirectors()

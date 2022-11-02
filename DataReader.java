@@ -8,8 +8,6 @@ import org.json.simple.parser.JSONParser;
 
 public class DataReader extends DataConstants{
     
-    private static final JSONObject JSONObject = null;
-
     public static ArrayList<Parent> getAllParents(){
         ArrayList<Parent> parents = new ArrayList<Parent>();
 
@@ -193,7 +191,7 @@ public class DataReader extends DataConstants{
                     contacts.add(new Contact(contactFname, contactLname, contactPhoneNum, contactEmail, contactRelationship));
                 }
                
-                counselors.add(new Counselor(lname, fname, birthday, gender, size, lname, medication, size, email, password, str,allergy, str, str, str, contacts, jsonArray, jsonArray));
+                counselors.add(new Counselor(UUID, fname, lname, email, password, phoneNum, birthday, gender, size, street, town, state, zipCode, country, aboutme, contacts, counselorJSON, jsonArray));
             }
         return counselors;
         }

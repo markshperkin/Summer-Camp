@@ -41,6 +41,8 @@ public Counselor (String id, String firstName, String lastName, String email, St
 
 }
     
+    
+
     public String getFirstName() {
         return firstName;
     }
