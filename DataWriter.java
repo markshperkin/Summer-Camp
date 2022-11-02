@@ -159,17 +159,20 @@ public static JSONObject getChildsJSON(Child child){
 public static JSONObject getParentsJSON(Parent parent){
     HashMap<String, Object> ParentsInfo= new HashMap<String, Object>();
     ParentsInfo.put(ID,UUID.randomUUID().toString());
+    ParentsInfo.put("User", "Parent");
     ParentsInfo.put(FIRSTNAME,parent.getfirstname());
     ParentsInfo.put(LASTNAME,parent.getlastname());
+    ParentsInfo.put(BIRTHDAY, parent.getbirthday());
     ParentsInfo.put(EMAIL,parent.getEmail());
-    
+    ParentsInfo.put(PASSWORD, parent.getPassword());
     ParentsInfo.put(PHONENUMBER,parent.getphonenum());
     ParentsInfo.put(STREET,parent.getstreet());
     ParentsInfo.put(TOWN,parent.gettown());
-    ParentsInfo.put(ZIPCODE,parent.getstate());
+    ParentsInfo.put(ZIPCODE,parent.getZipCode());
+    ParentsInfo.put(STATE, parent.getstate());
     ParentsInfo.put(COUNTRY,parent.getcountry());
     ParentsInfo.put(GENDER,parent.getGender());
-    //ParentsInfo.put(PARENT_CHILD,parent.getUUID().toString()); //TODO FIX THIS THIS JUST GETS AN EXISTING USERS ID
+    ParentsInfo.put(CHILDREN, parent.getChildID());
 
     JSONObject ParentInfoJSON = new JSONObject(ParentsInfo);
     
@@ -228,6 +231,7 @@ public static JSONObject getDirectorsJSON(Director director)
     Directorsinfo.put(ZIPCODE,director.getzipCode());
     Directorsinfo.put(COUNTRY,director.getCountry());
     Directorsinfo.put(BIRTHDAY, director.getbirthday());
+    
 
     JSONObject DirectorinfoJSON =new JSONObject(Directorsinfo);
     return DirectorinfoJSON;

@@ -19,6 +19,7 @@ public class DataConstants {
     protected static final String MEDDOSE="medDose";
     protected static final String SHIRSIZE="shirtSize";
     protected static final String STREET="street";
+    protected static final String CHILDREN= "children";
     protected static final String TOWN="town";
     protected static final String STATE="state";
     protected static final String ZIPCODE= "zipCode";

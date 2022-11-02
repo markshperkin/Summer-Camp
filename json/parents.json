@@ -1,51 +1,71 @@
 [
+ {
+  "id":"eb976e86-5667-4ff6-9822-9da64d217558",
+  "User": "Parent",
+  "firstName": "Karla",
+  "lastName": "Johnson",
+  "birthday": "09/01/1977",
+  "email" : "kJohnson342@gmail.com",
+  "password":"ir3211",
+  "phoneNum":"803-543-9999",
+  "street" :"543 Lowery Ct",
+  "town": "West Columbia",
+  "zipCode": "29172",
+  "state": "South Carolina",
+  "country": "United States",
+  "Gender":"Female",
+  "children" : ["d72fe20f-f381-4b6d-898c-2f12551e1d62"]    
+  },
   {
-    "firstName": "Karla",
-    "lastName": "Johnson",
-    "zipCode": "West Columbia",
-    "country": "29172",
-    "town": "543 Lowery Ct",
-    "street": "09\/01\/1977",
-    "phoneNum": "803-543-9999",
-    "id": "10771103-1199-496c-91f5-babefcc2da51",
-    "Gender": null,
-    "email": "kJohnson342@gmail.com"
+  "id":"6d217b18-dc3e-4612-bb2a-43bf7547ba10",
+  "User": "Parent",
+  "firstName": "Alex",
+  "lastName": "Johnson",
+  "birthday": "03/07/1976",
+  "email" : "AJH874@gmail.com",
+  "password":"re234s",
+  "phoneNum":"803-654-8554",
+  "street" :"543 Lowery Ct",
+  "town": "West Columbia",
+  "zipCode": "29170",
+  "state": "South Carolina",
+  "country": "United States",
+  "Gender":"Male",
+  "children": ["d72fe20f-f381-4b6d-898c-2f12551e1d62"]  
     
-  },
-  {
-    "firstName": "Alex",
-    "lastName": "Johnson",
-    "zipCode": "West Columbia",
-    "country": "29170",
-    "town": "543 Lowery Ct",
-    "street": "03\/07\/1976",
-    "phoneNum": "803-654-8554",
-    "id": "bb7b1d21-df05-457a-b866-31c85ece9259",
-    "Gender": null,
-    "email": "AJH874@gmail.com"
-  },
-  {
+  },{
+    "id":"d043fb8b-06a2-4f95-bb25-4306df4448e3",
+    "User": "Parent",
     "firstName": "Jared",
     "lastName": "Waterman",
-    "zipCode": "Columbia",
-    "country": "29201",
-    "town": "942 Tremble Dr",
-    "street": "07\/31\/1990",
-    "phoneNum": "803-853-3255",
-    "id": "9370eed4-c0d3-4a51-9d9f-382e7656c33d",
-    "Gender": null,
-    "email": "jWat342@gmail.com"
-  },
-  {
+    "birthday": "07/31/1990",
+    "email" : "jWat342@gmail.com",
+    "password":"RTS543",
+    "phoneNum":"803-853-3255",
+    "street" :"942 Tremble Dr",
+    "town": "Columbia",
+    "zipCode": "29201",
+    "state": "South Carolina",
+    "country": "United States",
+    "Gender":"Male",
+    "children": ["d72fe20f-f381-4b6d-898c-2f12551e1d62"]
+   
+  },{
+    "id":"d7851dcd-7936-4fa6-a721-4ab30876773f",
+    "User": "Parent",
     "firstName": "Nora",
     "lastName": "Waterman",
-    "zipCode": "Columbia",
-    "country": "29201",
-    "town": "942 Tremble Dr",
-    "street": "09\/13\/1992",
-    "phoneNum": "803-531-3255",
-    "id": "a879b966-e2ee-48f6-84ba-28a9961eb3b1",
-    "Gender": null,
-    "email": "NWat32@gmail.com"
-  }
+    "birthday": "09/13/1992",
+    "email" : "NWat32@gmail.com",
+    "password": "ware2122",
+    "phoneNum":"803-531-3255",
+    "street" :"942 Tremble Dr",
+    "town": "Columbia",
+    "zipCode": "29201",
+    "state": "South Carolina",
+    "country": "United States",
+    "Gender":"Male",
+    "children": ["d72fe20f-f381-4b6d-898c-2f12551e1d62"]
+    }
 ]
+  
