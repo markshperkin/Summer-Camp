@@ -40,5 +40,19 @@ public class Parent extends User{
     public String getUUID() {
         return id;
     }
+    public String getstreet(){
+        return street;
+    }
+    public String gettown(){
+        return town;
+
+    }
+    public String getstate(){
+        return state;
+
+    }
+    public String getcountry(){
+        return country;
+    }
 
 }

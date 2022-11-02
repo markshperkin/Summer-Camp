@@ -6,7 +6,7 @@ public class SummerCamp{
     public ArrayList<FAQ> faqs;
     public String question;
     public String answer;
-    public ArrayList<String> reviews;
+    public static ArrayList<String> reviews;
     public ArrayList<Sessions> sessions;
     public String camperNeed;
     public ArrayList<String> camperNeeds;
@@ -33,6 +33,10 @@ public class SummerCamp{
 
     }
 
+    public SummerCamp(){
+        
+    }
+
     public void addActivity(Activity activity){
         
     }
@@ -46,12 +50,14 @@ public class SummerCamp{
     }
 
     public static void addReview(String review){
-
+        reviews.add(review);
     }
 
     public void addCamperNeed(String camperNeed){
 
     }
+
+    
 
     public void displayCampInfo (String campAddress, String campEmail, String campNumber){
 

@@ -1,87 +1,107 @@
 import java.util.UUID;
 
+/**
+ * Abstract class for users
+ */
 public abstract class User {
     protected String firstName;
     protected String lastName;
     protected String email;
     protected String password;
     protected String phoneNum;
-    protected String  street;
+    protected String street;
     protected String town;
     protected String state;
-    protected static String zipCode;
+    protected String zipCode;
     protected String country;
     protected String birthday;
     protected String gender;
     protected String id;
-    
-
-    public User(String firstName, String lastName, String email) {
+    /**
+     * Constructor for creating a new user
+     * @param firstName string of the user first name
+     * @param lastName string of the user last name
+     * @param email string of the user email
+     * @param password string of the user password
+     * @param phoneNum string of the user phone number
+     * @param street string of the user street
+     * @param town string of the user town
+     * @param state string of the user state
+     * @param zipCode string of the user zipcode
+     * @param country string of the user country
+     * @param birthday string of the user birthday
+     * @param gender string of the user gender
+     */
+    public User(String firstName, String lastName, String email, String password, String phoneNum, String street, String town, String state, String zipCode, String country, String birthday, String gender) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
         this.phoneNum = phoneNum;
         this.birthday = birthday;
-        this.street =street;
-        this.town=town;
-        this.state=state;
-        this.zipCode=zipCode;
-        this.country=country;
-        this.gender=gender;
-        this.id = UUID.randomUUID().toString();
-        
+        this.street = street;
+        this.town = town;
+        this.state = state;
+        this.zipCode = zipCode;
+        this.country = country;
+        this.gender = gender;
+        this.id = UUID.randomUUID().toString();   
     }
-
-    public User(String fname, String lname, String email2, String password2, String phoneNum2, String street2,
-            String town2, String state2, String zipCode2, String country2, String birthday2, String gender2) {
-    }
-
-    // public static void createUser(String firstName,String lastName,String email,String password, String phoneNum, String birthday) {
-    //     User user = new User(firstName, lastName, email, password, phoneNum, birthday);
-    // }
-    public String getfirstname()
-    {
+    /**
+     * gets first name of user
+     * @return String first name
+     */
+    public String getfirstname() {
         return firstName;
-
     }
-    public String getlastname()
-    {
+    /**
+     * gets the lastname of the user
+     * @return String lastname
+     */
+    public String getlastname() {
         return lastName;
-
     }
-    public String getphonenum()
-    {
+    /**
+     * gets the phone number of user
+     * @return String phone number
+     */
+    public String getphonenum() {
         return phoneNum;
-
-    
     }
-    public String getbirthday()
-    {
+    /**
+     * gets the birthday of the user
+     * @return String birthday
+     */
+    public String getbirthday() {
        return birthday;
-
     }
-    public String getgender()
-    {
+    /**
+     * gets the gender of the user
+     * @return String gender
+     */
+    public String getGender() {
         return gender;
-
     }
+    /**
+     * gets the UUID of user
+     * @return String id
+     */
     public String getUUID() {
         return id;
     }
-
-    public static String getEmail() {
+    /**
+     * gets the email of the user
+     * @return String email
+     */
+    public String getEmail() {
         return email;
     }
-
-    public static String getPassword() {
+    /**
+     * gets the password of the user
+     * @return String password
+     */
+    public String getPassword() {
         return password;
     }
-    public String ViewActivities() {
-        return null;
-    }
-
-    public String addAddress(String street, String town, String state, String zipCode, String country) {
-        return "";
-    }
+    
 }

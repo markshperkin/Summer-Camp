@@ -64,5 +64,30 @@ public class DataConstants {
     protected static final String CHILD_CONTACT_EMAIL="email";
     protected static final String CHILD_CONTACT_RELAT="relationship";
     protected static final String CHILD_CONTACT="contacts";
+<<<<<<< HEAD
+    protected static final String PARENT_ID="id";
+    protected static final String PARENT_FIRST="firstName";
+    protected static final String PARENT_LAST="lastName";
+    protected static final String PARENT_BIRTHDAY= "birthday";
+    protected static final String PARENT_EMAIL="email";
+    protected static final String PARENT_PASSWORD="password";
+    protected static final String PARENT_PHONE="phoneNum";
+    protected static final String PARENT_STREET="street";
+    protected static final String PARENT_TOWN="town";
+    protected static final String PARENT_ZIP_CODE="zipCode";
+    protected static final String PARENT_STATE="state";
+    protected static final String PARENT_COUNTRY="country";
+    protected static final String PARENT_GENDER="Gender";
+    protected static final String PARENT_CHILD="children";
+
+    
+
+
+
+
+
+    
+=======
        
+>>>>>>> 3883b0bd08c2a743c3496eaae831196f6f420a8a
 }

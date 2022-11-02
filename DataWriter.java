@@ -120,7 +120,7 @@ public static JSONObject getChildsJSON(Child child){
     Childinfo.put(CHILD_GENDER,child.getgender());
     Childinfo.put(CHILD_SHIRTSIZE,child.getShirtSize());
     Childinfo.put(CHILD_STRIKE,child.getStrike());
-    Childinfo.put(CHILD_ALLEGERY,child.getAllergy());
+    Childinfo.put(CHILD_ALLEGERY,child.getAllergies());
 
     JSONArray JSONmedication =new JSONArray();
 
@@ -156,6 +156,25 @@ public static JSONObject getChildsJSON(Child child){
        return ChildinfoJSON;
 
 }
+public static JSONObject getParentsJSON(Parent parent){
+    HashMap<String, Object> ParentsInfo= new HashMap<String, Object>()
+    ParentsInfo.put(PARENT_ID,parent.getUUID().toString());
+    ParentsInfo.put(PARENT_FIRST,parent.getfirstname());
+    ParentsInfo.put(PARENT_LAST,parent.getlastname());
+    ParentsInfo.put(PARENT_EMAIL,parent.getEmail());
+    ParentsInfo.put(PARENT_PHONE,parent.getphonenum());
+    ParentsInfo.put(PARENT_STREET,parent.getstreet());
+    ParentsInfo.put(PARENT_TOWN,parent.gettown());
+    ParentsInfo.put(PARENT_ZIP_CODE,parent.getstate());
+    ParentsInfo.put(PARENT_COUNTRY,parent.getcountry());
+    ParentsInfo.put(PARENT_GENDER,parent.getgender());
+    ParentsInfo.put(PARENT_CHILD,parent.getUUID().toString());
+
+    JSONObject ParentInfoJSON = new JSONObject(ParentsInfo);
+    
+    return ParentInfoJSON;
+
+}   
 
 public static JSONObject getCounselorsJSON(Counselor counselor) {
     HashMap<String,Object> Counselorsinfo = new HashMap<String,Object>();

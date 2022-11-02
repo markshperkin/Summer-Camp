@@ -6,15 +6,12 @@ import java.util.UUID;
 /**
  * Creates a child
  */
-public class Counselor {
+public class Counselor extends User{
     public String firstName;
     public String lastName;
     public String birthday;
     public String gender;
-    public String medName;
-    public String medtime;
-    public String medDose;
-    public String allergy;
+    public String aboutMe;
     public String Aboutme;
     public String shirtSize;
     public ArrayList<Contact> contacts;
@@ -23,14 +20,20 @@ public class Counselor {
     public String UUid;
     public String email;
     public String password;
+    public String phoneNum;
 
-public Counselor (String id, String firstName, String lastName, String email, String password, String phoneNum, String birthday, String gender, String shirtSize, String street,String town,String state,String zipCode,String country,ArrayList<Contact> emergencyContacts, ArrayList<Medication> medications, ArrayList <String> allergies){
+public Counselor (String id, String firstName, String lastName, String email, String password, String phoneNum, String birthday, String gender, String shirtSize, String street,String town,String state,String zipCode,String country, String aboutMe, ArrayList<Contact> emergencyContacts, ArrayList<Medication> medications, ArrayList <String> allergies){
+   super(firstName, lastName, email, password, phoneNum, birthday,street,town,state,zipCode,country,gender);
+   
+   
     this.firstName = firstName;
     this.lastName = lastName;
     this.birthday = birthday;
     this.gender = gender;
+    this.aboutMe = aboutMe;
     this.shirtSize = shirtSize;
     this.email= email;
+    this.phoneNum = phoneNum;
     this.password=password;
     this.UUid = UUID.randomUUID().toString();
     contacts = new ArrayList<Contact>();
@@ -42,8 +45,6 @@ public Counselor (String id, String firstName, String lastName, String email, St
     public String getFirstName() {
         return firstName;
     }
-
-
 
     public String getLastName() {
         return lastName;
@@ -63,29 +64,25 @@ public Counselor (String id, String firstName, String lastName, String email, St
 
 
 
-    public String getMedName() {
-        return medName;
+    public String getEmail(){
+        return email;
     }
 
-
-
-    public String getMedtime() {
-        return medtime;
+    public String getPassword(){
+        return password;
     }
 
-
-
-    public String getMedDose() {
-        return medDose;
+    public String getPhoneNumber(){
+        return phoneNum;
     }
 
-
-
-    public String getAllergy() {
-        return allergy;
+    public String getStreet(){
+        return street;
     }
 
-
+    public ArrayList<String> getAllergy() {
+        return allergies;
+    }
 
     public String getAboutme() {
         return Aboutme;
@@ -97,41 +94,20 @@ public Counselor (String id, String firstName, String lastName, String email, St
         return contacts;
     }
 
-
-
     public ArrayList<Medication> getMedications() {
         return medications;
     }
 
-    
-
-    
-    
-
     public String getshirtSize(){
         return shirtSize; 
-    }
-
-        
+    } 
 
     public void addMedication(String medName, String medTime, String medDose){
         
     }
 
     public void addAllergy(String allergy){
-        allergies.add(this.allergy);
-    }
-
-    public void addStrike (String firstName, String lastName, int strike){
-
-    }
-
-    public void receiveCampers(){
-
-    }
-
-    public String addAddress(String street, String town, String state, int zipCode, String country){
-        return "";
+        allergies.add(allergy);
     }
 
     public String getUUID() {
