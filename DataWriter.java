@@ -162,6 +162,7 @@ public static JSONObject getParentsJSON(Parent parent){
     ParentsInfo.put(FIRSTNAME,parent.getfirstname());
     ParentsInfo.put(LASTNAME,parent.getlastname());
     ParentsInfo.put(EMAIL,parent.getEmail());
+    
     ParentsInfo.put(PHONENUMBER,parent.getphonenum());
     ParentsInfo.put(STREET,parent.getstreet());
     ParentsInfo.put(TOWN,parent.gettown());
