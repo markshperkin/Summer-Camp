@@ -33,9 +33,7 @@ public class SummerCamp{
 
     }
 
-    public SummerCamp(){
-        
-    }
+    public SummerCamp(){}
 
     public void addActivity(Activity activity){
         
@@ -57,7 +55,9 @@ public class SummerCamp{
 
     }
 
-    
+    public ArrayList<Child> getAllCampers(){
+        return campers;
+    }
 
     public void displayCampInfo (String campAddress, String campEmail, String campNumber){
 
@@ -66,15 +66,11 @@ public class SummerCamp{
     public static String Search(String searchWord){
         return "activity by word";
     }
+
     public String sendNotif(String email, String notification) {
         return " ";
     }
-    public int getWeek() {
-        return WEEK;
-    }
-    public boolean withinWeek() {
-        return true;
-    }
+
 
     
 }
