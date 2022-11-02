@@ -150,6 +150,9 @@ public class Child {
     public String getStrike(){
         return Strike;
     }
+    public ArrayList<String> getAllergies(){
+        return allergies ;
+    }
     
 
 }

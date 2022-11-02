@@ -120,7 +120,7 @@ public static JSONObject getChildsJSON(Child child){
     Childinfo.put(CHILD_GENDER,child.getgender());
     Childinfo.put(CHILD_SHIRTSIZE,child.getShirtSize());
     Childinfo.put(CHILD_STRIKE,child.getStrike());
-    Childinfo.put(CHILD_ALLEGERY,child.getAllergy());
+    Childinfo.put(CHILD_ALLEGERY,child.getAllergies());
 
     JSONArray JSONmedication =new JSONArray();
 
