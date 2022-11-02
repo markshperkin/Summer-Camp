@@ -193,7 +193,6 @@ public static JSONObject getCounselorsJSON(Counselor counselor) {
     Counselorsinfo.put(ALLERGY, counselor.getAllergy());
     Counselorsinfo.put(MEDICATION, counselor.getMedications());
     Counselorsinfo.put(SHIRSIZE, counselor.getshirtSize());
-    Counselorsinfo.put(STRIKE, counselor.getStrike());
 
     JSONArray JSONcontacts = new JSONArray();
     for(int i=0; i<counselor.getContacts().size();i++){
