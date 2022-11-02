@@ -19,11 +19,14 @@ public class SummerCamp{
     public String notification;
     public String searchWord;
     public static final int WEEK=10;
+    public ArrayList<Cabin> cabins;
+    public Cabin cabin;
 
     public SummerCamp(String question, String answer, String camperNeed, String campAddress, String campEmail, String notification, String searchWord, int campNumber ){
         this.question = question;
         this.answer = answer;
         this.camperNeed = camperNeed;
+        cabin = new Cabin();
         this.campAddress = campAddress;
         this.campEmail = campEmail;
         this.notification = notification;
@@ -69,6 +72,10 @@ public class SummerCamp{
 
     public String sendNotif(String email, String notification) {
         return " ";
+    }
+
+    public void getCabins(ArrayList<Cabin> cabinAdded){
+        cabin.getCabins();
     }
 
 
