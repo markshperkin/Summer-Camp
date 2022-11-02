@@ -158,16 +158,16 @@ public static JSONObject getChildsJSON(Child child){
 }
 public static JSONObject getParentsJSON(Parent parent){
     HashMap<String, Object> ParentsInfo= new HashMap<String, Object>();
-    ParentsInfo.put(PARENT_ID,UUID.randomUUID().toString());
-    ParentsInfo.put(PARENT_FIRST,parent.getfirstname());
-    ParentsInfo.put(PARENT_LAST,parent.getlastname());
-    ParentsInfo.put(PARENT_EMAIL,parent.getEmail());
-    ParentsInfo.put(PARENT_PHONE,parent.getphonenum());
-    ParentsInfo.put(PARENT_STREET,parent.getstreet());
-    ParentsInfo.put(PARENT_TOWN,parent.gettown());
-    ParentsInfo.put(PARENT_ZIP_CODE,parent.getstate());
-    ParentsInfo.put(PARENT_COUNTRY,parent.getcountry());
-    ParentsInfo.put(PARENT_GENDER,parent.getGender());
+    ParentsInfo.put(ID,UUID.randomUUID().toString());
+    ParentsInfo.put(FIRSTNAME,parent.getfirstname());
+    ParentsInfo.put(LASTNAME,parent.getlastname());
+    ParentsInfo.put(EMAIL,parent.getEmail());
+    ParentsInfo.put(PHONENUMBER,parent.getphonenum());
+    ParentsInfo.put(STREET,parent.getstreet());
+    ParentsInfo.put(TOWN,parent.gettown());
+    ParentsInfo.put(ZIPCODE,parent.getstate());
+    ParentsInfo.put(COUNTRY,parent.getcountry());
+    ParentsInfo.put(GENDER,parent.getGender());
     //ParentsInfo.put(PARENT_CHILD,parent.getUUID().toString()); //TODO FIX THIS THIS JUST GETS AN EXISTING USERS ID
 
     JSONObject ParentInfoJSON = new JSONObject(ParentsInfo);
@@ -231,4 +231,9 @@ public static JSONObject getDirectorsJSON(Director director)
     JSONObject DirectorinfoJSON =new JSONObject(Directorsinfo);
     return DirectorinfoJSON;
 }
+ public static JSONObject getCabinsjson(Cabins cabin){
+    HashMap<String, Object>Cabininfo=new HashMap<String, Object>();
+    Cabinsinfo.put()
+ }
+
 }
