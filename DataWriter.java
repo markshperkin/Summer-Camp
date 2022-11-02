@@ -167,7 +167,7 @@ public static JSONObject getParentsJSON(Parent parent){
     ParentsInfo.put(PARENT_TOWN,parent.gettown());
     ParentsInfo.put(PARENT_ZIP_CODE,parent.getstate());
     ParentsInfo.put(PARENT_COUNTRY,parent.getcountry());
-    ParentsInfo.put(PARENT_GENDER,parent.getgender());
+    ParentsInfo.put(PARENT_GENDER,parent.getGender());
     ParentsInfo.put(PARENT_CHILD,parent.getUUID().toString());
 
     JSONObject ParentInfoJSON = new JSONObject(ParentsInfo);
@@ -185,6 +185,30 @@ public static JSONObject getCounselorsJSON(Counselor counselor) {
     Counselorsinfo.put(PASSWORD, counselor.getPassword());
     Counselorsinfo.put(PHONENUMBER, counselor.getPhoneNumber());
     Counselorsinfo.put();
+}
+
+
+public static JSONObject getDirectorsJSON(Director director)
+{
+    HashMap<String, Object> Directorinfo= new HashMap<String, Object>();
+    Directorinfo.put(ID,director.getUUID().toString());
+    Directorinfo.put(FIRSTNAME,director.getfirstname());
+    Directorinfo.put(LASTNAME,director.getlastname());
+    Directorinfo.put(EMAIL, director.getEmail());
+    Directorinfo.put(PASSWORD,director.getPassword());
+    Directorinfo.put(PHONENUMBER,director.getphonenum());
+    Directorinfo.put(STREET,director.getstreet());
+    Directorinfo.put(TOWN,director.gettown());
+    Directorinfo.put(STATE,director.getState());
+    Directorinfo.put(ZIPCODE,director.getzipCode());
+    Directorinfo.put(COUNTRY,director.getCountry());
+    Directorinfo.put(BIRTHDAY,director.getbirthday());
+    
+    
+
+     JSONObject DirectorinfoJSON = new JSONObject(Directorinfo);
+     return DirectorinfoJSON;
+
 }
 
 }

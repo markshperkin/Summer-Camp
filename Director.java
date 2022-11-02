@@ -7,17 +7,7 @@ public class Director extends User {
     public String id;
 
     public Director(String fname, String lname, String email, String password, String phoneNum, String street,
-<<<<<<< HEAD
-            String town, String zipCode, String state, String country, String birthday,String gender,String id) {
-    
-                super(fname,lname,email,password,phoneNum,street,town,zipCode,state,country,birthday,gender);
-                this.id=id;
-                
-    
-            }
-=======
             String town, String zipCode, String state, String country, String birthday, String gender) {
->>>>>>> 90ffe374077f7b00899ef9a51e5a9aa5577d353d
 
         super(fname, lname, email, password, phoneNum, street, town, zipCode, state, country, birthday, gender);
         this.id = UUID.randomUUID().toString();
@@ -39,5 +29,23 @@ public class Director extends User {
 
     public int checkMoney() {
         return 0;
+    }
+    public String getstreet(){
+        return street;
+    }
+    public String gettown(){
+        return town;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public String getzipCode() {
+        return zipCode;
     }
 }
