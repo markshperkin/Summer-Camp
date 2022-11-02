@@ -213,16 +213,17 @@ public class DataReader extends DataConstants{
                 String UUID = (String) cabinsJSON.get("id");
                 ArrayList<Schedule> schedule = new ArrayList<Schedule>();
                 ArrayList<Schedule> Monday =new ArrayList<Schedule>();
-                JSONArray jsonArray = (JSONArray) cabinsJSON.get(MONDAY);
+                JSONObject scheduleObj = (JSONObject) cabinsJSON.get(SCHEDULE);
                 
-                for(int j = 0; j < jsonArray.size(); j++){
+                JSONArray monday = (JSONArray) scheduleObj.get(MONDAY);
+                for(int j = 0; j < monday.size(); j++){
 
-                 JSONObject MONDAYJSON = (JSONObject) jsonArray.get(j);
+                 JSONObject MONDAYJSON = (JSONObject) monday.get(j);
                  String Mondaytitle=(String)MONDAYJSON.get(TITLE);
                  String Mondaydescription=(String)MONDAYJSON.get(DESCRIPTION);
                  String Mondaylocation=(String)MONDAYJSON.get(LOCATION);
-                 String Mondayclockhour=(String)MONDAYJSON.get(CLOCKHOURS);
-                 String Mondayclockmin=(String)MONDAYJSON.get(CLOCKMINUTE);
+                 String Mondayclockhour=(String)MONDAYJSON.get(CLOCKHOURS).toString();
+                 String Mondayclockmin=(String)MONDAYJSON.get(CLOCKMINUTE).toString();
                  String MondayTOD=(String)MONDAYJSON.get(TIMEOFDAY);
                  String Mondayaction=(String)MONDAYJSON.get(ACTION);
 
@@ -233,7 +234,7 @@ public class DataReader extends DataConstants{
                 
                 for(int k=0;k < jsonArray1.size(); k++){
 
-                 JSONObject TUESDAYJSON = (JSONObject) jsonArray.get(k);
+                 JSONObject TUESDAYJSON = (JSONObject) monday.get(k);
                  String TUESDAYtitle=(String)TUESDAYJSON.get(TITLE);
                  String TUESDAYdescription=(String)TUESDAYJSON.get(DESCRIPTION);
                  String TUESDAYlocation=(String)TUESDAYJSON.get(LOCATION);
@@ -249,7 +250,7 @@ public class DataReader extends DataConstants{
                 
                 for(int l=0;l < jsonArray2.size(); l++){
 
-                 JSONObject WEDNESDAYJSON = (JSONObject) jsonArray.get(l);
+                 JSONObject WEDNESDAYJSON = (JSONObject) monday.get(l);
                  String WEDNESDAYtitle=(String)WEDNESDAYJSON.get(TITLE);
                  String WEDNESDAYdescription=(String)WEDNESDAYJSON.get(DESCRIPTION);
                  String WEDNESDAYlocation=(String)WEDNESDAYJSON.get(LOCATION);
@@ -266,7 +267,7 @@ public class DataReader extends DataConstants{
                 
                 for(int m=0;m < jsonArray3.size(); m++){
 
-                 JSONObject THURSDAYJSON = (JSONObject) jsonArray.get(m);
+                 JSONObject THURSDAYJSON = (JSONObject) monday.get(m);
                  String THURSDAYtitle=(String)THURSDAYJSON.get(TITLE);
                  String THURSDAYdescription=(String)THURSDAYJSON.get(DESCRIPTION);
                  String THURSDAYlocation=(String)THURSDAYJSON.get(LOCATION);
@@ -282,7 +283,7 @@ public class DataReader extends DataConstants{
                 
                 for(int n=0;n < jsonArray4.size(); n++){
 
-                 JSONObject FRIDAYJSON = (JSONObject) jsonArray.get(n);
+                 JSONObject FRIDAYJSON = (JSONObject) monday.get(n);
                  String FRIDAYtitle=(String)FRIDAYJSON.get(TITLE);
                  String FRIDAYdescription=(String)FRIDAYJSON.get(DESCRIPTION);
                  String FRIDAYlocation=(String)FRIDAYJSON.get(LOCATION);
@@ -298,7 +299,7 @@ public class DataReader extends DataConstants{
                 
                 for(int s=0;s < jsonArray5.size(); s++){
 
-                 JSONObject SATURDAYJSON = (JSONObject) jsonArray.get(s);
+                 JSONObject SATURDAYJSON = (JSONObject) monday.get(s);
                  String SATURDAYtitle=(String)SATURDAYJSON.get(TITLE);
                  String SATURDAYdescription=(String)SATURDAYJSON.get(DESCRIPTION);
                  String SATURDAYlocation=(String)SATURDAYJSON.get(LOCATION);
@@ -314,7 +315,7 @@ public class DataReader extends DataConstants{
                 
                 for(int su=0;su < jsonArray6.size(); su++){
 
-                 JSONObject SUNDAYJSON = (JSONObject) jsonArray.get(su);
+                 JSONObject SUNDAYJSON = (JSONObject) monday.get(su);
                  String SUNDAYtitle=(String)SUNDAYJSON.get(TITLE);
                  String SUNDAYdescription=(String)SUNDAYJSON.get(DESCRIPTION);
                  String SUNDAYlocation=(String)SUNDAYJSON.get(LOCATION);
