@@ -1,14 +1,11 @@
 import java.util.Random;
 import java.util.*;
 
-<<<<<<< HEAD
-
-=======
 //import javax.swing.Action;
 /**
  * Creates an activity class
  */
->>>>>>> b48a6e8483c82afb94b8b41422de5e9f01abdd9d
+
 public class Activity {
     private String title;
     private String description;
@@ -17,29 +14,25 @@ public class Activity {
     private String clockMinute;
     private String timeofday;
     private String action;
-<<<<<<< HEAD
- 
-    
-=======
->>>>>>> b48a6e8483c82afb94b8b41422de5e9f01abdd9d
+
     private static final Random RANDOM = new Random();
     /**
      * Constructor for activity
      * @param title A string of activity title
      * @param description A string of activity description
      * @param location A string of activity location
-     * @param clockHour A string of activity clock hour
-     * @param clockMinute A string of activity clock minute
+     * @param i A string of activity clock hour
+     * @param j A string of activity clock minute
      * @param timeofday A string of activity time of day
      * @param action A string of activity action
      */
-    public Activity(String title, String description, String location, String clockHour, String clockMinute, String timeofday, String action) 
+    public Activity(String title, String description, String location, int i, int j, String timeofday, String action) 
     {
         this.title = title;
         this.description = description;
         this.location = location;
-        this.clockHour = clockHour;
-        this.clockMinute = clockMinute;
+        this.clockHour = i;
+        this.clockMinute = j;
         this.timeofday = timeofday;
         this.action = action;
     }
