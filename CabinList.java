@@ -31,11 +31,12 @@ public class CabinList {
         
     }
 
-    public void getAllCabins() {
+    public ArrayList<Cabin> getAllCabins() {
         for(Cabin c: cabins) {
             System.out.println(c);
-            return cabin
+           
         }
+        return cabins;
     }
 
     public void save() {
