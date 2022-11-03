@@ -359,13 +359,21 @@ public class DataReader extends DataConstants {
                 finalSchedule.put(Days.SATURDAY, saturdayActivity);
                 finalSchedule.put(Days.SUNDAY, sundayActivity);
 
-                cabins.add(new Cabin(counselor, camper, finalSchedule));
+                cabins.add(new Cabin(getCounselorByID(counselor), camper, finalSchedule));
             }
             return cabins;
         } catch (Exception e) {
             e.printStackTrace();
         }
 
+        return null;
+    }
+
+    public static Counselor getCounselorByID (String ID) {
+        for(int i = 0; i < DataReader.getAllCounselors().size();i++) {
+            if(DataReader.getAllCounselors().get(i).getUUID().equals(ID))
+                return DataReader.getAllCounselors().get(i);
+        }
         return null;
     }
 }

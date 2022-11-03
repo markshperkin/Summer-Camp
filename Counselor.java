@@ -111,13 +111,7 @@ public Counselor (String id, String firstName, String lastName, String email, St
         allergies.add(allergy);
     }
 
-    public Counselor getCounselorByID (String ID) {
-        for(int i = 0; i < DataReader.getAllCounselors().size();i++) {
-            if(DataReader.getAllCounselors().get(i).getUUID().equals(ID))
-                return DataReader.getAllCounselors().get(i);
-        }
-        return null;
-    }
+    
 
     public String getUUID() {
         return UUid.toString();

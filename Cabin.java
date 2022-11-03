@@ -27,7 +27,7 @@ public class Cabin {
     public String cMP;
 
 
-    public Cabin (Counselor counselor, ArrayList<Child> arrayList, HashMap<Days,ArrayList<Activity>> schedule){
+    public Cabin (Counselor counselor, ArrayList<String> camper, HashMap<Days,ArrayList<Activity>> schedule){
         this.counselor = counselor;
         schedule = new HashMap<Days,ArrayList<Activity>>();
         activity = new Activity();
