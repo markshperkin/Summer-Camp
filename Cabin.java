@@ -14,8 +14,8 @@ public class Cabin {
     private ArrayList<Child> campers5;
     private ArrayList<Child> campers6;
     private ArrayList<Counselor> counselors;
-    private String counselor;
-    private ArrayList<Cabin> allCabins ;
+    private Counselor counselor;
+    public ArrayList<Cabin> allCabins ;
     private ArrayList<Activity> morningActivities;
     private ArrayList<Activity> midActivities;
     private ArrayList<Activity> afternoonActivities;
@@ -27,10 +27,9 @@ public class Cabin {
     public String cMP;
 
 
-    public Cabin (String counselor, ArrayList<String> campers, HashMap<Days,ArrayList<Activity>> schedule){
+    public Cabin (Counselor counselor, ArrayList<Child> arrayList, HashMap<Days,ArrayList<Activity>> schedule){
         this.counselor = counselor;
         schedule = new HashMap<Days,ArrayList<Activity>>();
-        campers = new ArrayList<String>();
         activity = new Activity();
         rand = new Random();
         this.id = UUID.randomUUID().toString();
@@ -105,7 +104,7 @@ public class Cabin {
     }
 
     public void addCounselor(Counselor counselor){
-        counselors.add(this.counselor);
+        counselors.add(counselor);
     }
 
     public ArrayList<Counselor> getCounselor() {
@@ -113,18 +112,26 @@ public class Cabin {
     }
 
     public void addActivities(Activity activity){
-        morningActivities.add(new Activity("Kayaking", "Lake", 9,30, Action.KAYAKING));
-        morningActivities.add(new Activity("Zipliing", "Forest", 9,30, Action.KAYAKING));
-        midActivities.add(new Activity("Arts and Crafts", "Communal Cabin", 12,30, Action.KAYAKING));
-        midActivities.add(new Activity("Field Games", "Field", 12,30, Action.KAYAKING));
-        afternoonActivities.add(new Activity("Rock Wall", "West Camp", 4,30, Action.KAYAKING));
-        afternoonActivities.add(new Activity("Hiking", "Forest", 4,30, Action.KAYAKING));
-        afternoonActivities.add(new Activity("Scavenger Hunt", "Field", 4,30, Action.KAYAKING));
+        morningActivities.add(new Activity("Kayaking", "fun in the lake", "Lake", 9,30, "AM", "KAYAKING"));
+        morningActivities.add(new Activity("Zipliing", "fun in the forest", "Forest", 9,30, "AM", "ZIPLINING"));
+        midActivities.add(new Activity("Arts and Crafts", "use your creativity", "Communal Cabin", 12,30, "PM", "ARTS AND CRAFTS"));
+        midActivities.add(new Activity("Field Games", "use your energy", "Field", 12,30, "PM", "FIELD GAMES"));
+        afternoonActivities.add(new Activity("Rock Wall", "do something new", "West Camp", 4,30, "PM", "ROCK WALL"));
+        afternoonActivities.add(new Activity("Hiking", "fun in the forest", "Forest", 4,30, "PM", "HIKING"));
+        afternoonActivities.add(new Activity("Scavenger Hunt", "search and find", "Field", 4,30, "PM", "SCAVENGER HUNT"));
     }
 
     public ArrayList<Activity> getAllActivities(){
-        
+        allActivities.add(new Activity("Kayaking", "fun in the lake", "Lake", 9,30, "AM", "KAYAKING"));
+        allActivities.add(new Activity("Zipliing", "fun in the forest", "Forest", 9,30, "AM", "ZIPLINING"));
+        allActivities.add(new Activity("Arts and Crafts", "use your creativity", "Communal Cabin", 12,30, "PM", "ARTS AND CRAFTS"));
+        allActivities.add(new Activity("Field Games", "use your energy", "Field", 12,30, "PM", "FIELD GAMES"));
+        allActivities.add(new Activity("Rock Wall", "do something new", "West Camp", 4,30, "PM", "ROCK WALL"));
+        allActivities.add(new Activity("Hiking", "fun in the forest", "Forest", 4,30, "PM", "HIKING"));
+        allActivities.add(new Activity("Scavenger Hunt", "search and find", "Field", 4,30, "PM", "SCAVENGER HUNT"));
+        return allActivities;
     }
+
 
     public ArrayList<Activity> getActions(){
         cabinActivities.clear();
