@@ -47,24 +47,19 @@ public class CabinList {
         return null;
         
     }
-<<<<<<< HEAD
 
+    /**
+     * gets all cabins
+     * @return cabins arraylist
+     */
     public ArrayList<Cabin> getAllCabins() {
         for(Cabin c: cabins) {
             System.out.println(c);
-           
-=======
-    /**
-     * gets all of the cabins
-     */
-    public void getAllCabins() {
-        for(Cabin c: cabins) {
-            System.out.println(c);
-            
->>>>>>> b48a6e8483c82afb94b8b41422de5e9f01abdd9d
         }
         return cabins;
     }
+
+    
     /**
      * saves cabins
      */
