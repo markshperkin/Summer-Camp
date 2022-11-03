@@ -67,7 +67,8 @@ public class CampFacade {
     }
 
     public static void addChild(Child childChild){
-        SummerCamp.campers.add(childChild);
+        DataWriter.getChildsJSON(childChild);
+        DataWriter.saveChild();
     }
 
     public static void addCounselor(Counselor counselorCounselor){
