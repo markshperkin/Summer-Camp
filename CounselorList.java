@@ -1,21 +1,36 @@
 import java.util.ArrayList;
 import java.util.UUID;
 
-
+/**
+ * creating a class of the counselorList
+ */
 public class CounselorList {
-
+/**
+ * creating the creating the private for the counselorList 
+ */
     private static CounselorList counselorsList;
     private static ArrayList<Counselor> counselors;
-
+/**
+ * creating of the conselorsList
+ */
     private CounselorList(){
         counselors = DataReader.getAllCounselors();
     }
-
+/**
+ * creating a counselorList of the getinstance
+ * @return counselors
+ */
     public static CounselorList getInstance(){
         if (counselorsList == null)
             counselorsList = new CounselorList();
         return counselorsList;
     }
+/**
+ * publi
+ * @param username
+ * @param password
+ * @return
+ */
 
     public boolean login(String username, String password) {
         for(Counselor p: counselors) {
