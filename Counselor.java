@@ -111,6 +111,8 @@ public Counselor (String id, String firstName, String lastName, String email, St
         allergies.add(allergy);
     }
 
+    
+
     public String getUUID() {
         return UUid.toString();
     }
