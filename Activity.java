@@ -10,8 +10,8 @@ public class Activity {
     private String title;
     private String description;
     private String location;
-    private String clockHour;
-    private String clockMinute;
+    private int clockHour;
+    private int clockMinute;
     private String timeofday;
     private String action;
 
