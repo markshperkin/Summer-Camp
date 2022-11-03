@@ -47,6 +47,8 @@ public class SummerCamp{
         cabin.getCabins();
     }
 
-
+    public void addCounselor(Counselor counselorAdd){
+        counselors.add(counselorAdd);
+    }
     
 }

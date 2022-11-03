@@ -9,21 +9,19 @@ public class CampFacade {
     private Contact contact;
     private Activity activity;
     private SummerCamp summerCamp;
-    private FAQ faq;
     private static Cabin cabin;
     private static Sessions session;
     static ParentsList parentList = ParentsList.getInstance();
     static CounselorList counselorList = CounselorList.getInstance();
     static DirectorList directorList = DirectorList.getInstance();
 
-    public CampFacade(Counselor counselor, Parent parent, Child child, Contact contact, Activity activity, FAQ faq, Cabin cabin, SummerCamp summerCamp){
+    public CampFacade(Counselor counselor, Parent parent, Child child, Contact contact, Activity activity, Cabin cabin, SummerCamp summerCamp){
         this.counselor = counselor;
         this.summerCamp = summerCamp;
         this.parent = parent;
         this.child = child;
         this.contact = contact;
         this.activity = activity;
-        this.faq = faq;
         this.cabin = cabin;
     }
 
@@ -57,7 +55,7 @@ public class CampFacade {
 
     /** This is for creating new Counselor as they have more information to add  */
     public static void signUpCounselor(String firstName, String lastName, String email, String password, String phoneNum, String birthday, String gender, String shirtSize, String street, String town, String state, String zipCode, String country, ArrayList<Contact> emergencyContacts, ArrayList<Medication> medications, ArrayList <String> allergies ) {
-        Counselor counselor = new Counselor(UUID.randomUUID().toString(), firstName, lastName, email, password, phoneNum, birthday, gender, shirtSize, street, town, state, zipCode, country, emergencyContacts, medications, allergies);
+        Counselor counselor = new Counselor(UUID.randomUUID().toString(), firstName, lastName, email, password, phoneNum, birthday, gender, shirtSize, street, town, state, zipCode, country, country, emergencyContacts, medications, allergies);
         DataWriter.getCounselorsJSON(counselor);
         DataWriter.saveCounselors();
     }
@@ -72,7 +70,7 @@ public class CampFacade {
     }
 
     public static void addCounselor(Counselor counselorCounselor){
-        SummerCamp.counselors.add(counselorCounselor);
+        SummerCamp.addCounselor(counselorCounselor);
     }
 
     public static void viewChild (String viewFirstName, String viewLastName){
