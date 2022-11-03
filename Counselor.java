@@ -111,6 +111,10 @@ public Counselor (String id, String firstName, String lastName, String email, St
         allergies.add(allergy);
     }
 
+    public Counselor getCounselorByID (String ID) {
+        for
+    }
+
     public String getUUID() {
         return UUid.toString();
     }

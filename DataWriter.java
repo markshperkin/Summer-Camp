@@ -259,5 +259,3 @@ public static JSONObject getDirectorsJSON(Director director)
 
 
  }
-
-}

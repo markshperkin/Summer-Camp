@@ -31,7 +31,7 @@ public class CabinList {
         
     }
 
-    public void getAllCabins() {
+    public ArrayList<Cabin> getAllCabins() {
         for(Cabin c: cabins) {
             System.out.println(c);
             
