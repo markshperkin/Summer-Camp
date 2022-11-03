@@ -1,7 +1,6 @@
 import java.util.Random;
 import java.util.*;
 
-//import javax.swing.Action;
 
 public class Activity {
     private String title;
@@ -11,7 +10,7 @@ public class Activity {
     private String clockMinute;
     private String timeofday;
     private String action;
-    
+ 
     
     private static final Random RANDOM = new Random();
 
