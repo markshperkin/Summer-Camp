@@ -8,8 +8,8 @@ import org.junit.jupiter.api.Test;
 
 public class ParentListTest {
     @Test
-    public void testLoginInvalid(){
+    public void testLoginInvalid() {
         boolean result = ParentsList.getInstance().login("jsmart", "12345");
-        assertEquals(false,result);
+        assertEquals(false, result);
     }
 }
