@@ -418,11 +418,15 @@ public class ParentListTest {
         for(int i = 0; i < ParentsList.getInstance().getAllParents().size(); i++) {
             if(ParentsList.getInstance().getAllParents().get(i).equals(parent)) {
                 result = true;
-                assertEquals(true, result);
+                assertEquals(false, result);
             }
         } 
     }
 
-    
+    @Test
+    public void testGetAllParentValid() {
+        int size = ParentsList.getInstance().getAllParents().size();
+        assertEquals(28, size);
+    }
     
 }
