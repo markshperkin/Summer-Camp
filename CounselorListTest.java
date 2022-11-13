@@ -1,5 +1,5 @@
 /**
- * CounselorList written
+ * CounselorList written and tested by Rick Jiang
  */
 
 import static org.junit.jupiter.api.Assertions.*;
