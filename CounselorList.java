@@ -55,13 +55,18 @@ public class CounselorList {
      return  null;
     }
 
-    public boolean addCounselor(Counselor counselor) {
-        if(counselor == null)
-            return false;
-        counselors.add(counselor);
-        save();
-        return true;
-    }
+    public boolean addCounselor(String firstName, String lastName, String birthday, String gender, String aboutMe,
+    String shirtSize, String UUid, String email, String password,String phoneNum,String street,String town,String zipCode,String state, String country) {
+    Counselor counselor = new Counselor(firstName, lastName, birthday, gender, aboutMe,shirtSize,UUid,email,password,phoneNum,street,town,zipCode,state,country);
+    
+    
+Counselor.add(counselor);
+return true;
+}
+    
+public void clear() {
+    counselors = new ArrayList<Counselor>();
+}
 
     public void save() {
         DataWriter.saveCounselors();

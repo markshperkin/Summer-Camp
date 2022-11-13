@@ -10,7 +10,6 @@ public class Counselor extends User{
     public String birthday;
     public String gender;
     public String aboutMe;
-    public String Aboutme;
     public String shirtSize;
     public ArrayList<Contact> contacts;
     public ArrayList<Medication> medication;
@@ -149,13 +148,8 @@ public Counselor (String UUid, String firstName, String lastName, String email, 
     public ArrayList<String> getAllergy() {
         return allergies;
     }
-    /**
-     * gets the about me of counselor
-     * @return String about me
-     */
-    public String getAboutme() {
-        return Aboutme;
-    }
+    
+    
     /**
      * gets the contacts 
      * @return String contact
@@ -206,6 +200,10 @@ public Counselor (String UUid, String firstName, String lastName, String email, 
     public String getUUID() {
         return UUid.toString();
     }
+    public static void add(Counselor counselor) {
+    
+    
+    }
+
+
 }
-
-
