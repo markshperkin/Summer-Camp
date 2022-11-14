@@ -21,6 +21,7 @@ public class CabinListTest{
         cabin = new Cabin(counselor, camper, schedule);
     }
 
+    @Test
     public void testCabinAddValid() {
         boolean result = CabinList.getInstance().addCabin(cabin);
         assertTrue(result);
@@ -32,26 +33,31 @@ public class CabinListTest{
         assertFalse(result);
     }
 
+    @Test
     public void testCabinAddNullCounselor() {
         boolean result = CabinList.getInstance().addCabin(new Cabin (null, camper, schedule));
         assertFalse(result);
     }
 
+    @Test
     public void testCabinAddNullCampers() {
         boolean result = CabinList.getInstance().addCabin(new Cabin (counselor, null, schedule));
         assertFalse(result);
     }
 
+    @Test
     public void testCabinAddNullSchedule() {
         boolean result = CabinList.getInstance().addCabin(new Cabin (counselor, camper, null));
         assertFalse(result);
     }
 
+    @Test
     public void testGetAllCabinsValid() {
         int size = CabinList.getInstance().getAllCabins().size();
         assertEquals(2, size);
     }
 
+    @Test
     public void testGetAllCabinsZero() {
         CabinList.getInstance().clear();
         int size = CabinList.getInstance().getAllCabins().size();
