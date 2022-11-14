@@ -21,46 +21,42 @@ public class CabinListTest{
         cabin = new Cabin(counselor, camper, schedule);
     }
 
-    public void testAddValid() {
+    public void testCabinAddValid() {
         boolean result = CabinList.getInstance().addCabin(cabin);
         assertTrue(result);
     }
 
     @Test
-    public void testAddDuplicate() {
+    public void testCabinAddDuplicate() {
         boolean result = CabinList.getInstance().getAllCabins().equals(CabinList.getInstance().getAllCabins());
         assertFalse(result);
     }
 
-    public void testAddNullCounselor() {
+    public void testCabinAddNullCounselor() {
         boolean result = CabinList.getInstance().addCabin(new Cabin (null, camper, schedule));
         assertFalse(result);
     }
 
-    public void testAddNullCampers() {
+    public void testCabinAddNullCampers() {
         boolean result = CabinList.getInstance().addCabin(new Cabin (counselor, null, schedule));
         assertFalse(result);
     }
 
-    public void testAddNullSchedule() {
+    public void testCabinAddNullSchedule() {
         boolean result = CabinList.getInstance().addCabin(new Cabin (counselor, camper, null));
         assertFalse(result);
     }
 
-    public void testgetAllCabinsValid() {
+    public void testGetAllCabinsValid() {
         int size = CabinList.getInstance().getAllCabins().size();
         assertEquals(2, size);
     }
 
-    public void testgetAllCabinsZero() {
+    public void testGetAllCabinsZero() {
         CabinList.getInstance().clear();
         int size = CabinList.getInstance().getAllCabins().size();
         assertEquals(0, size);
     }
 
-    public void testgetAllCabinsInvalid() {
-        int size = CabinList.getInstance().getAllCabins().size();
-        assertEquals(2, size);
-    }
     
 }

@@ -69,7 +69,8 @@ public Counselor (String UUid, String firstName, String lastName, String email, 
      medication = new ArrayList<Medication>();
      UUid = UUID.randomUUID().toString();
      allergies = new ArrayList<String>();
-  } 
+  }
+  
     
   /**
      * gets the first name of the counselor
