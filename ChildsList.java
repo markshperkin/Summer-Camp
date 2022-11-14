@@ -41,6 +41,8 @@ public class ChildsList {
      */
     public ArrayList<Child> getAllChild()
     {
+         for(Child c: children) 
+            System.out.println(c);
        return children;
     }
     /**
@@ -70,6 +72,10 @@ public class ChildsList {
             }
         }
         return null;
+    }
+
+    public void clear() {
+        children = new ArrayList<Child>();
     }
     
     /**
