@@ -66,6 +66,8 @@ public class CabinList {
     public void save() {
         DataWriter.saveCabins();
     }
+    public void clear() {
+    }
 
 
 }
